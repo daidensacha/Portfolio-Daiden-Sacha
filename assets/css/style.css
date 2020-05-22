@@ -810,6 +810,7 @@ footer {
     -webkit-box-shadow: inset 0px 13px 20px 0px rgba(0,0,0,0.35);
     -moz-box-shadow: inset 0px 13px 20px 0px rgba(0,0,0,0.35);
     box-shadow: inset 0px 13px 20px 0px rgba(0,0,0,0.35);
+    overflow: hidden;
 }
 
 footer > span {
