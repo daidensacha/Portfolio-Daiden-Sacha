@@ -23,6 +23,10 @@ body {
     background: url('../images/seamless-blue-1.png') repeat;
 }
 
+.uk-background-muted {
+    background: url('../images/seamless-background-muted.jpg') repeat;
+}
+
 /*                
 ================================================================== Theme Divider
 */
@@ -78,6 +82,56 @@ https://codepen.io/Oddgson/pen/VPrYbv
 	background-color: white;
 	border: 1px solid rgb(48,49,51);
 }
+
+
+/*
+================================================================================
+============================== BUTTON STYLING =============================
+================================================================================
+*/
+#resume-modal-button, #btn-resume-download {
+    border: 2px solid #9555af;
+    /* border-radius: 50%; */
+    /* font-size: 22px; */
+    /* line-height: 22px; */
+    /* text-align: center; */
+    /* vertical-align: middle; */
+    color: #9555af;
+    opacity: 0.7;
+    background: #ffffff; 
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out; 
+  }
+
+ /* CREDIT for STYLING BUTTONS - https://fvsch.com/styling-buttons/ */
+
+ #contact-btn.uk-button,
+ #resume-modal-button, 
+ #btn-resume-download  {
+    /* default for <button>, but useful for <a> */
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    /* create a small space when buttons wrap on 2 lines */
+    margin: 2px 0;
+    /* invisible border (will be colored on hover/focus) */
+    border: solid 1px transparent;
+    border-radius: 4px;
+    /* make sure colors have enough contrast! */
+    color: #ffffff;
+    background-color: #9555af;
+  }
+  
+  /* inverse colors on mouse-over and focus */
+  #contact-btn.uk-button:hover, #resume-modal-button:hover,#btn-resume-download:hover, 
+  #contact-btn.uk-button:focus, #resume-modal-button:focus, #btn-resume-download:focus  {
+    color: #9555af;
+    border-color: currentColor;
+    background-color: white;
+  }
+
 
 /*                
 ========================================================================= Navbar
@@ -232,5 +286,462 @@ h1.profession {
 .name-block {
     z-index: 5;
     top: 45%;
+}
+
+
+/*
+================================================================================
+============================== ABOUT BLOCK STYLING =============================
+================================================================================
+*/
+
+
+.d-image-background {
+    padding: 50px 0;
+}
+.d-content {
+    padding: 70px;
+    text-align: justify;
+}
+
+/* End profile 2 */
+
+.about {
+    min-height: 800px;
+}
+
+.image-daiden {
+    background: url('../images/daiden-4.png');
+    height: 260px;
+    max-width: 260px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    border: 1px solid #707070;
+}
+
+.about {
+    border-top: 5px solid #e5e5e5;
+}
+
+.d-image-background {
+    padding: 50px 0;
+    border-top: 2px solid #e5e5e5;
+    border-bottom: 2px solid #e5e5e5;
+}
+
+.daiden-image-wrapper {
+    border-top: 2px solid hsl(0, 0%, 50%);
+    padding-top: 3px 0;
+    background: hsl(0, 0%, 40%);
+    -webkit-box-shadow: 0px -6px 33px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -6px 33px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px -6px 33px -10px rgba(0,0,0,0.75);
+}
+
+
+/*
+================================================================================
+============================== SKILLS BLOCK STYLING ============================
+================================================================================
+*/
+
+.skills {
+    background: transparent;
+    
+}
+
+.skill-bg-wrapper {
+    border-top: 2px solid hsl(0, 0%, 50%);
+    border-bottom: 2px solid hsl(0, 0%, 50%);
+    padding: 3px 0;
+    background: hsl(0, 0%, 40%);
+    -webkit-box-shadow: inset 0px 1px 15px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 1px 15px -10px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 1px 15px -10px rgba(0,0,0,0.75);
+}
+
+.list-inline-skill img {
+  margin: 10px auto;
+}
+
+.skill-block-icon {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  vertical-align: middle;
+  padding: 30px;
+  background: #040404;
+  margin: 0px auto;
+}
+
+.icon-block h3 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.icon-block p {
+    text-align: center;
+    padding: 0 10px;
+}
+
+.icon-block {
+  display: inline-block;
+ 
+}
+
+.icon-block > img {
+  width: 47px;
+  margin: 0 auto;
+}
+
+.dev-skills {
+    padding: 10px 0 30px;
+}
+
+.dev-skills img {
+  vertical-align: center;
+  margin: auto;
+}
+
+/*                                    
+=================================================================== Skills Ikons
+*/
+
+div.progress {
+  position: relative;
+  height: 25px;
+  width: 100%;
+  margin-bottom: 4px;
+  background: rgba(232, 236, 239, 1.00);
+  border-radius: 4px;
+}
+
+.progress-type {
+  position: absolute;
+  width: 90px;
+  height: 25px;
+  left: 0px;
+  font-weight: 400;
+  padding: 0px 10px 0px 10px;
+  color: #fafafa;
+  background-color: rgba(25, 25, 25, 0.2);
+}
+
+.progress-section {
+  margin: 40px 20px;
+  min-height: 200px;
+}
+
+/*               
+========================================================== Progress Bars Styling
+*/
+
+.l-inline-skill img {
+  display: block;
+  margin: 0 auto;
+  height: 25px;
+}
+
+span.progress-percentage.photoshop {
+    position: absolute;
+    left: 0;
+    height: 25px;
+    width: 60%;
+    background-color: #00f1fe;
+    border-radius: 4px 0 0 4px; 
+}
+span.progress-type.photoshop {
+    position: absolute;
+    width: 90px;
+    height: 25px;
+    left: 0px;
+    font-weight: 400;
+    padding: 0px 10px 0px 10px;
+    color: #fafafa;
+    background-color: rgba(25, 25, 25, 0.2);
+    z-index: 10;
+    border-radius: 4px 0 0 4px;
+    font-size: 12pt;
+}
+
+span.progress-percentage.illustrator {
+    position: absolute;
+    left: 0;
+    height: 25px;
+    width: 70%;
+    background-color: #f8b849;
+    border-radius: 4px 0 0 4px;
+}
+
+span.progress-type.illustrator {
+    position: absolute;
+    width: 90px;
+    height: 25px;
+    left: 0px;
+    font-weight: 400;
+    padding: 0px 10px 0px 10px;
+    color: #fafafa;
+    background-color: rgba(25, 25, 25, 0.2);
+    z-index: 10;
+    border-radius: 4px 0 0 4px;
+    font-size: 12pt;
+}
+
+span.progress-percentage.xd {
+    position: absolute;
+    left: 0;
+    height: 25px;
+    width: 30%;
+    background-color: #ff25be;
+    border-radius: 4px 0 0 4px;
+}
+
+span.progress-type.xd {
+    position: absolute;
+    width: 90px;
+    height: 25px;
+    left: 0px;
+    font-weight: 400;
+    padding: 0px 10px 0px 10px;
+    color: #fafafa;
+    background-color: rgba(25, 25, 25, 0.2);
+    z-index: 10;
+    border-radius: 4px 0 0 4px;
+    font-size: 12pt;
+}
+
+span.progress-percentage.indesign {
+    position: absolute;
+    left: 0;
+    height: 25px;
+    width: 50%;
+    background-color: #ff3f94;
+    border-radius: 4px 0 0 4px;
+}
+
+span.progress-type.indesign {
+    position: absolute;
+    width: 90px;
+    height: 25px;
+    left: 0px;
+    font-weight: 400;
+    padding: 0px 10px 0px 10px;
+    color: #fafafa;
+    background-color: rgba(25, 25, 25, 0.2);
+    z-index: 10;
+    border-radius: 4px 0 0 4px;
+    font-size: 12pt;
+}
+
+span.progress-percentage.html5 {
+    position: absolute;
+    left: 0;
+    height: 25px;
+    width: 80%;
+    background-color: #ee671d;
+    border-radius: 4px 0 0 4px;
+}
+
+span.progress-type.html5 {
+    position: absolute;
+    width: 90px;
+    height: 25px;
+    left: 0px;
+    font-weight: 400;
+    padding: 0px 10px 0px 10px;
+    color: #fafafa;
+    background-color: rgba(25, 25, 25, 0.2);
+    z-index: 10;
+    border-radius: 4px 0 0 4px;
+    font-size: 12pt;
+}
+
+span.progress-percentage.css3 {
+    position: absolute;
+    left: 0;
+    height: 25px;
+    width: 75%;
+    background-color: #31addf;
+    border-radius: 4px 0 0 4px;
+}
+
+span.progress-type.css3 {
+    position: absolute;
+    width: 90px;
+    height: 25px;
+    left: 0px;
+    font-weight: 400;
+    padding: 0px 10px 0px 10px;
+    color: #fafafa;
+    background-color: rgba(25, 25, 25, 0.2);
+    z-index: 10;
+    border-radius: 4px 0 0 4px;
+    font-size: 12pt;
+}
+
+span.progress-percentage.javascript {
+    position: absolute;
+    left: 0;
+    height: 25px;
+    width: 20%;
+    background-color: #ffcc00;
+    border-radius: 4px 0 0 4px;
+}
+
+span.progress-type.javascript {
+    position: absolute;
+    width: 90px;
+    height: 25px;
+    left: 0px;
+    font-weight: 400;
+    padding: 0px 10px 0px 10px;
+    color: #fafafa;
+    background-color: rgba(25, 25, 25, 0.2);
+    z-index: 10;
+    border-radius: 4px 0 0 4px;
+    font-size: 12pt;
+}
+
+span.progress-percentage.bootstrap {
+    position: absolute;
+    left: 0;
+    height: 25px;
+    width: 70%;
+    background-color: #603f8e;
+    border-radius: 4px 0 0 4px;
+}
+
+span.progress-type.bootstrap {
+    position: absolute;
+    width: 90px;
+    height: 25px;
+    left: 0px;
+    font-weight: 400;
+    padding: 0px 10px 0px 10px;
+    color: #fafafa;
+    background-color: rgba(25, 25, 25, 0.2);
+    z-index: 10;
+    border-radius: 4px 0 0 4px;
+    font-size: 12pt;
+}
+
+span.progress-percentage.python {
+    position: absolute;
+    left: 0;
+    height: 25px;
+    width: 0%;
+    background-color: #396f9f;
+    border-radius: 4px 0 0 4px;
+}
+
+span.progress-type.python {
+    position: absolute;
+    width: 90px;
+    height: 25px;
+    left: 0px;
+    font-weight: 400;
+    padding: 0px 10px 0px 10px;
+    color: #fafafa;
+    background-color: rgba(25, 25, 25, 0.2);
+    z-index: 10;
+    border-radius: 4px 0 0 4px;
+    font-size: 12pt;
+}
+
+span.progress-percentage.django {
+    position: absolute;
+    left: 0;
+    height: 25px;
+    width: 0%;
+    background-color: #0c4b33;
+    border-radius: 4px 0 0 4px;
+}
+
+span.progress-type.django {
+    position: absolute;
+    width: 90px;
+    height: 25px;
+    left: 0px;
+    font-weight: 400;
+    padding: 0px 10px 0px 10px;
+    color: #fafafa;
+    background-color: rgba(25, 25, 25, 0.2);
+    z-index: 10;
+    border-radius: 4px 0 0 4px;
+    font-size: 12pt;
+}
+
+span.progress-percentage.flask {
+    position: absolute;
+    left: 0;
+    height: 25px;
+    width: 0%;
+    background-color: #363b3d;
+    border-radius: 4px 0 0 4px;
+}
+
+span.progress-type.flask {
+    position: absolute;
+    width: 90px;
+    height: 25px;
+    left: 0px;
+    font-weight: 400;
+    padding: 0px 10px 0px 10px;
+    color: #fafafa;
+    background-color: rgba(25, 25, 25, 0.2);
+    z-index: 10;
+    border-radius: 4px 0 0 4px;
+    font-size: 12pt;
+}
+
+span.progress-percentage.mysql {
+    position: absolute;
+    left: 0;
+    height: 25px;
+    width: 5%;
+    background-color: #02546b;
+    border-radius: 4px 0 0 4px;
+}
+
+span.progress-type.mysql {
+    position: absolute;
+    width: 90px;
+    height: 25px;
+    left: 0px;
+    font-weight: 400;
+    padding: 0px 10px 0px 10px;
+    color: #fafafa;
+    background-color: rgba(25, 25, 25, 0.2);
+    z-index: 10;
+    border-radius: 4px 0 0 4px;
+    font-size: 12pt;
+}
+
+span.progress-percentage.mongodb {
+    position: absolute;
+    left: 0;
+    height: 25px;
+    width: 0%;
+    background-color: #49b344;
+    border-radius: 4px 0 0 4px;
+}
+
+span.progress-type.mongodb {
+    position: absolute;
+    width: 90px;
+    height: 25px;
+    left: 0px;
+    font-weight: 400;
+    padding: 0px 10px 0px 10px;
+    color: #fafafa;
+    background-color: rgba(25, 25, 25, 0.2);
+    z-index: 10;
+    border-radius: 4px 0 0 4px;
+    font-size: 12pt;
 }
 

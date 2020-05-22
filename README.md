@@ -60,8 +60,19 @@ social sites on the right. Semi-transparent, dissapears scrolling down, appears
 scrolling up.
 
 ##### About Block
+With mobile first design in mind I included 2 separate images in this section, 
+as the larger one by design doesn't look as nice in a mobile view, so it is 
+visible on screens larger than 1200px. An alternate image is visible for smaller 
+screens. 
+The content is minimal, to say who I am, what my stregths are and what I do. 
+Contains a button link to a modal window displaying my resume, and in that modal 
+is a download button opening the pdf in a separate window to be printed or saved.
 
 #### Skill Block
+This section was much easier using Bootstrap progress bars, that said it was 
+pretty easy to knock the same up using HTML and CSS, looks exactly the same. 
+Also easy to adjust the percentage level in the CSS file. I would make this a 
+priority to convert to SASS so it would be even easier to change the variables. 
 
 #### Portfolio Block
 
