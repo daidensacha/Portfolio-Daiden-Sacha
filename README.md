@@ -6,8 +6,9 @@ career to Full Stack Development. It fits and I decided on this as I feel it wil
 be an ongoing process as my skills impove. Better to start sooner than later.
 
 ### Planning
-The 5 planes of user experience was a good process in which pushed me to nut out 
-various aspects of the process in a sequential order.
+The 5 planes of user experience was a good process, and it pushed me to nut out 
+various aspects in a sequential order before jumping in to the markup. I found 
+that beneficial.
 
 I identified 3 potential users of the site.
 1. Recruiters looking for someone to fill positions.
@@ -90,6 +91,15 @@ with a form, hit send and bazinga!
 #### Modal View Resume
 Modal opens to show a high quality gif image of the resume, with a button to 
 download the resume in a separate window to be saved or printed.
+
+**NOTES:**
+-The form is not complete as I haven't learnt how to process the data for sending.
+Would like to fix this in the next part of the course when we dive into JS.
+-Also, although the skill block was fun to knock up, I'm not really happy with it.
+As it is, I think it's limited, and a little to busy for my liking. Additionally 
+if I add the tools to learn from my wishlist to what I already know, then I'm 
+already contemplating to change the format of the skill block to outline skills
+in a nicer way.
 
 
 
