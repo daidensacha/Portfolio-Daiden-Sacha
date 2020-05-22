@@ -21,7 +21,7 @@ body {
 */
 
 .uk-background-blue {
-    background: url('../images/seamless-background-blue.png') repeat;
+    background: url('../images/seamless-background-blue.jpg') repeat;
 }
 
 .uk-background-muted {
@@ -338,7 +338,7 @@ h1.profession {
 }
 
 .image-daiden {
-    background: url('../images/daiden-4.png');
+    background: url('../images/daiden-4.gif');
     height: 260px;
     max-width: 260px;
     border-radius: 50%;
@@ -866,3 +866,5 @@ footer .uk-navbar-nav>hr {
 ============================== RESUME MODAL STYLING =============================
 ================================================================================
 */
+
+
