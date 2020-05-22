@@ -43,9 +43,9 @@ First step, play. With an idea of what I need to create, off then to
 [Codepen](https://codepen.io/daidensacha). I wanted to get an idea of what I 
 could do with Bootstrap. First a modal form, then a skills block, and a 
 portfolio gallery. I realised when it came to creating the gallery that in 
-Bootstrap i was limited to options I didn't like. So for complarison I started 
+Bootstrap I was limited to options I didn't like. So for comparison I started 
 again creating the same prototypes with UIkit and it became my preferred option
-becuase of the array of features it offered that I felt better suited my needs.
+becuase of the array of features it offered. I felt better suited my needs.
 
 ### Site Sections
 
