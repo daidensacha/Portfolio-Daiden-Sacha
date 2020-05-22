@@ -3,9 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Daiden Sacha Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    
+    <!-- Start Header Block -->
+    <div class="container uk-height-viewport uk-background-cover uk-background-fixed uk-light header-image" data-src="assets/images/header-image-1.png" uk-img>
+        
+        <!-- Begin Navbar-->
+        <div class="tm-header" id="home">
+            <div uk-sticky="show-on-up: true; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #scrollup-dropbar" class="uk-sticky uk-navbar-sticky uk-sticky-below uk-sticky-fixed" style="position: fixed; top: 0px; width: 100%;">  
+                <nav class="uk-navbar-container uk-navbar-transparent uk-navbar-sticky">
+                    <div class="uk-container">
+                        <div uk-navbar="" class="uk-navbar">
+        
+                            <div class="uk-navbar-left">
+        
+                                <!-- <a class="uk-navbar-item uk-logo" href="#"></a> -->
+
+                                <div class="uk-navbar-left">
+                                    <ul class="uk-navbar-nav uk-visible@s">
+                                        <li class="uk-active"><a class="bottom-leftToRight" href="#home">Home</a></li>
+                                        <li class=""><a class="bottom-leftToRight" href="#about">About</a></li>
+                                        <li class=""><a class="bottom-leftToRight" href="#gallery">Portfolio</a></li>
+                                        <li class=""><a class="bottom-leftToRight" href="#modal-contact-form" uk-toggle>Contact</a></li>
+                                    </ul>
+                                    <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+                                </div>
+                            </div>
+                            
+                            <div class="uk-navbar-right">
+                                <ul class="uk-navbar-nav social-links">
+                                    <li class="">
+                                        <a class="" href="https://github.com/daidensacha" target="_blank"><i class="fab fa-github"></i></a>
+                                    </li>
+                                    <li class="">
+                                        <a class="" href="https://www.linkedin.com/in/daiden-sacha-8852b41a6/"  target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                    <li class="">
+                                        <a class="" href="#modal-contact-form" uk-toggle><i class="far fa-envelope"></i></a>
+                                    </li>
+                                </ul> 
+                            </div>
+        
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="uk-sticky-placeholder" style="height: 80px; margin: 0px;"></div>
+        
+            <!-- Start Offcanvas Navbar -->
+            <div id="sidenav" uk-offcanvas="flip: false" class="uk-offcanvas">
+                <div class="uk-offcanvas-bar">
+                    <ul class="uk-nav">
+                        <li class="uk-active"><a href="#home">Home</a></li>
+                        <li class="#about"><a href="#about">About</a></li>
+                        <li class="#portfolio"><a href="">Portfolio</a></li>
+                        <li class="#modal-contact-form"><a href="">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End Offcanvas Navbar -->
+
+        </div>
+        <!-- End Navbar-->
+
+        <!-- Start Name and Profession Block -->
+        <div class="grid uk-position-center header-name-block" tabindex="0">    
+            <h1 class="name uk-text-center" uk-scrollspy="cls: uk-animation-scale-up; uk-transform-origin-top-center; repeat: false" >Daiden Sacha</h1>
+            <hr class="line-light uk-align-center" uk-scrollspy="cls: uk-animation-scale-up; repeat: false">
+            <h1 class="profession uk-text-center uk-text-uppercase" uk-scrollspy="cls: uk-animation-scale-up; uk-transform-origin-bottom-center; repeat: false">Full Stack Developer</h1>
+        </div>
+        <!-- End Name and Profession Block -->
+
+        <!-- Start Skill Icon Block -->
+        <div id="header-skill-icons" class="uk-text-center uk-position-bottom skill-icon-block uk-grid-collapse" uk-grid>
+            <div class="uk-width-1-3 uk-display-block skill-block">
+                <div class="skills-category" uk-scrollspy="cls: uk-animation-slide-bottom; repeat: false">
+                    <img src="assets/images/skills-adobe.png" alt="Adobe Design">
+                </div>
+            </div>
+            <div class="uk-width-1-3 uk-display-block skill-block">
+                <div class="skills-category" uk-scrollspy="cls: uk-animation-slide-bottom; repeat: false">
+                    <img src="assets/images/skills-frontend.png" alt="Front End Development">
+                </div>
+            </div>
+            <div class="uk-width-1-3 uk-display-block skill-block">
+                <div class="skills-category" uk-scrollspy="cls: uk-animation-slide-bottom; repeat: false">
+                    <img src="assets/images/skills-backend.png" alt="Backend Development">
+                </div>
+            </div>
+        </div>
+        <!-- End Skill Icon Block -->  
+
+    </div>
+    <!-- End Header Block -->
+
+    <!-- UIkit form validation to be completed with jQuery or Vanilla JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="node_modules/uikit/dist/js/uikit.min.js"></script>
+    <script src="node_modules/uikit/dist/js/uikit-icons.min.js"></script>
+    <script src="https://kit.fontawesome.com/7432ab4d43.js" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

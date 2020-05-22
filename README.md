@@ -1,17 +1,65 @@
 # Welcome
 ## Code Institute Milestone Project 1 
 ### Portfolio - Daiden Sacha - Full Stack Web Developer
+I decided on completeing a personal portfolio relating to my desire to change my
+career to Full Stack Development. It fits and I decided on this as I feel it will
+be an ongoing process as my skills impove. Better to start sooner than later.
 
 ### Planning
+The 5 planes of user experience was a good process in which pushed me to nut out 
+various aspects of the process in a sequential order.
+
+I identified 3 potential users of the site.
+1. Recruiters looking for someone to fill positions.
+2. Clients looking for freelancers to complete specified work.
+3. Open source projects in need of contibutors.
+
+From my side, I'm basically looking for oportunities to work in an environment 
+that supports personal and professional development, working with the latest 
+technologies. Keeping it focussed to "I need to promote the professional me".
+
+With potential users in mind I decided that I wanted to create a 
+landing page with a good first impression, simple but clear. 
+Required Features.
+1. One page site, not overcooked with info. 
+2. Sticky navbar, there when its needed.
+3. Icon links to Linkedin, Github, and Contact form.
+4. Modal contact form, easy to open, doesn't navigate away from the homepage.
+5. About Me, Who am I, what's my strength or skillset, and what do I do/ offer?
+It should be a simple outline that someone can skim though to get a brief 
+outline.
+6. Resume, display and possibility to download.
+7. Skills block, simple block with a simple overview of my skills, using icons
+and progress bars.
+8. Portfolio gallery, gallery showing examples of my work.
+9. Footer with the navbar and icon links.
+
+App of choice for creating my wireframes what Adobe XD, totally new to it, but 
+quite easy to pick up and has really cool features. I went a little overboard 
+with the wireframe, creating a prototype page but it was fun learning.
 
 #### Choice: Bootstrap vs UIkit
+First step, play. With an idea of what I need to create, off then to 
+[Codepen](https://codepen.io/daidensacha). I wanted to get an idea of what I 
+could do with Bootstrap. First a modal form, then a skills block, and a 
+portfolio gallery. I realised when it came to creating the gallery that in 
+Bootstrap i was limited to options I didn't like. So for complarison I started 
+again creating the same prototypes with UIkit and it became my preferred option
+becuase of the array of features it offered that I felt better suited my needs.
 
 ### Site Sections
 
 #### Header Block
+Full screen background image, Name, and Title with 
+some icons for Adobe Design, Frontend, Backend. All structured in a kind of 
+"stack".
 
 ##### Navbar
+Sticky navbar, links to page sections on the left, and links with icons to 
+social sites on the right. Semi-transparent, dissapears scrolling down, appears 
+scrolling up.
 
+##### About Block
 
 #### Skill Block
 
