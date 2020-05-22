@@ -31,6 +31,7 @@ body {
 /*                
 ================================================================== Theme Divider
 */
+
 .hr-40per {
     border-top: 1px solid rgba(229, 229, 229,.9);
     width: 40%;
@@ -50,6 +51,7 @@ body {
 CREDIT: Inspiration for the following divider styling from:,
 https://codepen.io/Oddgson/pen/VPrYbv
 */
+
 .divider {
     position: relative;
     margin: 40px 0;
@@ -70,6 +72,7 @@ https://codepen.io/Oddgson/pen/VPrYbv
 /*
 ************************************************ Divider Primary (White Rhombus)
 */
+
 .div-rhombus-white:after {
     content: "";
     position: absolute;
@@ -117,6 +120,7 @@ https://codepen.io/Oddgson/pen/VPrYbv
 ============================== BUTTON STYLING =============================
 ================================================================================
 */
+
 #resume-modal-button, #btn-resume-download {
     border: 2px solid #9555af;
     /* border-radius: 50%; */
@@ -163,6 +167,7 @@ https://codepen.io/Oddgson/pen/VPrYbv
 /*                
 ========================================================================= Navbar
 */
+
  .uk-navbar-container {
      background-color: rgba(0,0,0,0.45);
  }
@@ -265,6 +270,7 @@ ul.social-links {
 .skill-icon-block {
     padding-bottom: 50px;
 }
+
 .skill-block>.skills-category>img  {
     max-width: 100%;
     height: auto;
@@ -285,7 +291,6 @@ ul.social-links {
     width: 100px;
     opacity: .5;
 }
-
 
 /*               
 ============================================================= Name Block Styling
@@ -315,13 +320,11 @@ h1.profession {
     top: 45%;
 }
 
-
 /*
 ================================================================================
 ============================== ABOUT BLOCK STYLING =============================
 ================================================================================
 */
-
 
 .d-image-background {
     padding: 50px 0;
@@ -330,8 +333,6 @@ h1.profession {
     padding: 70px;
     text-align: justify;
 }
-
-/* End profile 2 */
 
 .about {
     min-height: 800px;
@@ -365,7 +366,6 @@ h1.profession {
     -moz-box-shadow: 0px -6px 33px -10px rgba(0,0,0,0.75);
     box-shadow: 0px -6px 33px -10px rgba(0,0,0,0.75);
 }
-
 
 /*
 ================================================================================
@@ -482,6 +482,7 @@ span.progress-percentage.photoshop {
     background-color: #00f1fe;
     border-radius: 4px 0 0 4px; 
 }
+
 span.progress-type.photoshop {
     position: absolute;
     width: 90px;
@@ -772,7 +773,6 @@ span.progress-type.mongodb {
     font-size: 12pt;
 }
 
-
 /*
 ================================================================================
 ============================== PORTFOLIO BLOCK STYLING =========================
@@ -804,7 +804,6 @@ span.progress-type.mongodb {
     padding-left: 10px;
     padding-right: 10px;
 }
-
 
 /*
 ================================================================================
@@ -849,7 +848,6 @@ footer .uk-navbar-nav>hr {
     margin-right: 20px;
     margin-left: 20px;  
 }
-
 
 /*
 ================================================================================
