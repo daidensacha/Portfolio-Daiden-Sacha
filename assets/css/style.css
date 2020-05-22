@@ -19,8 +19,9 @@ body {
 /*
 ============================================================== Theme Backgrounds
 */
+
 .uk-background-blue {
-    background: url('../images/seamless-blue-1.png') repeat;
+    background: url('../images/seamless-background-blue.png') repeat;
 }
 
 .uk-background-muted {
@@ -49,27 +50,44 @@ body {
 CREDIT: Inspiration for the following divider styling from:,
 https://codepen.io/Oddgson/pen/VPrYbv
 */
+.divider {
+    position: relative;
+    margin: 40px 0;
+    height: 1px;
+    }
 
-.divider
-{
-	position: relative;
-	margin: 40px 0;
-	height: 1px;
+.div-transparent:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 25%;
+    right: 25%;
+    width: 50%;
+    height: 1px;
+    background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
 }
 
-.div-transparent:before
-{
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 25%;
-	right: 25%;
-	width: 50%;
-	height: 1px;
-	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+/*
+***************** Divider Primary (White Rhombus)
+*/
+.div-rhombus-white:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -7px;
+    left: calc(50% - 7px);
+    width: 14px;
+    height: 14px;
+    transform: rotate(45deg);
+    background-color: white;
+    border: 1px solid rgb(48,49,51);
 }
 
-.div-arrow-down:after
+/*
+***************** Divider Secondary (Blue Rhombus)
+*/
+
+.div-rhombus-blue:after
 {
 	content: "";
 	position: absolute;
@@ -79,7 +97,7 @@ https://codepen.io/Oddgson/pen/VPrYbv
 	width: 14px;
 	height: 14px;
 	transform: rotate(45deg);
-	background-color: white;
+	background-color: rgba(32, 152, 207,0.9);
 	border: 1px solid rgb(48,49,51);
 }
 
@@ -745,3 +763,35 @@ span.progress-type.mongodb {
     font-size: 12pt;
 }
 
+
+/*
+================================================================================
+============================== PORTFOLIO BLOCK STYLING =========================
+================================================================================
+*/
+
+.gallery-container {
+    border: 1px solid #e5e5e5;
+    padding: 15px;
+    background: #ffffff;
+}
+
+.gallery {
+    border-top: 2px solid #e5e5e5;
+     padding-bottom: 100px;
+}
+
+.grid.gallery {
+    margin-top: 100px;
+    /* padding-bottom: 100px; */
+}
+
+.gallery-images > a > img {
+    border: 1px solid black;
+}
+
+.gallery-images p {
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
