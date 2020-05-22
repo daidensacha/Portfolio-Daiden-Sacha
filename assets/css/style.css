@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Manrope:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('../../node_modules/uikit/dist/css/uikit.min.css');
+@import url('uikit.min.css');
 
 
 body {
@@ -839,4 +839,38 @@ footer .uk-navbar-nav>hr {
     margin-right: 20px;
     margin-left: 20px;  
 }
+
+
+/*
+================================================================================
+============================== MODAL FORM STYLING ==============================
+================================================================================
+*/
+
+.uk-modal-body {
+    padding: 10px;
+}
+
+/*
+================================================================================
+============================== RESUME MODAL STYLING =============================
+================================================================================
+*/
+
+  #resume-modal-button, #btn-resume-download {
+    border: 2px solid rgba(32, 152, 207,0.9);
+    /* border-radius: 50%; */
+    /* font-size: 22px; */
+    /* line-height: 22px; */
+    /* text-align: center; */
+    /* vertical-align: middle; */
+    color: #2098D1;
+    opacity: 0.7;
+    background: #ffffff; 
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out; 
+  }
+
 
