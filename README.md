@@ -75,10 +75,21 @@ Also easy to adjust the percentage level in the CSS file. I would make this a
 priority to convert to SASS so it would be even easier to change the variables. 
 
 #### Portfolio Block
+Here is the primary reason I chose to go with UIkit, as it suited my need to 
+display images of my previous work. The sites are on my local server, and none 
+currently available on public server. I wanted to display a selection of images
+just as an example. I've used an overlay that appears on hover to outline the 
+skills used on the work, clicking it opens it up to full screen image with 
+navigation arrows to additional images. Nice seamless background created in 
+Photoshop, with UIkit drop shadow for the works.
 
 #### Modal Contact Form
+I wanted the contact to be easily opened from the home page in a modal window 
+with a form, hit send and bazinga! 
 
 #### Modal View Resume
+Modal opens to show a high quality gif image of the resume, with a button to 
+download the resume in a separate window to be saved or printed.
 
 
 

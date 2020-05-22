@@ -574,6 +574,91 @@
     </div>
     <!-- END Gallery block -->
 
+    <!-- START Footer block -->
+    <footer>
+        <div class="uk-navbar uk-visible@m">
+
+            <!-- <div class="uk-navbar-left">
+                <a class="uk-navbar-item uk-logo" href="#">Logo</a>
+            </div> -->
+
+            <div class="uk-navbar-center">
+                <ul class="uk-navbar-nav ">
+                    <li class="uk-active"><a href="#home">Home</a></li>
+                    <hr class="uk-divider-vertical">
+                    <li><a href="#about">About</a></li>
+                    <hr class="uk-divider-vertical">
+                    <li><a href="#gallery">Gallery</a></li>
+                    <hr class="uk-divider-vertical">
+                    <li><a href="#modal-contact-form" uk-toggle>Contact</a></li>
+                </ul> 
+            </div>
+            
+            <div class="uk-navbar-right">
+                <div class="uk-navbar-item">
+                    <ul class="uk-navbar-nav social-links">
+                        <li class="">
+                            <a class="" href="https://github.com/daidensacha" target="_blank"><i class="fab fa-github"></i></a>
+                        </li>
+                        <li class="">
+                            <a class="" href="https://www.linkedin.com/in/daiden-sacha-8852b41a6/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                        <li class="">
+                            <a class="" href="#modal-contact-form" uk-toggle><i class="far fa-envelope"></i></a>
+                        </li>
+                    </ul> 
+                </div>
+            </div>
+        </div>
+        <span class="uk-align-center uk-text-center">Copyright © 2020 Daiden Sacha. All Rights Reserved</span>
+    </footer>
+    <!-- END Footer block -->
+
+    <!-- Start Modal Contact Form-->
+    <div id="modal-contact-form" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body"><button class="uk-modal-close-outside" type="button" uk-close></button>
+            <form class="uk-background-bottom-right uk-background-cover uk-padding" id="contact-form" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/142451/office-desk.jpg);" >
+                
+                <div class="uk-modal-dialog uk-modal-body"><button class="uk-modal-close-outside" type="button" uk-close></button></div>
+                
+                <fieldset class="uk-fieldset">
+                    <legend class="uk-legend uk-text-center">Write to me</legend>
+
+                    <div class="uk-margin uk-inline-block uk-width-1-1">
+                        <span class="uk-form-icon" uk-icon="icon: user"></span>
+                        <input class="uk-input" type="text" name="name" placeholder="Your Name">
+                    </div>
+                    <div class="uk-margin uk-inline-block uk-width-1-1">
+                    <span class="uk-form-icon" uk-icon="icon: mail"></span>
+                        <input class="uk-input" type="email" name="email" placeholder="Your Email">
+                    </div>
+                    <div class="uk-margin  uk-width-1-1">
+                        <textarea class="uk-textarea" rows="10" name="message" placeholder="Subject"></textarea>
+                    </div>
+                    <div>
+                    <button type="submit" class="uk-button uk-button-default" id="contact-btn">Send</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <!-- End Modal Contact Form-->
+
+    <!-- Start Resume Modal-->
+    <div id="resume" class="uk-flex-top" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-overflow-auto">
+            <button class="uk-modal-close-outside" type="button" uk-close></button>
+            <div class="container">
+                <img src="assets/images/resume-1811x1280-2020.gif" alt="Resume 2020">
+            </div>
+            <form method="get" action="assets/documents/resume-2020.pdf" target="_blank">
+                <button type="submit" class="uk-button uk-button-default" id="btn-resume-download">Download PDF</button>
+            </form>
+        </div>
+    </div>
+    <!-- End Resume Modal -->
+
+
 
 
     <!-- UIkit form validation to be completed with jQuery or Vanilla JS -->
