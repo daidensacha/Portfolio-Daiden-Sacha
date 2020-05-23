@@ -105,45 +105,42 @@
         <h1 class="uk-h1 uk-text-center uk-text-uppercase uk-padding">About Me</h1>
         <div class="divider div-transparent div-rhombus-white"></div>
 
-        <div class="container d-image-background uk-background-repeat" data-src="assets/images/seamless-background-muted.jpg" uk-img>
+        <div class="container d-image-background uk-background-repeat uk-overflow-none uk-padding-large" uk-grid data-src="assets/images/seamless-background-muted.jpg" uk-img>
 
-            <div class="container" uk-grid>
-                <div class="container uk-width-2-3@l">
-                    <div class="image-daiden uk-hidden@l">
-                    </div>
-                
-                    <div class="d-content">
-                        <p>I’m an Australian based in Germany, with a life of experience in an eclectic set of different fields, 
-                            ranging from transport management, reflexology massage therapy, house renovations, baking Hungarian sweet bread, 
-                            and logistic problem solving.</p>
-                
-                        <p>My passion is Web Development, with skills in HTML5, CSS3, Bootstrap, UIkit, Joomla CMS, 
-                            Adobe Photoshop, Adobe Illustrator and Adobe Xd, I dive with confidence into front end development. 
-                            My current process is to build on my skill set, learning JavaScript, jQuery, Node, Django, Flask 
-                            and MySQL so I can also work with backend development.</p>
-                            
-                        <p>I take pride in working with clients to deliver quality work, on time, and within agreed budget.</p>
-
-                        <p>I’m currently studying software development with Code Institute. I'm open for opportunities to work for companies:
-                            <ul>
-                                <li>invested in professional, individual, and team development,</li>
-                                <li>commited to providing services based on the latest technologies,</li>
-                                <li>nuturing an environment that can fly beyond limitations.</li>
-                            </ul>
-                        </p>
-                        <p>Drop me a line and i'll be happy to discuss all proposals. </p>
-                        <p><button class="uk-button" id="resume-modal-button" href="#resume" uk-toggle>Read and download my resume.</button></p>
-                        
-                    </div>
+            <div class="uk-text-justify" uk-grid>
+                <div class="uk-width-2-3@l">
+                    <div class="image-daiden uk-hidden@l"></div>
+                        <div class="article">
+                            <p>I’m an Australian based in Germany, with a life of experience in an eclectic set of different fields, 
+                                ranging from transport management, reflexology massage therapy, house renovations, baking Hungarian sweet bread, 
+                                and logistic problem solving.</p>
                     
+                            <p>My passion is Web Development, with skills in HTML5, CSS3, Bootstrap, UIkit, Joomla CMS, 
+                                Adobe Photoshop, Adobe Illustrator and Adobe Xd, I dive with confidence into front end development. 
+                                My current process is to build on my skill set, learning JavaScript, jQuery, Node, Django, Flask 
+                                and MySQL so I can also work with backend development.</p>
+                                
+                            <p>I take pride in working with clients to deliver quality work, on time, and within agreed budget.</p>
+    
+                            <p>I’m currently studying software development with Code Institute. I'm open for opportunities to work for companies:
+                                <ul>
+                                    <li>invested in professional, individual, and team development,</li>
+                                    <li>commited to providing services based on the latest technologies,</li>
+                                    <li>nuturing an environment that can fly beyond limitations.</li>
+                                </ul>
+                            </p>
+                            <p>Drop me a line and i'll be happy to discuss all proposals. </p>
+                            <p><button class="uk-button" id="resume-modal-button" href="#resume" uk-toggle>Read and download my resume.</button></p>
+                            
+                        </div>
                 </div>
-                <div class="uk-width-1-3@l">
-                    <div class="image-dai">
-                        <img class="uk-align-right uk-visible@l" src="assets/images/daiden-5.gif" alt="Daiden Sacha">
-                    </div>
+                <div class="uk-width-expand@l">
+                        <div class="image-dai">
+                            <img class="uk-float-right uk-visible@l" src="assets/images/daiden-6.gif" alt="Daiden Sacha">
+                        </div>
                 </div>
-
             </div>
+
         </div>
     </div>
     <!-- END About block -->
@@ -439,8 +436,8 @@
             Portfolio
         </div>
         <div class="divider div-transparent div-rhombus-white"></div>
-
-        <div class="uk-grid-small uk-child-width-1-3@m uk-padding-small uk-padding-remove-bottom uk-background-blue" id="portfolio-bg" uk-grid>
+        <!-- uk-grid-small to uk-grid-match-->
+        <div class="uk-grid-match uk-child-width-1-3@m uk-padding-small uk-padding-remove-bottom uk-background-blue" id="portfolio-bg" uk-grid>
             <div class="uk-inline-clip uk-transition-toggle uk-text-center gallery-images" uk-lightbox="animation: slide" tabindex="0">
                 
                 <div class="container uk-box-shadow-large gallery-container">

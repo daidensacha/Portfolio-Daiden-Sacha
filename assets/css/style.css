@@ -16,6 +16,10 @@ body {
     box-shadow: inset 0px -2px 22px -8px rgba(0,0,0,0.75);
 }
 
+.uk-padding-medium {
+    padding: 40px;
+}
+
 /*
 ============================================================== Theme Backgrounds
 */
@@ -326,15 +330,27 @@ h1.profession {
 */
 
 .d-image-background {
-    padding: 50px 0;
+    border-top: 2px solid #e5e5e5;
+    border-bottom: 2px solid #e5e5e5;
 }
 .d-content {
-    padding: 70px;
     text-align: justify;
+    border: 1px solid red;
+}
+
+.image-dai {
+    max-height: 600px;
+}
+
+.image-dai > img {
+    max-height: 600px;
+    padding: 0;
 }
 
 .about {
     min-height: 800px;
+    border-top: 5px solid #e5e5e5;
+    border-left: 2p solid blue;
 }
 
 .image-daiden {
@@ -343,27 +359,8 @@ h1.profession {
     max-width: 260px;
     border-radius: 50%;
     display: block;
-    margin: auto;
+    margin: 0 auto 30px;
     border: 1px solid #707070;
-}
-
-.about {
-    border-top: 5px solid #e5e5e5;
-}
-
-.d-image-background {
-    padding: 50px 0;
-    border-top: 2px solid #e5e5e5;
-    border-bottom: 2px solid #e5e5e5;
-}
-
-.daiden-image-wrapper {
-    border-top: 2px solid hsl(0, 0%, 50%);
-    padding-top: 3px 0;
-    background: hsl(0, 0%, 40%);
-    -webkit-box-shadow: 0px -6px 33px -10px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px -6px 33px -10px rgba(0,0,0,0.75);
-    box-shadow: 0px -6px 33px -10px rgba(0,0,0,0.75);
 }
 
 /*
@@ -781,7 +778,8 @@ span.progress-type.mongodb {
 .gallery-container {
     border: 1px solid #e5e5e5;
     padding: 15px;
-    background: #ffffff;
+    height: 100%;
+    background-color: #ffffff
 }
 
 .gallery {
@@ -791,7 +789,6 @@ span.progress-type.mongodb {
 
 .grid.gallery {
     margin-top: 100px;
-    /* padding-bottom: 100px; */
 }
 
 .gallery-images > a > img {
