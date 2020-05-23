@@ -56,13 +56,13 @@
             <div class="uk-sticky-placeholder" style="height: 80px; margin: 0px;"></div>
         
             <!-- Start Offcanvas Navbar -->
-            <div id="sidenav" uk-offcanvas="flip: false" class="uk-offcanvas">
+            <div id="sidenav" uk-offcanvas="mode: push; overlay: true" class="uk-offcanvas">
                 <div class="uk-offcanvas-bar">
                     <ul class="uk-nav">
                         <li class="uk-active"><a href="#home">Home</a></li>
                         <li class="#about"><a href="#about">About</a></li>
-                        <li class="#portfolio"><a href="">Portfolio</a></li>
-                        <li class="#modal-contact-form"><a href="">Contact</a></li>
+                        <li class="#portfolio"><a href="#gallery">Portfolio</a></li>
+                        <li class="#modal-contact-form"><a href="#modal-contact-form" uk-toggle>Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -618,7 +618,7 @@
 
     <!-- Start Modal Contact Form-->
     <div id="modal-contact-form" uk-modal>
-        <div class="uk-modal-dialog uk-modal-body"><button class="uk-modal-close-outside" type="button" uk-close></button>
+        <div class="uk-modal-dialog uk-modal-body"><button class="uk-modal-close-default" type="button" uk-close></button>
             <form class="uk-background-bottom-right uk-background-cover uk-padding" id="contact-form" style="background-image: url('assets/images/office-desk.jpg');" >
                 
                 <div class="uk-modal-dialog uk-modal-body"><button class="uk-modal-close-outside" type="button" uk-close></button></div>
@@ -649,7 +649,7 @@
     <!-- Start Resume Modal-->
     <div id="resume" class="uk-flex-top" uk-modal>
         <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-overflow-auto">
-            <button class="uk-modal-close-outside" type="button" uk-close></button>
+            <button class="uk-modal-close-default" type="button" uk-close></button>
             <div class="container">
                 <img src="assets/images/resume-1811x1280-2020.gif" alt="Resume 2020">
             </div>

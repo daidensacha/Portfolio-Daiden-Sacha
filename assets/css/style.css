@@ -484,7 +484,7 @@ div.progress {
 .l-inline-skill img {
   display: block;
   margin: 0 auto;
-  height: 25px;
+  max-height: 25px;
 }
 
 span.progress-percentage.photoshop {
