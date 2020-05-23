@@ -1,6 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Manrope:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('uikit.min.css');
 
+/*
+================================== Root variables for changing skill percentages
+*/
+:root{
+    --photoshop: 75%;
+    --illustrator: 80%;
+    --xd: 40%;
+    --indesign: 50%;
+    --html5: 80%;
+    --css3: 70%;
+    --javascript: 40%;
+    --bootstrap: 70%;
+    --python: 50%;
+    --django: 40%;
+    --flask: 60%;
+    --mysql: 60%;
+    --mongodb: 40%;
+}
+
 
 body {
 
@@ -335,7 +354,6 @@ h1.profession {
 }
 .d-content {
     text-align: justify;
-    border: 1px solid red;
 }
 
 .image-dai {
@@ -350,7 +368,6 @@ h1.profession {
 .about {
     min-height: 800px;
     border-top: 5px solid #e5e5e5;
-    border-left: 2p solid blue;
 }
 
 .image-daiden {
@@ -474,7 +491,7 @@ span.progress-percentage.photoshop {
     position: absolute;
     left: 0;
     height: 25px;
-    width: 60%;
+    width: var(--photoshop);
     background-color: #00f1fe;
     border-radius: 4px 0 0 4px; 
 }
@@ -497,7 +514,7 @@ span.progress-percentage.illustrator {
     position: absolute;
     left: 0;
     height: 25px;
-    width: 70%;
+    width: var(--illustrator);
     background-color: #f8b849;
     border-radius: 4px 0 0 4px;
 }
@@ -520,7 +537,7 @@ span.progress-percentage.xd {
     position: absolute;
     left: 0;
     height: 25px;
-    width: 30%;
+    width: var(--xd);
     background-color: #ff25be;
     border-radius: 4px 0 0 4px;
 }
@@ -543,7 +560,7 @@ span.progress-percentage.indesign {
     position: absolute;
     left: 0;
     height: 25px;
-    width: 50%;
+    width: var(--indesign);
     background-color: #ff3f94;
     border-radius: 4px 0 0 4px;
 }
@@ -566,7 +583,7 @@ span.progress-percentage.html5 {
     position: absolute;
     left: 0;
     height: 25px;
-    width: 80%;
+    width: var(--html5);
     background-color: #ee671d;
     border-radius: 4px 0 0 4px;
 }
@@ -589,7 +606,7 @@ span.progress-percentage.css3 {
     position: absolute;
     left: 0;
     height: 25px;
-    width: 75%;
+    width: var(--css3);
     background-color: #31addf;
     border-radius: 4px 0 0 4px;
 }
@@ -612,7 +629,7 @@ span.progress-percentage.javascript {
     position: absolute;
     left: 0;
     height: 25px;
-    width: 20%;
+    width: var(--javascript);
     background-color: #ffcc00;
     border-radius: 4px 0 0 4px;
 }
@@ -635,7 +652,7 @@ span.progress-percentage.bootstrap {
     position: absolute;
     left: 0;
     height: 25px;
-    width: 70%;
+    width: var(--bootstrap);
     background-color: #603f8e;
     border-radius: 4px 0 0 4px;
 }
@@ -658,7 +675,7 @@ span.progress-percentage.python {
     position: absolute;
     left: 0;
     height: 25px;
-    width: 0%;
+    width: var(--python);
     background-color: #396f9f;
     border-radius: 4px 0 0 4px;
 }
@@ -681,7 +698,7 @@ span.progress-percentage.django {
     position: absolute;
     left: 0;
     height: 25px;
-    width: 0%;
+    width: var(--django);
     background-color: #0c4b33;
     border-radius: 4px 0 0 4px;
 }
@@ -704,7 +721,7 @@ span.progress-percentage.flask {
     position: absolute;
     left: 0;
     height: 25px;
-    width: 0%;
+    width: var(--flask);
     background-color: #363b3d;
     border-radius: 4px 0 0 4px;
 }
@@ -727,7 +744,7 @@ span.progress-percentage.mysql {
     position: absolute;
     left: 0;
     height: 25px;
-    width: 5%;
+    width: var(--mysql);
     background-color: #02546b;
     border-radius: 4px 0 0 4px;
 }
@@ -750,7 +767,7 @@ span.progress-percentage.mongodb {
     position: absolute;
     left: 0;
     height: 25px;
-    width: 0%;
+    width: var(--mongodb);
     background-color: #49b344;
     border-radius: 4px 0 0 4px;
 }
