@@ -72,32 +72,32 @@
         <!-- End Navbar-->
 
         <!-- Start Name and Profession Block -->
-        <div class="grid uk-position-center header-name-block" tabindex="0">    
-            <h1 class="name uk-text-center" uk-scrollspy="cls: uk-animation-scale-up; uk-transform-origin-top-center; repeat: false" >Daiden Sacha</h1>
-            <div class="divider div-transparent div-rhombus-white"></div>
-            <h1 class="profession uk-text-center uk-text-uppercase" uk-scrollspy="cls: uk-animation-scale-up; uk-transform-origin-bottom-center; repeat: false">Full Stack Developer</h1>
+        <div class="grid uk-position-center header-name-block" uk-scrollspy="target: > h1, div; cls: uk-animation-slide; repeat: false" tabindex="0">    
+            <h1 class="name uk-text-center uk-animation-slide-top-small"  >Daiden Sacha</h1>
+            <div class="divider div-transparent div-rhombus-white uk-animation-fade" ></div>
+            <h1 class="profession uk-text-center uk-text-uppercase uk-animation-slide-bottom-small">Full Stack Developer</h1>
         </div>
         <!-- End Name and Profession Block -->
 
-        <!-- Start Skill Icon Block -->
+        <!-- Start Header Skill Icon Block -->
         <div id="header-skill-icons" class="uk-text-center uk-position-bottom skill-icon-block uk-grid-collapse" uk-grid>
             <div class="uk-width-1-3 uk-display-block skill-block">
-                <div class="skills-category" uk-scrollspy="cls: uk-animation-slide-bottom; repeat: false">
-                    <img src="assets/images/skills-adobe.png" alt="Adobe Design">
+                <div class="skills-category" uk-scrollspy="cls: uk-animation-slide-left; repeat: false" tabindex="0">
+                    <img class="adobe-design-white" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="Adobe Design">
                 </div>
             </div>
             <div class="uk-width-1-3 uk-display-block skill-block">
-                <div class="skills-category" uk-scrollspy="cls: uk-animation-slide-bottom; repeat: false">
-                    <img src="assets/images/skills-frontend.png" alt="Front End Development">
+                <div class="skills-category" uk-scrollspy="cls: uk-animation-slide-bottom; repeat: false" tabindex="0">
+                    <img class="frontend-dev-white" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="Front End Development">
                 </div>
             </div>
             <div class="uk-width-1-3 uk-display-block skill-block">
-                <div class="skills-category" uk-scrollspy="cls: uk-animation-slide-bottom; repeat: false">
-                    <img src="assets/images/skills-backend.png" alt="Backend Development">
+                <div class="skills-category" uk-scrollspy="cls: uk-animation-slide-right; repeat: false" tabindex="0">
+                    <img class="backend-dev-white" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="Backend Development">
                 </div>
             </div>
         </div>
-        <!-- End Skill Icon Block -->  
+        <!-- End Header Skill Icon Block -->  
 
     </div>
     <!-- End Header Block -->
@@ -105,14 +105,14 @@
     <!-- START About block-->
     <div class="about" id="about">
 
-        <h1 class="uk-h1 uk-text-center uk-text-uppercase uk-padding">About Me</h1>
+        <h1 class="uk-h1 uk-text-center uk-text-uppercase uk-padding" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: false ">About Me</h1>
         <div class="divider div-transparent div-rhombus-white"></div>
 
         <div class="container d-image-background uk-background-repeat uk-overflow-none uk-padding-large" uk-grid data-src="assets/images/seamless-background-muted.jpg" uk-img>
 
             <div class="uk-text-justify" uk-grid>
                 <div class="uk-width-2-3@l">
-                    <div class="image-daiden uk-hidden@l"></div>
+                    <div class="image-daiden uk-hidden@l" uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: false " tabindex="0"></div>
                         <div class="article">
                             <p>I’m an Australian based in Germany, with a life of experience in an eclectic set of different fields, 
                                 ranging from transport management, reflexology massage therapy, house renovations, baking Hungarian sweet bread, 
@@ -138,7 +138,7 @@
                         </div>
                 </div>
                 <div class="uk-width-expand@l">
-                        <div class="image-dai">
+                        <div class="image-dai" uk-scrollspy="cls: uk-animation-fade; repeat: false " tabindex="0">
                             <img class="uk-float-right uk-visible@l" src="assets/images/daiden-6.gif" alt="Daiden Sacha">
                         </div>
                 </div>
@@ -150,7 +150,7 @@
 
     <!-- START Skills block -->
     <div class="grid skill-block">
-        <h1 class="uk-h1 uk-text-center uk-text-uppercase  uk-padding">Skills</h1>
+        <h1 class="uk-h1 uk-text-center uk-text-uppercase  uk-padding" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: false ">Skills</h1>
         <div class="divider div-transparent div-rhombus-white"></div>
 
         <div class="skills">
@@ -158,14 +158,14 @@
                 <div class="uk-background-cover uk-background-fixed" data-src="assets/images/header-image-1.jpg" uk-img>
                     <div class="uk-grid-small uk-flex uk-child-width-expand@s skillblock-icons"  uk grid>
                         
-                        <div class="uk-width-1-3@m skill-block">
-                                <img class="uk-align-center" src="assets/images/skills-adobe-yellow.png" alt="Adobe Design">
+                        <div class="uk-width-1-3@m skill-block" uk-scrollspy="cls: uk-animation-slide-left; repeat: false">
+                                <img class="adobe-design-yellow uk-align-center" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="Adobe Design">
                         </div>
-                        <div class="uk-width-1-3@m skill-block">
-                                <img class="uk-align-center" src="assets/images/skills-frontend-yellow.png" alt="Front End Development">
+                        <div class="uk-width-1-3@m skill-block" uk-scrollspy="cls: uk-animation-scale-up; repeat: false">
+                                <img class="frontend-dev-yellow uk-align-center" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="Front End Development">
                         </div>
-                        <div class="uk-width-1-3@m skill-block">
-                                <img class="uk-align-center" src="assets/images/skills-backend-yellow.png" alt="Backend Development">
+                        <div class="uk-width-1-3@m skill-block" uk-scrollspy="cls: uk-animation-slide-right; repeat: false">
+                                <img class="backend-dev-yellow uk-align-center" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="Backend Development">
                         </div>
                     </div>
                 </div>
@@ -173,12 +173,12 @@
             
             <div class="uk-grid uk-grid-divider">
 
-                <div class="uk-width-1-3@m uk-grid-collapse icon-block">
+                <div class="uk-width-1-3@m uk-grid-collapse icon-block" uk-scrollspy="cls: uk-animation-slide-left; repeat: false">
                     <h3>Design</h3>
                     <div class="uk-grid skills-row progress-section">
                         <div class="uk-width-1-6">
                             <div class="l-inline-skill">
-                                <img src="assets/images/icon-simple-adobephotoshop.png" alt="Photoshop">
+                                <img class="sprite-photoshop" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="Photoshop">
                                 <a target="_blank" href="#">
                                 <span class="sr-only">Photoshop</span>
                                 </a>
@@ -196,7 +196,7 @@
                     
                         <div class="uk-width-1-6">
                             <div class="l-inline-skill">
-                                <img src="assets/images/icon-simple-adobeillustrator.png" alt="`Illustrator">
+                                <img class="sprite-illustrator" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="`Illustrator">
                                 <a target="_blank" href="#">
                                 <span class="sr-only">Illustrator</span>
                                 </a>
@@ -214,7 +214,7 @@
             
                         <div class="uk-width-1-6">
                             <div class="l-inline-skill">
-                                <img src="assets/images/icon-simple-adobexd.png" alt="Xd">
+                                <img class="sprite-xd" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="Xd">
                                 <a target="_blank" href="#">
                                 <span class="sr-only">Xd</span>
                                 </a>
@@ -232,7 +232,7 @@
             
                         <div class="uk-width-1-6">
                             <div class="l-inline-skill">
-                                <img src="assets/images/icon-simple-adobeindesign.png" alt="InDesign">
+                                <img class="sprite-indesign" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="InDesign">
                                 <a target="_blank" href="#">
                                 <span class="sr-only">InDesign</span>
                                 </a>
@@ -251,12 +251,12 @@
                     <p>Fully responsive layouts developed from the ground up with a focus on user centric design to meet and fulfil the needs of the user and the website.</p>
                 </div>
 
-                <div class="uk-width-1-3@m uk-grid-collapse icon-block">
+                <div class="uk-width-1-3@m uk-grid-collapse icon-block" uk-scrollspy="cls: uk-animation-scale-up; repeat: false">
                     <h3>Frontend</h3>
                     <div class="uk-grid skills-row progress-section">
                         <div class="uk-width-1-6">
                             <div class="l-inline-skill">
-                                <img src="assets/images/icon-awesome-html5.png" alt="HTML5">
+                                <img class="sprite-html5" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="HTML5">
                                 <a target="_blank" href="#">
                                     <span class="sr-only">HTML5</span>
                                 </a>
@@ -274,7 +274,7 @@
             
                         <div class="uk-width-1-6">
                             <div class="l-inline-skill">
-                                <img src="assets/images/icon-simple-css3.png" alt="CSS3">
+                                <img class="sprite-css3" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="CSS3">
                                 <a target="_blank" href="#">
                                     <span class="sr-only">CSS3</span>
                                 </a>
@@ -292,7 +292,7 @@
                 
                         <div class="uk-width-1-6">
                             <div class="l-inline-skill">
-                                <img src="assets/images/icon-awesome-js-square.png" alt="JavaScript">
+                                <img class="sprite-js" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="JavaScript">
                                 <a target="_blank" href="#">
                                     <span class="sr-only">JavaScript</span>
                                 </a>
@@ -310,7 +310,7 @@
                 
                         <div class="uk-width-1-6">
                             <div class="l-inline-skill">
-                                <img src="assets/images/icon-simple-bootstrap.png" alt="Bootstrap">
+                                <img class="sprite-bootstrap" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="Bootstrap">
                                 <a target="_blank" href="#">
                                     <span class="sr-only">Bootstrap</span>
                                 </a>
@@ -330,13 +330,13 @@
                         create modern, dynamic and sexy websites.</p>
                 </div>
 
-                <div class="uk-width-1-3@m uk-grid-collapse icon-block">
+                <div class="uk-width-1-3@m uk-grid-collapse icon-block" uk-scrollspy="cls: uk-animation-slide-right; repeat: false">
                     <h3>Backend</h3>
                     <div class="uk-grid skills-row progress-section">
             
                         <div class="uk-width-1-6">
                             <div class="l-inline-skill">
-                                <img src="assets/images/icon-simple-python.png" alt="Python">
+                                <img class="sprite-python" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="Python">
                                 <a target="_blank" href="#">
                                     <span class="sr-only">Python</span>
                                 </a>
@@ -354,7 +354,7 @@
             
                         <div class="uk-width-1-6">
                             <div class="l-inline-skill">
-                                <img src="assets/images/icon-simple-django.png" alt="Django">
+                                <img class="sprite-django" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="Django">
                                 <a target="_blank" href="#">
                                     <span class="sr-only">Django</span>
                                 </a>
@@ -372,7 +372,7 @@
             
                         <div class="uk-width-1-6">
                             <div class="l-inline-skill">
-                                <img src="assets/images/icon-simple-flask.png" alt="Flask">
+                                <img class="sprite-flask" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="Flask">
                                 <a target="_blank" href="#">
                                     <span class="sr-only">Flask</span>
                                 </a>
@@ -390,7 +390,7 @@
             
                         <div class="uk-width-1-6">
                             <div class="l-inline-skill">
-                                <img src="assets/images/icon-simple-mysql.png" alt="MySQL">
+                                <img class="sprite-mysql" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="MySQL">
                                 <a target="_blank" href="#">
                                     <span class="sr-only">MySQL</span>
                                 </a>
@@ -408,7 +408,7 @@
             
                         <div class="uk-width-1-6">
                             <div class="l-inline-skill">
-                                <img src="assets/images/icon-simple-mongodb.png" alt="MongoDB">
+                                <img class="sprite-mongodb" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="MongoDB">
                                 <a target="_blank" href="#">
                                     <span class="sr-only">MongoDB</span>
                                 </a>
@@ -435,13 +435,13 @@
 
     <!-- START Gallery block -->
     <div class="grid gallery uk-background-blue" id="gallery">
-        <div class="uk-h1 uk-text-center uk-text-uppercase  uk-padding">
+        <div class="uk-h1 uk-text-center uk-text-uppercase  uk-padding" uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: false">
             Portfolio
         </div>
         <div class="divider div-transparent div-rhombus-white"></div>
         <!-- uk-grid-small to uk-grid-match-->
         <div class="uk-grid-match uk-child-width-1-3@m uk-padding-small uk-padding-remove-bottom uk-background-blue" id="portfolio-bg" uk-grid>
-            <div class="uk-inline-clip uk-transition-toggle uk-text-center gallery-images" uk-lightbox="animation: slide" tabindex="0">
+            <div class="uk-inline-clip uk-transition-toggle uk-text-center gallery-images" uk-scrollspy="cls: uk-animation-fade; delay: 200; repeat: false" uk-lightbox="animation: slide" tabindex="0">
                 
                 <div class="container uk-box-shadow-large gallery-container">
                     <h3>Refelxology Point</h3>
@@ -466,7 +466,7 @@
                 </div>
 
             </div>
-            <div class="uk-inline-clip uk-transition-toggle uk-text-center gallery-images" uk-lightbox="animation: slide" tabindex="0">
+            <div class="uk-inline-clip uk-transition-toggle uk-text-center gallery-images" uk-scrollspy="cls: uk-animation-fade; delay: 200; repeat: false" uk-lightbox="animation: slide" tabindex="0">
                 
                 <div class="container uk-box-shadow-large gallery-container">
                     <h3>Bonza Kurtos Kalas</h3>
@@ -492,7 +492,7 @@
                         Theme using UIkit, HTML5/ CSS3/ Adobe Photoshop/ Adobe Illustrator.</p>
                 </div>
             </div>
-            <div class="uk-inline-clip uk-transition-toggle uk-text-center gallery-images" uk-lightbox="animation: slide" tabindex="0">
+            <div class="uk-inline-clip uk-transition-toggle uk-text-center gallery-images" uk-scrollspy="cls: uk-animation-fade; delay: 200; repeat: false" uk-lightbox="animation: slide" tabindex="0">
                 
                 <div class="container uk-box-shadow-large gallery-container">
                 <h3>Karanaki's Raw Food</h3>
@@ -521,7 +521,7 @@
 
             </div>
 
-            <div class="uk-inline-clip uk-transition-toggle uk-text-center gallery-images" uk-lightbox="animation: slide" tabindex="0">
+            <div class="uk-inline-clip uk-transition-toggle uk-text-center gallery-images" uk-scrollspy="cls: uk-animation-fade; delay: 200; repeat: false" uk-lightbox="animation: slide" tabindex="0">
                 
                 <div class="container uk-box-shadow-large gallery-container">
                     <h3>Interactive Refelexology Foot Charts</h3>
@@ -541,7 +541,7 @@
 
             </div>
         
-            <div class="uk-inline-clip uk-transition-toggle uk-text-center gallery-images" uk-lightbox="animation: slide" tabindex="0">
+            <div class="uk-inline-clip uk-transition-toggle uk-text-center gallery-images" uk-scrollspy="cls: uk-animation-fade; delay: 200; repeat: false" uk-lightbox="animation: slide" tabindex="0">
                 
                 <div class="container uk-box-shadow-large gallery-container ">
                     <h3>Manahawkin Tree Service</h3>

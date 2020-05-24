@@ -297,7 +297,7 @@ ul.social-links {
     max-width: 100%;
     height: auto;
     box-sizing: border-box;
-    width: 100px;
+    width: 150px;
     opacity: .5;
 }
 
@@ -310,7 +310,7 @@ ul.social-links {
     max-width: 100%;
     height: auto;
     box-sizing: border-box;
-    width: 100px;
+    width: 150px;
     opacity: .5;
 }
 
@@ -477,6 +477,125 @@ div.progress {
   min-height: 200px;
 }
 
+/*
+============================================================= Icon image sprites
+*/
+
+.adobe-design-white {
+    width: 150px;
+    height: 150px;
+    background: url('../images/sprites/sprite-skill-category-150x150.png') 0 0;
+}
+
+.frontend-dev-white {
+    width: 150px;
+    height: 150px;
+    background: url('../images/sprites/sprite-skill-category-150x150.png') -150px 0;
+}
+
+.backend-dev-white {
+    width: 150px;
+    height: 150px;
+    background: url('../images/sprites/sprite-skill-category-150x150.png') -300px 0;
+}
+
+.adobe-design-yellow {
+    width: 150px;
+    height: 150px;
+    background: url('../images/sprites/sprite-skill-category-150x150.png') -450px 0;
+}
+
+.frontend-dev-yellow {
+    width: 150px;
+    height: 150px;
+    background: url('../images/sprites/sprite-skill-category-150x150.png') -600px 0;
+}
+
+.backend-dev-yellow {
+    width: 150px;
+    height: 150px;
+    background: url('../images/sprites/sprite-skill-category-150x150.png') -750px 0;
+}
+
+.sprite-photoshop {
+    width: 25px;
+    height: 25px;
+    background: url('../images/sprites/sprite-skills-25x25.png') 0 0;
+  }
+
+.sprite-illustrator {
+    width: 25px;
+    height: 25px;
+    background: url('../images/sprites/sprite-skills-25x25.png') -25px 0;
+  }  
+  
+.sprite-xd {
+    width: 25px;
+    height: 25px;
+    background: url('../images/sprites/sprite-skills-25x25.png') -50px 0;
+  }
+
+.sprite-indesign {
+    width: 25px;
+    height: 25px;
+    background: url('../images/sprites/sprite-skills-25x25.png') -75px 0;
+  }
+
+.sprite-html5 {
+    width: 25px;
+    height: 25px;
+    background: url('../images/sprites/sprite-skills-25x25.png') -100px 0;
+  }
+
+.sprite-css3 {
+    width: 25px;
+    height: 25px;
+    background: url('../images/sprites/sprite-skills-25x25.png') -125px 0;
+  }
+
+.sprite-js {
+    width: 25px;
+    height: 25px;
+    background: url('../images/sprites/sprite-skills-25x25.png') -150px 0;
+  }
+
+.sprite-bootstrap {
+    width: 25px;
+    height: 25px;
+    background: url('../images/sprites/sprite-skills-25x25.png') -175px 0;
+  }
+
+.sprite-python {
+    width: 25px;
+    height: 25px;
+    background: url('../images/sprites/sprite-skills-25x25.png') -200px 0;
+  }
+
+.sprite-django {
+    width: 25px;
+    height: 25px;
+    background: url('../images/sprites/sprite-skills-25x25.png') -225px 0;
+  }
+
+.sprite-flask {
+    width: 25px;
+    height: 25px;
+    background: url('../images/sprites/sprite-skills-25x25.png') -250px 0;
+  }
+
+.sprite-mysql {
+    width: 25px;
+    height: 25px;
+    background: url('../images/sprites/sprite-skills-25x25.png') -275px 0;
+  }
+
+.sprite-mongodb {
+    width: 25px;
+    height: 25px;
+    background: url('../images/sprites/sprite-skills-25x25.png') -300px 0;
+  }
+
+
 /*               
 ========================================================== Progress Bars Styling
 */
@@ -485,6 +604,7 @@ div.progress {
   display: block;
   margin: 0 auto;
   max-height: 25px;
+  min-width: 25px;
 }
 
 span.progress-percentage.photoshop {
