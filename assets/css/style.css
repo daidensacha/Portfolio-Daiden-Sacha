@@ -297,7 +297,7 @@ ul.social-links {
     max-width: 100%;
     height: auto;
     box-sizing: border-box;
-    width: 150px;
+    width: 125px;
     opacity: .5;
 }
 
@@ -310,7 +310,7 @@ ul.social-links {
     max-width: 100%;
     height: auto;
     box-sizing: border-box;
-    width: 150px;
+    width: 125px;
     opacity: .5;
 }
 
@@ -478,44 +478,48 @@ div.progress {
 }
 
 /*
-============================================================= Icon image sprites
+========================================================= Skill Category Sprites
 */
 
 .adobe-design-white {
-    width: 150px;
-    height: 150px;
-    background: url('../images/sprites/sprite-skill-category-150x150.png') 0 0;
+    width: 125px;
+    height: 125px;
+    background: url('../images/sprites/skill-cat@125png') 0 0;
 }
 
 .frontend-dev-white {
     width: 150px;
-    height: 150px;
-    background: url('../images/sprites/sprite-skill-category-150x150.png') -150px 0;
+    height: 125px;
+    background: url('../images/sprites/skill-cat@125png') -125px 0;
 }
 
 .backend-dev-white {
-    width: 150px;
-    height: 150px;
-    background: url('../images/sprites/sprite-skill-category-150x150.png') -300px 0;
+    width: 125px;
+    height: 125px;
+    background: url('../images/sprites/skill-cat@125png') -250px 0;
 }
 
 .adobe-design-yellow {
-    width: 150px;
-    height: 150px;
-    background: url('../images/sprites/sprite-skill-category-150x150.png') -450px 0;
+    width: 125px;
+    height: 125px;
+    background: url('../images/sprites/skill-cat@125png') -500px 0;
 }
 
 .frontend-dev-yellow {
     width: 150px;
-    height: 150px;
-    background: url('../images/sprites/sprite-skill-category-150x150.png') -600px 0;
+    height: 125px;
+    background: url('../images/sprites/skill-cat@125png') -625px 0;
 }
 
 .backend-dev-yellow {
-    width: 150px;
-    height: 150px;
-    background: url('../images/sprites/sprite-skill-category-150x150.png') -750px 0;
+    width: 125px;
+    height: 125px;
+    background: url('../images/sprites/skill-cat@125png') -750px 0;
 }
+
+/*
+============================================================= Skill Icon Sprites
+*/
 
 .sprite-photoshop {
     width: 25px;
