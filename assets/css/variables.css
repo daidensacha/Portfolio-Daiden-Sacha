@@ -9,8 +9,7 @@
     /* 
     ================================= SPRITE: SKILL CATEGORY IMAGES ============ 
     */
-    /* --skill-cat-image: url('./assets/images/sprites/skill-cat@125png'); */
-    --skill-cat-image: url('assets/images/sprites/skill-cat@125png');
+  
     --skill-cat-width: 125px;
     --skill-cat-height: 125px;  
 

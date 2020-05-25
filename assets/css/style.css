@@ -470,42 +470,42 @@ div.progress {
 .adobe-design-white {
     width: var(--skill-cat-width);
     height: var(--skill-cat-height);
-    background: var(--skill-cat-image);
+    background: url('../images/sprites/skill-cat@125png');;
     background-position: var(--adobe-design-white);
 }
 
 .frontend-dev-white {
     width: var(--skill-cat-width);
     height: var(--skill-cat-height);
-    background: var(--skill-cat-image);
+    background: url('../images/sprites/skill-cat@125png');;
     background-position: var(--frontend-dev-white);
 }
 
 .backend-dev-white {
     width: var(--skill-cat-width);
     height: var(--skill-cat-height);
-    background: var(--skill-cat-image);
+    background: url('../images/sprites/skill-cat@125png');;
     background-position: var(--backend-dev-white);
 }
 
 .adobe-design-yellow {
     width: var(--skill-cat-width);
     height: var(--skill-cat-height);
-    background: var(--skill-cat-image);
+    background: url('../images/sprites/skill-cat@125png');;
     background-position: var(--adobe-design-yellow);
 }
 
 .frontend-dev-yellow {
     width: var(--skill-cat-width);
     height: var(--skill-cat-height);
-    background: var(--skill-cat-image);
+    background: url('../images/sprites/skill-cat@125png');;
     background-position: var(--frontend-dev-yellow);
 }
 
 .backend-dev-yellow {
     width: var(--skill-cat-width);
     height: var(--skill-cat-height);
-    background: var(--skill-cat-image);
+    background: url('../images/sprites/skill-cat@125png');;
     background-position: var(--backend-dev-yellow);
 }
 
