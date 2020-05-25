@@ -1,25 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Manrope:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('uikit.min.css');
-
+@import url('variables.css');
 /*
-================================== Root variables for changing skill percentages
+NOTES:
+See variables.css for variables relating to display of skill category images,
+skill block icons, and also for changing skill proficiency level.
 */
-:root{
-    --photoshop: 75%;
-    --illustrator: 80%;
-    --xd: 40%;
-    --indesign: 50%;
-    --html5: 80%;
-    --css3: 70%;
-    --javascript: 40%;
-    --bootstrap: 70%;
-    --python: 50%;
-    --django: 40%;
-    --flask: 60%;
-    --mysql: 60%;
-    --mongodb: 40%;
-}
-
 
 body {
 
@@ -478,43 +464,49 @@ div.progress {
 }
 
 /*
-========================================================= Skill Category Sprites
+=================================================== Sprite Skill Category Images
 */
 
 .adobe-design-white {
-    width: 125px;
-    height: 125px;
-    background: url('../images/sprites/skill-cat@125png') 0 0;
+    width: var(--skill-cat-width);
+    height: var(--skill-cat-height);
+    background: var(--skill-cat-image);
+    background-position: var(--adobe-design-white);
 }
 
 .frontend-dev-white {
-    width: 150px;
-    height: 125px;
-    background: url('../images/sprites/skill-cat@125png') -125px 0;
+    width: var(--skill-cat-width);
+    height: var(--skill-cat-height);
+    background: var(--skill-cat-image);
+    background-position: var(--frontend-dev-white);
 }
 
 .backend-dev-white {
-    width: 125px;
-    height: 125px;
-    background: url('../images/sprites/skill-cat@125png') -250px 0;
+    width: var(--skill-cat-width);
+    height: var(--skill-cat-height);
+    background: var(--skill-cat-image);
+    background-position: var(--backend-dev-white);
 }
 
 .adobe-design-yellow {
-    width: 125px;
-    height: 125px;
-    background: url('../images/sprites/skill-cat@125png') -500px 0;
+    width: var(--skill-cat-width);
+    height: var(--skill-cat-height);
+    background: var(--skill-cat-image);
+    background-position: var(--adobe-design-yellow);
 }
 
 .frontend-dev-yellow {
-    width: 150px;
-    height: 125px;
-    background: url('../images/sprites/skill-cat@125png') -625px 0;
+    width: var(--skill-cat-width);
+    height: var(--skill-cat-height);
+    background: var(--skill-cat-image);
+    background-position: var(--frontend-dev-yellow);
 }
 
 .backend-dev-yellow {
-    width: 125px;
-    height: 125px;
-    background: url('../images/sprites/skill-cat@125png') -750px 0;
+    width: var(--skill-cat-width);
+    height: var(--skill-cat-height);
+    background: var(--skill-cat-image);
+    background-position: var(--backend-dev-yellow);
 }
 
 /*
@@ -615,7 +607,7 @@ span.progress-percentage.photoshop {
     position: absolute;
     left: 0;
     height: 25px;
-    width: var(--photoshop);
+    width: var(--photoshop-percentage);
     background-color: #00f1fe;
     border-radius: 4px 0 0 4px; 
 }
@@ -638,7 +630,7 @@ span.progress-percentage.illustrator {
     position: absolute;
     left: 0;
     height: 25px;
-    width: var(--illustrator);
+    width: var(--illustrator-percentage);
     background-color: #f8b849;
     border-radius: 4px 0 0 4px;
 }
@@ -661,7 +653,7 @@ span.progress-percentage.xd {
     position: absolute;
     left: 0;
     height: 25px;
-    width: var(--xd);
+    width: var(--xd-percentage);
     background-color: #ff25be;
     border-radius: 4px 0 0 4px;
 }
@@ -684,7 +676,7 @@ span.progress-percentage.indesign {
     position: absolute;
     left: 0;
     height: 25px;
-    width: var(--indesign);
+    width: var(--indesign-percentage);
     background-color: #ff3f94;
     border-radius: 4px 0 0 4px;
 }
@@ -707,7 +699,7 @@ span.progress-percentage.html5 {
     position: absolute;
     left: 0;
     height: 25px;
-    width: var(--html5);
+    width: var(--html5-percentage);
     background-color: #ee671d;
     border-radius: 4px 0 0 4px;
 }
@@ -730,7 +722,7 @@ span.progress-percentage.css3 {
     position: absolute;
     left: 0;
     height: 25px;
-    width: var(--css3);
+    width: var(--css3-percentage);
     background-color: #31addf;
     border-radius: 4px 0 0 4px;
 }
@@ -753,7 +745,7 @@ span.progress-percentage.javascript {
     position: absolute;
     left: 0;
     height: 25px;
-    width: var(--javascript);
+    width: var(--javascript-percentage);
     background-color: #ffcc00;
     border-radius: 4px 0 0 4px;
 }
@@ -776,7 +768,7 @@ span.progress-percentage.bootstrap {
     position: absolute;
     left: 0;
     height: 25px;
-    width: var(--bootstrap);
+    width: var(--bootstrap-percentage);
     background-color: #603f8e;
     border-radius: 4px 0 0 4px;
 }
@@ -799,7 +791,7 @@ span.progress-percentage.python {
     position: absolute;
     left: 0;
     height: 25px;
-    width: var(--python);
+    width: var(--python-percentage);
     background-color: #396f9f;
     border-radius: 4px 0 0 4px;
 }
@@ -822,7 +814,7 @@ span.progress-percentage.django {
     position: absolute;
     left: 0;
     height: 25px;
-    width: var(--django);
+    width: var(--django-percentage);
     background-color: #0c4b33;
     border-radius: 4px 0 0 4px;
 }
@@ -845,7 +837,7 @@ span.progress-percentage.flask {
     position: absolute;
     left: 0;
     height: 25px;
-    width: var(--flask);
+    width: var(--flask-percentage);
     background-color: #363b3d;
     border-radius: 4px 0 0 4px;
 }
@@ -868,7 +860,7 @@ span.progress-percentage.mysql {
     position: absolute;
     left: 0;
     height: 25px;
-    width: var(--mysql);
+    width: var(--mysql-percentage);
     background-color: #02546b;
     border-radius: 4px 0 0 4px;
 }
@@ -891,7 +883,7 @@ span.progress-percentage.mongodb {
     position: absolute;
     left: 0;
     height: 25px;
-    width: var(--mongodb);
+    width: var(--mongodb-percentage);
     background-color: #49b344;
     border-radius: 4px 0 0 4px;
 }
