@@ -995,3 +995,8 @@ footer .uk-navbar-nav>hr {
 */
 
 
+@media only screen and (max-width: 600px) {
+    footer {
+      max-height: 200px;
+    }
+  }

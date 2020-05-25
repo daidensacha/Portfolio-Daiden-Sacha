@@ -9,8 +9,8 @@
     /* 
     ================================= SPRITE: SKILL CATEGORY IMAGES ============ 
     */
-    --skill-cat-image: url('./assets/images/sprites/skill-cat@125png');
-    /* --skill-cat-image: url('/Users/daiden/Courses/Learning People/Full Stack Developer/Milestone Projects/MP-1-Portfolio/assets/images/sprites/skill-cat@125png'); */
+    /* --skill-cat-image: url('./assets/images/sprites/skill-cat@125png'); */
+    --skill-cat-image: url('assets/images/sprites/sprite-skill-category-150x150.png')
     --skill-cat-width: 125px;
     --skill-cat-height: 125px;  
 
