@@ -1,670 +1,614 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daiden Sacha Portfolio</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-    <!-- Start Header Block -->
-    <div class="container uk-height-viewport uk-background-cover uk-background-fixed uk-light header-image" data-src="assets/images/header-image-1.jpg" uk-img>
-        
-        <!-- Begin Navbar-->
-        <div class="tm-header" id="home">
-            <div uk-sticky="show-on-up: true; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #scrollup-dropbar" class="uk-sticky uk-navbar-sticky uk-sticky-below uk-sticky-fixed" style="position: fixed; top: 0px; width: 100%;">  
-                <nav class="uk-navbar-container uk-navbar-transparent uk-navbar-sticky">
-                    <div class="uk-container">
-                        <div uk-navbar="" class="uk-navbar">
-        
-                            <div class="uk-navbar-left">
-        
-                                <!-- <a class="uk-navbar-item uk-logo" href="#"></a> -->
-
-                                <div class="uk-navbar-left">
-                                    <ul class="uk-navbar-nav uk-visible@s">
-                                        <li class="uk-active"><a class="bottom-leftToRight" href="#home" uk-scroll>Home</a></li>
-                                        <li class=""><a class="bottom-leftToRight" href="#about" uk-scroll>About</a></li>
-                                        <li class=""><a class="bottom-leftToRight" href="#gallery" uk-scroll>Portfolio</a></li>
-                                        <li class=""><a class="bottom-leftToRight" href="#modal-contact-form" uk-toggle>Contact</a></li>
-                                    </ul>
-                                    <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
-                                </div>
-                            </div>
-                            
-                            <div class="uk-navbar-right">
-                                <ul class="uk-navbar-nav social-links">
-                                    <li class="">
-                                        <a class="" href="https://github.com/daidensacha" target="_blank" uk-tooltip="title: Github; delay: 500; animation: uk-animation-scale-up; pos: bottom; cls: uk-active tooltip-blue uk-box-shadow-large"><i class="fab fa-github"></i></a>
-                                    </li>
-                                    <li class="">
-                                        <a class="" href="https://www.linkedin.com/in/daiden-sacha-8852b41a6/"  target="_blank" uk-tooltip="title: Linkedin; delay: 500; animation: animation: uk-animation-scale-up; pos: bottom; cls: uk-active tooltip-blue uk-box-shadow-large"><i class="fab fa-linkedin-in"></i></a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="https://codepen.io/daidensacha/pens/"  target="_blank" uk-tooltip="title: Codepen; delay: 500; animation: animation: uk-animation-scale-up; pos: bottom; cls: uk-active tooltip-blue uk-box-shadow-large"><i class="fab fa-codepen"></i></a>
-                                    </li>
-                                    <li class="">
-                                        <a class="" href="#modal-contact-form" uk-toggle uk-tooltip="title: Message me; delay: 500; animation: uk-animation-scale-up; pos: bottom; cls: uk-active tooltip-blue uk-box-shadow-large"><i class="far fa-envelope"></i></a>
-                                    </li>
-                                </ul> 
-                            </div>
-        
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Daiden Sacha Portfolio</title>
+      <link rel="stylesheet" href="assets/css/style.css">
+   </head>
+   <body>
+      <!-- Start Header Block -->
+      <div class="container uk-height-viewport uk-background-cover uk-background-fixed uk-light header-image" data-src="assets/images/header-image-1.jpg" uk-img>
+         <!-- Begin Navbar-->
+         <div class="tm-header" id="home">
+            <div uk-sticky="show-on-up: true; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #scrollup-dropbar" class="uk-sticky uk-navbar-sticky uk-sticky-below uk-sticky-fixed" style="position: fixed; top: 0px; width: 100%;">
+               <nav class="uk-navbar-container uk-navbar-transparent uk-navbar-sticky">
+                  <div class="uk-container">
+                     <div uk-navbar="" class="uk-navbar">
+                        <div class="uk-navbar-left">
+                           <!-- <a class="uk-navbar-item uk-logo" href="#"></a> -->
+                           <div class="uk-navbar-left">
+                              <ul class="uk-navbar-nav uk-visible@s">
+                                 <li class="uk-active"><a class="bottom-leftToRight" href="#home" uk-scroll>Home</a></li>
+                                 <li class=""><a class="bottom-leftToRight" href="#about" uk-scroll>About</a></li>
+                                 <li class=""><a class="bottom-leftToRight" href="#gallery" uk-scroll>Portfolio</a></li>
+                                 <li class=""><a class="bottom-leftToRight" href="#modal-contact-form" uk-toggle>Contact</a></li>
+                              </ul>
+                              <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+                           </div>
                         </div>
-                    </div>
-                </nav>
+                        <div class="uk-navbar-right">
+                           <ul class="uk-navbar-nav social-links">
+                              <li class="">
+                                 <a class="" href="https://github.com/daidensacha" target="_blank" uk-tooltip="title: Github; delay: 500; animation: uk-animation-scale-up; pos: bottom; cls: uk-active tooltip-blue uk-box-shadow-large"><i class="fab fa-github"></i></a>
+                              </li>
+                              <li class="">
+                                 <a class="" href="https://www.linkedin.com/in/daiden-sacha-8852b41a6/"  target="_blank" uk-tooltip="title: Linkedin; delay: 500; animation: animation: uk-animation-scale-up; pos: bottom; cls: uk-active tooltip-blue uk-box-shadow-large"><i class="fab fa-linkedin-in"></i></a>
+                              </li>
+                              <li>
+                                 <a class="" href="https://codepen.io/daidensacha/pens/"  target="_blank" uk-tooltip="title: Codepen; delay: 500; animation: animation: uk-animation-scale-up; pos: bottom; cls: uk-active tooltip-blue uk-box-shadow-large"><i class="fab fa-codepen"></i></a>
+                              </li>
+                              <li class="">
+                                 <a class="" href="#modal-contact-form" uk-toggle uk-tooltip="title: Message me; delay: 500; animation: uk-animation-scale-up; pos: bottom; cls: uk-active tooltip-blue uk-box-shadow-large"><i class="far fa-envelope"></i></a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </nav>
             </div>
             <div class="uk-sticky-placeholder" style="height: 80px; margin: 0px;"></div>
-        
             <!-- Start Offcanvas Navbar -->
             <div id="sidenav" uk-offcanvas="mode: push; overlay: true" class="uk-offcanvas">
-                <div class="uk-offcanvas-bar">
-                    <ul class="uk-nav">
-                        <li class="uk-active"><a href="#home">Home</a></li>
-                        <li class="#about"><a href="#about">About</a></li>
-                        <li class="#portfolio"><a href="#gallery">Portfolio</a></li>
-                        <li class="#modal-contact-form"><a href="#modal-contact-form" uk-toggle>Contact</a></li>
-                    </ul>
-                </div>
+               <div class="uk-offcanvas-bar">
+                  <ul class="uk-nav">
+                     <li class="uk-active"><a href="#home">Home</a></li>
+                     <li class="#about"><a href="#about">About</a></li>
+                     <li class="#portfolio"><a href="#gallery">Portfolio</a></li>
+                     <li class="#modal-contact-form"><a href="#modal-contact-form" uk-toggle>Contact</a></li>
+                  </ul>
+               </div>
             </div>
             <!-- End Offcanvas Navbar -->
-
-        </div>
-        <!-- End Navbar-->
-
-        <!-- Start Name and Profession Block -->
-        <div class="grid uk-position-center header-name-block" uk-scrollspy="target: > h1, div; cls: uk-animation-slide; repeat: false" tabindex="0">    
+         </div>
+         <!-- End Navbar-->
+         <!-- Start Name and Profession Block -->
+         <div class="grid uk-position-center header-name-block" uk-scrollspy="target: > h1, div; cls: uk-animation-slide; repeat: false" tabindex="0">
             <h1 class="name uk-text-center uk-animation-slide-top-small"  >Daiden Sacha</h1>
             <div class="divider div-transparent div-rhombus-white uk-animation-fade" ></div>
             <h1 class="profession uk-text-center uk-text-uppercase uk-animation-slide-bottom-small">Full Stack Developer</h1>
-        </div>
-        <!-- End Name and Profession Block -->
-
-        <!-- Start Header Skill Icon Block -->
-        <div id="header-skill-icons" class="uk-text-center uk-position-bottom skill-icon-block uk-grid-collapse" uk-grid>
+         </div>
+         <!-- End Name and Profession Block -->
+         <!-- Start Header Skill Icon Block -->
+         <div id="header-skill-icons" class="uk-text-center uk-position-bottom skill-icon-block uk-grid-collapse" uk-grid>
             <div class="uk-width-1-3 uk-display-block skill-block">
-                <div class="skills-category" uk-scrollspy="cls: uk-animation-slide-left; repeat: false" tabindex="0">
-                    <img class="adobe-design-white" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="Adobe Design">
-                </div>
+               <div class="skills-category" uk-scrollspy="cls: uk-animation-slide-left; repeat: false" tabindex="0">
+                  <img class="adobe-design-white" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="Adobe Design">
+               </div>
             </div>
             <div class="uk-width-1-3 uk-display-block skill-block">
-                <div class="skills-category" uk-scrollspy="cls: uk-animation-slide-bottom; repeat: false" tabindex="0">
-                    <img class="frontend-dev-white" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="Front End Development">
-                </div>
+               <div class="skills-category" uk-scrollspy="cls: uk-animation-slide-bottom; repeat: false" tabindex="0">
+                  <img class="frontend-dev-white" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="Front End Development">
+               </div>
             </div>
             <div class="uk-width-1-3 uk-display-block skill-block">
-                <div class="skills-category" uk-scrollspy="cls: uk-animation-slide-right; repeat: false" tabindex="0">
-                    <img class="backend-dev-white" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="Backend Development">
-                </div>
+               <div class="skills-category" uk-scrollspy="cls: uk-animation-slide-right; repeat: false" tabindex="0">
+                  <img class="backend-dev-white" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="Backend Development">
+               </div>
             </div>
-        </div>
-        <!-- End Header Skill Icon Block -->  
-
-    </div>
-    <!-- End Header Block -->
-
-    <!-- START About block-->
-    <div class="about" id="about">
-
-        <h1 class="uk-h1 uk-text-center uk-text-uppercase uk-padding" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: false ">About Me</h1>
-        <div class="divider div-transparent div-rhombus-white"></div>
-
-        <div class="container d-image-background uk-background-repeat uk-overflow-none uk-padding-large" uk-grid data-src="assets/images/seamless-background-muted.jpg" uk-img>
-
+         </div>
+         <!-- End Header Skill Icon Block -->  
+      </div>
+      <!-- End Header Block -->
+      <!-- START About block-->
+      <div class="about" id="about">
+         <h1 class="uk-h1 uk-text-center uk-text-uppercase uk-padding" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: false ">About Me</h1>
+         <div class="divider div-transparent div-rhombus-white"></div>
+         <div class="container d-image-background uk-background-repeat uk-overflow-none uk-padding-large" uk-grid data-src="assets/images/seamless-background-muted.jpg" uk-img>
             <div class="uk-text-justify" uk-grid>
-                <div class="uk-width-2-3@l">
-                    <div class="image-daiden uk-hidden@l" uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: false " tabindex="0"></div>
-                        <div class="article">
-                            <p>I’m an Australian based in Germany, with a life of experience in an eclectic set of different fields, 
-                                ranging from transport management, reflexology massage therapy, house renovations, baking Hungarian sweet bread, 
-                                and logistic problem solving.</p>
-                    
-                            <p>My passion is Web Development, with skills in HTML5, CSS3, Bootstrap, UIkit, Joomla CMS, 
-                                Adobe Photoshop, Adobe Illustrator and Adobe Xd, I dive with confidence into front end development. 
-                                My current process is to build on my skill set, learning JavaScript, jQuery, Node, Django, Flask 
-                                and MySQL so I can also work with backend development.</p>
-                                
-                            <p>I take pride in working with clients to deliver quality work, on time, and within agreed budget.</p>
-    
-                            <p>I’m currently studying software development with Code Institute. I'm open for opportunities to work for companies:
-                                <ul>
-                                    <li>invested in professional, individual, and team development,</li>
-                                    <li>commited to providing services based on the latest technologies,</li>
-                                    <li>nuturing an environment that can fly beyond limitations.</li>
-                                </ul>
-                            </p>
-                            <p>Drop me a line and i'll be happy to discuss all proposals. </p>
-                            <p><button class="uk-button" id="resume-modal-button" href="#resume" uk-toggle>Read and download my resume.</button></p>
-                            
-                        </div>
-                </div>
-                <div class="uk-width-expand@l">
-                        <div class="image-dai" uk-scrollspy="cls: uk-animation-fade; repeat: false " tabindex="0">
-                            <img class="uk-float-right uk-visible@l" src="assets/images/daiden-6.gif" alt="Daiden Sacha">
-                        </div>
-                </div>
+               <div class="uk-width-2-3@l">
+                  <div class="image-daiden uk-hidden@l" uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: false " tabindex="0"></div>
+                  <div class="article">
+                     <p>I’m an Australian based in Germany, with a life of experience in an eclectic set of different 
+                         fields, ranging from transport management, reflexology massage therapy, house renovations, 
+                         baking Hungarian sweet bread, and logistic problem-solving.
+                     </p>
+                     <p>My passion is Web Development, with skills in HTML5, CSS3, Bootstrap, UIkit, Joomla CMS, Adobe 
+                         Photoshop, Adobe Illustrator, and Adobe Xd, I dive with confidence into front end development. 
+                         My current process is to build on my skill set, learning JavaScript, jQuery, Node, Django, 
+                         Flask, and MySQL so I can also work with backend development.
+                     </p>
+                     <p>I take pride in working with clients to deliver quality work, on time, and within the agreed 
+                         budget.</p>
+                     <p>I’m currently studying software development with Code Institute. I'm open to opportunities to 
+                         work for companies:
+                     <ul>
+                        <li>invested in professional, individual, and team development,</li>
+                        <li>committed to providing services based on the latest technologies,</li>
+                        <li>nurturing an environment that can fly beyond limitations.</li>
+                     </ul>
+                     </p>
+                     <p>Drop me a line and I'll be happy to discuss all proposals. </p>
+                     <p><button class="uk-button" id="resume-modal-button" href="#resume" uk-toggle>Read and download my resume.</button></p>
+                  </div>
+               </div>
+               <div class="uk-width-expand@l">
+                  <div class="image-dai" uk-scrollspy="cls: uk-animation-fade; repeat: false " tabindex="0">
+                     <img class="uk-float-right uk-visible@l" src="assets/images/daiden-6.gif" alt="Daiden Sacha">
+                  </div>
+               </div>
             </div>
-
-        </div>
-    </div>
-    <!-- END About block -->
-
-    <!-- START Skills block -->
-    <div class="grid skill-block">
-        <h1 class="uk-h1 uk-text-center uk-text-uppercase  uk-padding" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: false ">Skills</h1>
-        <div class="divider div-transparent div-rhombus-white"></div>
-
-        <div class="skills">
+         </div>
+      </div>
+      <!-- END About block -->
+      <!-- START Skills block -->
+      <div class="grid skill-block">
+         <h1 class="uk-h1 uk-text-center uk-text-uppercase  uk-padding" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: false ">Skills</h1>
+         <div class="divider div-transparent div-rhombus-white"></div>
+         <div class="skills">
             <div class="container skill-bg-wrapper">
-                <div class="uk-background-cover uk-background-fixed" data-src="assets/images/header-image-1.jpg" uk-img>
-                    <div class="uk-grid-small uk-flex uk-child-width-expand@s skillblock-icons"  uk grid>
-                        
-                        <div class="uk-width-1-3@m skill-block" uk-scrollspy="cls: uk-animation-slide-left; repeat: false">
-                                <img class="adobe-design-yellow uk-align-center" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="Adobe Design">
-                        </div>
-                        <div class="uk-width-1-3@m skill-block" uk-scrollspy="cls: uk-animation-scale-up; repeat: false">
-                                <img class="frontend-dev-yellow uk-align-center" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="Front End Development">
-                        </div>
-                        <div class="uk-width-1-3@m skill-block" uk-scrollspy="cls: uk-animation-slide-right; repeat: false">
-                                <img class="backend-dev-yellow uk-align-center" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="Backend Development">
-                        </div>
-                    </div>
-                </div>
+               <div class="uk-background-cover uk-background-fixed" data-src="assets/images/header-image-1.jpg" uk-img>
+                  <div class="uk-grid-small uk-grid-collapse uk-flex uk-child-width-expand@s skillblock-icons"  uk grid>
+                     <div class="uk-width-1-3@m skill-block" uk-scrollspy="cls: uk-animation-slide-left; repeat: false">
+                        <img class="adobe-design-yellow uk-align-center" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="Adobe Design">
+                     </div>
+                     <div class="uk-width-1-3@m skill-block" uk-scrollspy="cls: uk-animation-scale-up; repeat: false">
+                        <img class="frontend-dev-yellow uk-align-center" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="Front End Development">
+                     </div>
+                     <div class="uk-width-1-3@m skill-block" uk-scrollspy="cls: uk-animation-slide-right; repeat: false">
+                        <img class="backend-dev-yellow uk-align-center" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="Backend Development">
+                     </div>
+                  </div>
+               </div>
             </div>
-            
             <div class="uk-grid uk-grid-divider">
-
-                <div class="uk-width-1-3@m uk-grid-collapse icon-block" uk-scrollspy="cls: uk-animation-slide-left; repeat: false">
-                    <h3>Design</h3>
-                    <div class="uk-grid skills-row progress-section">
-                        <div class="uk-width-1-6">
-                            <div class="l-inline-skill">
-                                <img class="sprite-photoshop" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="Photoshop">
-                                <a target="_blank" href="#">
-                                <span class="sr-only">Photoshop</span>
-                                </a>
-                            </div> 
+               <div class="uk-width-1-3@m uk-grid-collapse icon-block" uk-scrollspy="cls: uk-animation-slide-left; repeat: false">
+                  <h3>Design</h3>
+                  <div class="uk-grid skills-row progress-section">
+                     <div class="uk-width-1-6">
+                        <div class="l-inline-skill">
+                           <img class="sprite-photoshop" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="Photoshop">
+                           <a target="_blank" href="#">
+                           <span class="sr-only">Photoshop</span>
+                           </a>
                         </div>
-                        <div class="uk-width-5-6">
-                            <div class="progress photoshop">
-                                <div class="progress-bar progress-photoshop" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                                    <span class="sr-only">70% complete</span>
-                                </div>
-                                <span class="progress-type photoshop">Photoshop</span>
-                                <span class="progress-percentage photoshop"></span>
-                            </div>
+                     </div>
+                     <div class="uk-width-5-6">
+                        <div class="progress photoshop">
+                           <div class="progress-bar progress-photoshop" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                              <span class="sr-only">70% complete</span>
+                           </div>
+                           <span class="progress-type photoshop">Photoshop</span>
+                           <span class="progress-percentage photoshop"></span>
                         </div>
-                    
-                        <div class="uk-width-1-6">
-                            <div class="l-inline-skill">
-                                <img class="sprite-illustrator" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="`Illustrator">
-                                <a target="_blank" href="#">
-                                <span class="sr-only">Illustrator</span>
-                                </a>
-                            </div> 
+                     </div>
+                     <div class="uk-width-1-6">
+                        <div class="l-inline-skill">
+                           <img class="sprite-illustrator" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="`Illustrator">
+                           <a target="_blank" href="#">
+                           <span class="sr-only">Illustrator</span>
+                           </a>
                         </div>
-                        <div class="uk-width-5-6">
-                            <div class="progress illustrator">
-                                <div class="progress-bar progress-illustrator" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                                    <span class="sr-only">80% complete</span>
-                                </div>
-                                <span class="progress-type illustrator">Illustrator</span>
-                                <span class="progress-percentage illustrator"></span>
-                            </div>
+                     </div>
+                     <div class="uk-width-5-6">
+                        <div class="progress illustrator">
+                           <div class="progress-bar progress-illustrator" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                              <span class="sr-only">80% complete</span>
+                           </div>
+                           <span class="progress-type illustrator">Illustrator</span>
+                           <span class="progress-percentage illustrator"></span>
                         </div>
-            
-                        <div class="uk-width-1-6">
-                            <div class="l-inline-skill">
-                                <img class="sprite-xd" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="Xd">
-                                <a target="_blank" href="#">
-                                <span class="sr-only">Xd</span>
-                                </a>
-                            </div> 
+                     </div>
+                     <div class="uk-width-1-6">
+                        <div class="l-inline-skill">
+                           <img class="sprite-xd" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="Xd">
+                           <a target="_blank" href="#">
+                           <span class="sr-only">Xd</span>
+                           </a>
                         </div>
-                        <div class="uk-width-5-6">
-                            <div class="progress">
-                                <div class="progress-bar progress-xd" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-                                    <span class="sr-only">70% complete</span>
-                                </div>
-                                <span class="progress-type xd">Xd</span>
-                                <span class="progress-percentage xd"></span>
-                            </div>
+                     </div>
+                     <div class="uk-width-5-6">
+                        <div class="progress">
+                           <div class="progress-bar progress-xd" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                              <span class="sr-only">70% complete</span>
+                           </div>
+                           <span class="progress-type xd">Xd</span>
+                           <span class="progress-percentage xd"></span>
                         </div>
-            
-                        <div class="uk-width-1-6">
-                            <div class="l-inline-skill">
-                                <img class="sprite-indesign" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="InDesign">
-                                <a target="_blank" href="#">
-                                <span class="sr-only">InDesign</span>
-                                </a>
-                            </div> 
+                     </div>
+                     <div class="uk-width-1-6">
+                        <div class="l-inline-skill">
+                           <img class="sprite-indesign" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="InDesign">
+                           <a target="_blank" href="#">
+                           <span class="sr-only">InDesign</span>
+                           </a>
                         </div>
-                        <div class="uk-width-5-6">
-                            <div class="progress">
-                                <div class="progress-bar progress-indesign" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
-                                    <span class="sr-only">50% complete</span>
-                                </div>
-                                <span class="progress-type indesign">InDesign</span>
-                                <span class="progress-percentage indesign"></span>
-                            </div>
+                     </div>
+                     <div class="uk-width-5-6">
+                        <div class="progress">
+                           <div class="progress-bar progress-indesign" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                              <span class="sr-only">50% complete</span>
+                           </div>
+                           <span class="progress-type indesign">InDesign</span>
+                           <span class="progress-percentage indesign"></span>
                         </div>
-                    </div>
-                    <p>Fully responsive layouts developed from the ground up with a focus on user centric design to meet and fulfil the needs of the user and the website.</p>
-                </div>
-
-                <div class="uk-width-1-3@m uk-grid-collapse icon-block" uk-scrollspy="cls: uk-animation-scale-up; repeat: false">
-                    <h3>Frontend</h3>
-                    <div class="uk-grid skills-row progress-section">
-                        <div class="uk-width-1-6">
-                            <div class="l-inline-skill">
-                                <img class="sprite-html5" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="HTML5">
-                                <a target="_blank" href="#">
-                                    <span class="sr-only">HTML5</span>
-                                </a>
-                            </div> 
+                     </div>
+                  </div>
+                  <p>Fully responsive layouts developed from the ground up with a focus on user centric design to meet and fulfil the needs of the user and the website.</p>
+               </div>
+               <div class="uk-width-1-3@m uk-grid-collapse icon-block" uk-scrollspy="cls: uk-animation-scale-up; repeat: false">
+                  <h3>Frontend</h3>
+                  <div class="uk-grid skills-row progress-section">
+                     <div class="uk-width-1-6">
+                        <div class="l-inline-skill">
+                           <img class="sprite-html5" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="HTML5">
+                           <a target="_blank" href="#">
+                           <span class="sr-only">HTML5</span>
+                           </a>
                         </div>
-                        <div class="uk-width-5-6">
-                            <div class="progress">
-                                <div class="progress-bar progress-html5" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                    <span class="sr-only">80% complete</span>
-                                </div>
-                                <span class="progress-type html5">HTML5</span>
-                                <span class="progress-percentage html5"></span>
-                            </div>
+                     </div>
+                     <div class="uk-width-5-6">
+                        <div class="progress">
+                           <div class="progress-bar progress-html5" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                              <span class="sr-only">80% complete</span>
+                           </div>
+                           <span class="progress-type html5">HTML5</span>
+                           <span class="progress-percentage html5"></span>
                         </div>
-            
-                        <div class="uk-width-1-6">
-                            <div class="l-inline-skill">
-                                <img class="sprite-css3" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="CSS3">
-                                <a target="_blank" href="#">
-                                    <span class="sr-only">CSS3</span>
-                                </a>
-                            </div> 
+                     </div>
+                     <div class="uk-width-1-6">
+                        <div class="l-inline-skill">
+                           <img class="sprite-css3" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="CSS3">
+                           <a target="_blank" href="#">
+                           <span class="sr-only">CSS3</span>
+                           </a>
                         </div>
-                        <div class="uk-width-5-6">
-                            <div class="progress">
-                                <div class="progress-bar progress-css3" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                    <span class="sr-only">80% complete</span>
-                                </div>
-                                <span class="progress-type css3">CSS3</span>
-                                <span class="progress-percentage css3"></span>
-                            </div>
+                     </div>
+                     <div class="uk-width-5-6">
+                        <div class="progress">
+                           <div class="progress-bar progress-css3" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                              <span class="sr-only">80% complete</span>
+                           </div>
+                           <span class="progress-type css3">CSS3</span>
+                           <span class="progress-percentage css3"></span>
                         </div>
-                
-                        <div class="uk-width-1-6">
-                            <div class="l-inline-skill">
-                                <img class="sprite-js" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="JavaScript">
-                                <a target="_blank" href="#">
-                                    <span class="sr-only">JavaScript</span>
-                                </a>
-                            </div> 
+                     </div>
+                     <div class="uk-width-1-6">
+                        <div class="l-inline-skill">
+                           <img class="sprite-js" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="JavaScript">
+                           <a target="_blank" href="#">
+                           <span class="sr-only">JavaScript</span>
+                           </a>
                         </div>
-                        <div class="uk-width-5-6">
-                            <div class="progress">
-                                <div class="progress-bar progress-js" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                                    <span class="sr-only">40% complete</span>
-                                </div>
-                                <span class="progress-type javascript">JavaScript</span>
-                                <span class="progress-percentage javascript"></span>
-                            </div>
+                     </div>
+                     <div class="uk-width-5-6">
+                        <div class="progress">
+                           <div class="progress-bar progress-js" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                              <span class="sr-only">40% complete</span>
+                           </div>
+                           <span class="progress-type javascript">JavaScript</span>
+                           <span class="progress-percentage javascript"></span>
                         </div>
-                
-                        <div class="uk-width-1-6">
-                            <div class="l-inline-skill">
-                                <img class="sprite-bootstrap" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="Bootstrap">
-                                <a target="_blank" href="#">
-                                    <span class="sr-only">Bootstrap</span>
-                                </a>
-                            </div> 
+                     </div>
+                     <div class="uk-width-1-6">
+                        <div class="l-inline-skill">
+                           <img class="sprite-bootstrap" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="Bootstrap">
+                           <a target="_blank" href="#">
+                           <span class="sr-only">Bootstrap</span>
+                           </a>
                         </div>
-                        <div class="uk-width-5-6">
-                            <div class="progress">
-                                <div class="progress-bar progress-bootstrap" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                    <span class="sr-only">80% complete</span>
-                                </div>
-                                <span class="progress-type bootstrap">Bootstrap</span>
-                                <span class="progress-percentage bootstrap"></span>
-                            </div>
+                     </div>
+                     <div class="uk-width-5-6">
+                        <div class="progress">
+                           <div class="progress-bar progress-bootstrap" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                              <span class="sr-only">80% complete</span>
+                           </div>
+                           <span class="progress-type bootstrap">Bootstrap</span>
+                           <span class="progress-percentage bootstrap"></span>
                         </div>
-                    </div>
-                    <p>Implementing mobile first fully responsive layouts using HTML5, CSS3, Bootstrap 4, JavaScript to 
-                        create modern, dynamic and sexy websites.</p>
-                </div>
-
-                <div class="uk-width-1-3@m uk-grid-collapse icon-block" uk-scrollspy="cls: uk-animation-slide-right; repeat: false">
-                    <h3>Backend</h3>
-                    <div class="uk-grid skills-row progress-section">
-            
-                        <div class="uk-width-1-6">
-                            <div class="l-inline-skill">
-                                <img class="sprite-python" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="Python">
-                                <a target="_blank" href="#">
-                                    <span class="sr-only">Python</span>
-                                </a>
-                            </div> 
+                     </div>
+                  </div>
+                  <p>Implementing mobile first fully responsive layouts using HTML5, CSS3, Bootstrap 4, JavaScript to 
+                     create modern, dynamic and sexy websites.
+                  </p>
+               </div>
+               <div class="uk-width-1-3@m uk-grid-collapse icon-block" uk-scrollspy="cls: uk-animation-slide-right; repeat: false">
+                  <h3>Backend</h3>
+                  <div class="uk-grid skills-row progress-section">
+                     <div class="uk-width-1-6">
+                        <div class="l-inline-skill">
+                           <img class="sprite-python" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="Python">
+                           <a target="_blank" href="#">
+                           <span class="sr-only">Python</span>
+                           </a>
                         </div>
-                        <div class="uk-width-5-6">
-                            <div class="progress">
-                                <div class="progress-bar progress-python" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                                    <span class="sr-only">40% complete</span>
-                                </div>
-                                <span class="progress-type python">Python</span>
-                                <span class="progress-percentage python"></span>
-                            </div>
+                     </div>
+                     <div class="uk-width-5-6">
+                        <div class="progress">
+                           <div class="progress-bar progress-python" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                              <span class="sr-only">40% complete</span>
+                           </div>
+                           <span class="progress-type python">Python</span>
+                           <span class="progress-percentage python"></span>
                         </div>
-            
-                        <div class="uk-width-1-6">
-                            <div class="l-inline-skill">
-                                <img class="sprite-django" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="Django">
-                                <a target="_blank" href="#">
-                                    <span class="sr-only">Django</span>
-                                </a>
-                            </div> 
+                     </div>
+                     <div class="uk-width-1-6">
+                        <div class="l-inline-skill">
+                           <img class="sprite-django" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="Django">
+                           <a target="_blank" href="#">
+                           <span class="sr-only">Django</span>
+                           </a>
                         </div>
-                        <div class="uk-width-5-6">
-                            <div class="progress">
-                                <div class="progress-bar progress-django" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                                    <span class="sr-only">60% complete</span>
-                                </div>
-                                <span class="progress-type django">Django</span>
-                                <span class="progress-percentage django"></span>
-                            </div>
+                     </div>
+                     <div class="uk-width-5-6">
+                        <div class="progress">
+                           <div class="progress-bar progress-django" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                              <span class="sr-only">60% complete</span>
+                           </div>
+                           <span class="progress-type django">Django</span>
+                           <span class="progress-percentage django"></span>
                         </div>
-            
-                        <div class="uk-width-1-6">
-                            <div class="l-inline-skill">
-                                <img class="sprite-flask" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="Flask">
-                                <a target="_blank" href="#">
-                                    <span class="sr-only">Flask</span>
-                                </a>
-                            </div> 
+                     </div>
+                     <div class="uk-width-1-6">
+                        <div class="l-inline-skill">
+                           <img class="sprite-flask" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="Flask">
+                           <a target="_blank" href="#">
+                           <span class="sr-only">Flask</span>
+                           </a>
                         </div>
-                        <div class="uk-width-5-6">
-                            <div class="progress">
-                                <div class="progress-bar progress-flask" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                                    <span class="sr-only">60% complete</span>
-                                </div>
-                                <span class="progress-type flask">Flask</span>
-                                <span class="progress-percentage flask"></span>
-                            </div>
+                     </div>
+                     <div class="uk-width-5-6">
+                        <div class="progress">
+                           <div class="progress-bar progress-flask" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                              <span class="sr-only">60% complete</span>
+                           </div>
+                           <span class="progress-type flask">Flask</span>
+                           <span class="progress-percentage flask"></span>
                         </div>
-            
-                        <div class="uk-width-1-6">
-                            <div class="l-inline-skill">
-                                <img class="sprite-mysql" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="MySQL">
-                                <a target="_blank" href="#">
-                                    <span class="sr-only">MySQL</span>
-                                </a>
-                            </div> 
+                     </div>
+                     <div class="uk-width-1-6">
+                        <div class="l-inline-skill">
+                           <img class="sprite-mysql" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="MySQL">
+                           <a target="_blank" href="#">
+                           <span class="sr-only">MySQL</span>
+                           </a>
                         </div>
-                        <div class="uk-width-5-6">
-                            <div class="progress">
-                                <div class="progress-bar progress-mysql" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                                    <span class="sr-only">60% complete</span>
-                                </div>
-                                <span class="progress-type mysql">MySQL</span>
-                                <span class="progress-percentage mysql"></span>
-                            </div>
+                     </div>
+                     <div class="uk-width-5-6">
+                        <div class="progress">
+                           <div class="progress-bar progress-mysql" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                              <span class="sr-only">60% complete</span>
+                           </div>
+                           <span class="progress-type mysql">MySQL</span>
+                           <span class="progress-percentage mysql"></span>
                         </div>
-            
-                        <div class="uk-width-1-6">
-                            <div class="l-inline-skill">
-                                <img class="sprite-mongodb" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="MongoDB">
-                                <a target="_blank" href="#">
-                                    <span class="sr-only">MongoDB</span>
-                                </a>
-                            </div> 
+                     </div>
+                     <div class="uk-width-1-6">
+                        <div class="l-inline-skill">
+                           <img class="sprite-mongodb" src="assets/images/sprites/sprite_trans_img.gif" height="1" width="1" alt="MongoDB">
+                           <a target="_blank" href="#">
+                           <span class="sr-only">MongoDB</span>
+                           </a>
                         </div>
-                        <div class="uk-width-5-6">
-                            <div class="progress">
-                                <div class="progress-bar progress-mongodb" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                                    <span class="sr-only">60% complete</span>
-                                </div>
-                                <span class="progress-type mongodb">MongoDB</span>
-                                <span class="progress-percentage mongodb"></span>
-                            </div>
-                        </div> 
-                    </div>
-                    <p> &bull; Speed &bull; Data &bull; Security – Applying server side logic to build the framework that integrates user facing elements developed for the frontend.</p>
-                </div>
-                
+                     </div>
+                     <div class="uk-width-5-6">
+                        <div class="progress">
+                           <div class="progress-bar progress-mongodb" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                              <span class="sr-only">60% complete</span>
+                           </div>
+                           <span class="progress-type mongodb">MongoDB</span>
+                           <span class="progress-percentage mongodb"></span>
+                        </div>
+                     </div>
+                  </div>
+                  <p> &bull; Speed &bull; Data &bull; Security – Applying server side logic to build the framework that integrates user facing elements developed for the frontend.</p>
+               </div>
             </div>
-            
-        </div>
-    </div>
-    <!-- END Skills block -->
-
-    <!-- START Gallery block -->
-    <div class="grid gallery uk-background-blue" id="gallery">
-        <div class="uk-h1 uk-text-center uk-text-uppercase  uk-padding" uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: false">
+         </div>
+      </div>
+      <!-- END Skills block -->
+      <!-- START Gallery block -->
+      <div class="grid gallery uk-background-blue" id="gallery">
+         <div class="uk-h1 uk-text-center uk-text-uppercase  uk-padding" uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: false">
             Portfolio
-        </div>
-        <div class="divider div-transparent div-rhombus-white"></div>
-        <!-- uk-grid-small to uk-grid-match-->
-        <div class="uk-grid-match uk-child-width-1-3@m uk-padding-small uk-padding-remove-bottom uk-background-blue" id="portfolio-bg" uk-grid>
+         </div>
+         <div class="divider div-transparent div-rhombus-white"></div>
+         <!-- uk-grid-small to uk-grid-match-->
+         <div class="uk-grid-match uk-child-width-1-3@m uk-padding-small uk-padding-remove-bottom uk-background-blue" id="portfolio-bg" uk-grid>
             <div class="uk-inline-clip uk-transition-toggle uk-text-center gallery-images" uk-scrollspy="cls: uk-animation-fade; delay: 200; repeat: false" uk-lightbox="animation: slide" tabindex="0">
-                
-                <div class="container uk-box-shadow-large gallery-container">
-                    <h3>Refelxology Point</h3>
-                    <hr>
-                    <a class="uk-inline" href="assets/images/gallery-images/reflex-point-1.jpg" data-caption="Reflexology Point Website - Image 1/10" data-uk-lightbox="{group:'group-1'}">
-                        <img src="assets/images/gallery-images/reflex-point-1.jpg" alt="">
-                        <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
-                            <p class="uk-h4 uk-margin-remove">Joomla CMS, Yoo Theme, HTML, CSS, UiKit, Bootstrap, JavaScript, jQuery, PHP, Adobe Illustrator, Adobe Photoshop</p>
-                        </div>
-                    </a>
-                    <a class="uk-hidden" href="assets/images/gallery-images/reflex-point-2.jpg" data-caption="Reflexology Point Website - Image  2/10" data-uk-lightbox="{group:'group-1'}"></a>
-                    <a class="uk-hidden" href="assets/images/gallery-images/reflex-point-5.jpg" data-caption="Reflexology Point Website - Image  3/10" data-uk-lightbox="{group:'group-1'}"></a>
-                    <a class="uk-hidden" href="assets/images/gallery-images/reflex-point-10.jpg" data-caption="Reflexology Point Website - Image  4/10" data-uk-lightbox="{group:'group-1'}"></a>
-                    <a class="uk-hidden" href="assets/images/gallery-images/reflex-point-14.jpg" data-caption="Reflexology Point Website - Image  5/10" data-uk-lightbox="{group:'group-1'}"></a>
-                    <a class="uk-hidden" href="assets/images/gallery-images/reflex-point-15.jpg" data-caption="Reflexology Point Website - Image  6/10" data-uk-lightbox="{group:'group-1'}"></a>
-                    <a class="uk-hidden" href="assets/images/gallery-images/reflex-point-16.jpg" data-caption="Reflexology Point Website - Image  7/10" data-uk-lightbox="{group:'group-1'}"></a>
-                    <a class="uk-hidden" href="assets/images/gallery-images/reflex-point-17.jpg" data-caption="Reflexology Point Website - Image  8/10" data-uk-lightbox="{group:'group-1'}"></a>
-                    <a class="uk-hidden" href="assets/images/gallery-images/reflex-point-19.jpg" data-caption="Reflexology Point Website - Image  9/10" data-uk-lightbox="{group:'group-1'}"></a>
-                    <a class="uk-hidden" href="assets/images/gallery-images/reflex-point-24.jpg" data-caption="Reflexology Point Website - Image  10/10" data-uk-lightbox="{group:'group-1'}"></a>
-                    <p>The initial site was static HTML and CSS, with a basic image  map. I rebuilt the site, learning HTML/ CSS/ Adobe Photoshop/ Adobe Illustrator/ Image mapping/ 
-                    Joomla CMS/ Customising Yoo Theme with UIkit.  </p>
-                </div>
-
+               <div class="container uk-box-shadow-large gallery-container">
+                  <h3>Refelxology Point</h3>
+                  <hr>
+                  <a class="uk-inline" href="assets/images/gallery-images/reflex-point-1.jpg" data-caption="Reflexology Point Website - Image 1/10" data-uk-lightbox="{group:'group-1'}">
+                     <img src="assets/images/gallery-images/reflex-point-1.jpg" alt="">
+                     <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                        <p class="uk-h4 uk-margin-remove">Joomla CMS, Yoo Theme, HTML, CSS, UiKit, Bootstrap, JavaScript, jQuery, PHP, Adobe Illustrator, Adobe Photoshop</p>
+                     </div>
+                  </a>
+                  <a class="uk-hidden" href="assets/images/gallery-images/reflex-point-2.jpg" data-caption="Reflexology Point Website - Image  2/10" data-uk-lightbox="{group:'group-1'}"></a>
+                  <a class="uk-hidden" href="assets/images/gallery-images/reflex-point-5.jpg" data-caption="Reflexology Point Website - Image  3/10" data-uk-lightbox="{group:'group-1'}"></a>
+                  <a class="uk-hidden" href="assets/images/gallery-images/reflex-point-10.jpg" data-caption="Reflexology Point Website - Image  4/10" data-uk-lightbox="{group:'group-1'}"></a>
+                  <a class="uk-hidden" href="assets/images/gallery-images/reflex-point-14.jpg" data-caption="Reflexology Point Website - Image  5/10" data-uk-lightbox="{group:'group-1'}"></a>
+                  <a class="uk-hidden" href="assets/images/gallery-images/reflex-point-15.jpg" data-caption="Reflexology Point Website - Image  6/10" data-uk-lightbox="{group:'group-1'}"></a>
+                  <a class="uk-hidden" href="assets/images/gallery-images/reflex-point-16.jpg" data-caption="Reflexology Point Website - Image  7/10" data-uk-lightbox="{group:'group-1'}"></a>
+                  <a class="uk-hidden" href="assets/images/gallery-images/reflex-point-17.jpg" data-caption="Reflexology Point Website - Image  8/10" data-uk-lightbox="{group:'group-1'}"></a>
+                  <a class="uk-hidden" href="assets/images/gallery-images/reflex-point-19.jpg" data-caption="Reflexology Point Website - Image  9/10" data-uk-lightbox="{group:'group-1'}"></a>
+                  <a class="uk-hidden" href="assets/images/gallery-images/reflex-point-24.jpg" data-caption="Reflexology Point Website - Image  10/10" data-uk-lightbox="{group:'group-1'}"></a>
+                  <p>The initial site was static HTML and CSS, with a basic image  map. I rebuilt the site, learning HTML/ CSS/ Adobe Photoshop/ Adobe Illustrator/ Image mapping/ 
+                     Joomla CMS/ Customising Yoo Theme with UIkit.  
+                  </p>
+               </div>
             </div>
             <div class="uk-inline-clip uk-transition-toggle uk-text-center gallery-images" uk-scrollspy="cls: uk-animation-fade; delay: 200; repeat: false" uk-lightbox="animation: slide" tabindex="0">
-                
-                <div class="container uk-box-shadow-large gallery-container">
-                    <h3>Bonza Kurtos Kalas</h3>
-                    <hr>
-                    <a class="uk-inline" href="assets/images/gallery-images/bonza-1.jpg" data-caption="Bonza Kurtos Kalas Website - Image 1/11" data-uk-lightbox="{group:'group-2'}">
-                        <img src="assets/images/gallery-images/bonza-1.jpg" alt="">
-                        <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
-                            <p class="uk-h4 uk-margin-remove">Joomla CMS, Yoo Theme, UiKit, Bootstrap, HTML, CSS, JavaScript, Adobe Illustrator, Adobe Photoshop</p>
-                        </div>
-                    </a>
-                    <a class="uk-hidden" href="assets/images/gallery-images/bonza-2.jpg" data-caption="Bonza Kurtos Kalas Website - Image 2/11" data-uk-lightbox="{group:'group-2'}"></a>
-                    <a class="uk-hidden" href="assets/images/gallery-images/bonza-3.jpg" data-caption="Bonza Kurtos Kalas Website - Image 3/11" data-uk-lightbox="{group:'group-2'}"></a>
-                    <a class="uk-hidden" href="assets/images/gallery-images/bonza-4.jpg" data-caption="Bonza Kurtos Kalas Website - Image 4/11" data-uk-lightbox="{group:'group-2'}"></a>
-                    <a class="uk-hidden" href="assets/images/gallery-images/bonza-5.jpg" data-caption="Bonza Kurtos Kalas Website - Image 5/11" data-uk-lightbox="{group:'group-2'}"></a>
-                    <a class="uk-hidden" href="assets/images/gallery-images/bonza-6.jpg" data-caption="Bonza Kurtos Kalas Website - Image 6/11" data-uk-lightbox="{group:'group-2'}"></a>
-                    <a class="uk-hidden" href="assets/images/gallery-images/bonza-7.jpg" data-caption="Bonza Kurtos Kalas Website - Image 7/11" data-uk-lightbox="{group:'group-2'}"></a>
-                    <a class="uk-hidden" href="assets/images/gallery-images/bonza-8.jpg" data-caption="Bonza Kurtos Kalas Website - Image 8/11" data-uk-lightbox="{group:'group-2'}"></a>
-                    <a class="uk-hidden" href="assets/images/gallery-images/bonza-9.jpg" data-caption="Bonza Kurtos Kalas Website - Image 9/11" data-uk-lightbox="{group:'group-2'}"></a>
-                    <a class="uk-hidden" href="assets/images/gallery-images/bonza-10.jpg" data-caption="Bonza Kurtos Kalas Website - Image 10/11" data-uk-lightbox="{group:'group-2'}"></a>
-                    <a class="uk-hidden" href="assets/images/gallery-images/bonza-11.jpg" data-caption="Bonza Kurtos Kalas Website - Image 11/11" data-uk-lightbox="{group:'group-2'}"></a>
-                    <p>Kurtos Kalas, Hungarian sweet bread hooked me in Prague, took me to Slovenia where I learned to bake it, bought an oven and shipped 
-                        it to Australia where I opened a shop, Bonza Kurtos Kalas. I build this site using Joomla CMS/ Customised Yoo 
-                        Theme using UIkit, HTML5/ CSS3/ Adobe Photoshop/ Adobe Illustrator.</p>
-                </div>
+               <div class="container uk-box-shadow-large gallery-container">
+                  <h3>Bonza Kurtos Kalas</h3>
+                  <hr>
+                  <a class="uk-inline" href="assets/images/gallery-images/bonza-1.jpg" data-caption="Bonza Kurtos Kalas Website - Image 1/11" data-uk-lightbox="{group:'group-2'}">
+                     <img src="assets/images/gallery-images/bonza-1.jpg" alt="">
+                     <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                        <p class="uk-h4 uk-margin-remove">Joomla CMS, Yoo Theme, UiKit, Bootstrap, HTML, CSS, JavaScript, Adobe Illustrator, Adobe Photoshop</p>
+                     </div>
+                  </a>
+                  <a class="uk-hidden" href="assets/images/gallery-images/bonza-2.jpg" data-caption="Bonza Kurtos Kalas Website - Image 2/11" data-uk-lightbox="{group:'group-2'}"></a>
+                  <a class="uk-hidden" href="assets/images/gallery-images/bonza-3.jpg" data-caption="Bonza Kurtos Kalas Website - Image 3/11" data-uk-lightbox="{group:'group-2'}"></a>
+                  <a class="uk-hidden" href="assets/images/gallery-images/bonza-4.jpg" data-caption="Bonza Kurtos Kalas Website - Image 4/11" data-uk-lightbox="{group:'group-2'}"></a>
+                  <a class="uk-hidden" href="assets/images/gallery-images/bonza-5.jpg" data-caption="Bonza Kurtos Kalas Website - Image 5/11" data-uk-lightbox="{group:'group-2'}"></a>
+                  <a class="uk-hidden" href="assets/images/gallery-images/bonza-6.jpg" data-caption="Bonza Kurtos Kalas Website - Image 6/11" data-uk-lightbox="{group:'group-2'}"></a>
+                  <a class="uk-hidden" href="assets/images/gallery-images/bonza-7.jpg" data-caption="Bonza Kurtos Kalas Website - Image 7/11" data-uk-lightbox="{group:'group-2'}"></a>
+                  <a class="uk-hidden" href="assets/images/gallery-images/bonza-8.jpg" data-caption="Bonza Kurtos Kalas Website - Image 8/11" data-uk-lightbox="{group:'group-2'}"></a>
+                  <a class="uk-hidden" href="assets/images/gallery-images/bonza-9.jpg" data-caption="Bonza Kurtos Kalas Website - Image 9/11" data-uk-lightbox="{group:'group-2'}"></a>
+                  <a class="uk-hidden" href="assets/images/gallery-images/bonza-10.jpg" data-caption="Bonza Kurtos Kalas Website - Image 10/11" data-uk-lightbox="{group:'group-2'}"></a>
+                  <a class="uk-hidden" href="assets/images/gallery-images/bonza-11.jpg" data-caption="Bonza Kurtos Kalas Website - Image 11/11" data-uk-lightbox="{group:'group-2'}"></a>
+                  <p>Kurtos Kalas, Hungarian sweet bread hooked me in Prague, took me to Slovenia where I learned to bake it, bought an oven and shipped 
+                     it to Australia where I opened a shop, Bonza Kurtos Kalas. I build this site using Joomla CMS/ Customised Yoo 
+                     Theme using UIkit, HTML5/ CSS3/ Adobe Photoshop/ Adobe Illustrator.
+                  </p>
+               </div>
             </div>
             <div class="uk-inline-clip uk-transition-toggle uk-text-center gallery-images" uk-scrollspy="cls: uk-animation-fade; delay: 200; repeat: false" uk-lightbox="animation: slide" tabindex="0">
-                
-                <div class="container uk-box-shadow-large gallery-container">
-                <h3>Karanaki's Raw Food</h3>
-                <hr>
-                    <a class="uk-inline" href="assets/images/gallery-images/karanakis-1.jpg" data-caption="Karanaki Raw Food Website - Image 1/10" data-uk-lightbox="{group:'group-3'}">
-                        <img src="assets/images/gallery-images/karanakis-1.jpg" alt="">
-                        <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
-                            <p class="uk-h4 uk-margin-remove">Joomla CMS, Yoo Theme, HTML, CSS, UiKit, Bootstrap, JavaScript, Adobe Illustrator, Adobe Photoshop</p>
-                        </div>
-                    </a>
-                    
-                    <a class="uk-hidden" href="assets/images/gallery-images/karanakis-2.jpg" data-caption="Karanaki Raw Food Website - Image 2/10" data-uk-lightbox="{group:'group-3'}"></a>
-                    <a class="uk-hidden" href="assets/images/gallery-images/karanakis-3.jpg" data-caption="Karanaki Raw Food Website - Image 3/10" data-uk-lightbox="{group:'group-3'}"></a>
-                    <a class="uk-hidden" href="assets/images/gallery-images/karanakis-4.jpg" data-caption="Karanaki Raw Food Website - Image 4/10" data-uk-lightbox="{group:'group-3'}"></a>
-                    <a class="uk-hidden" href="assets/images/gallery-images/karanakis-5.jpg" data-caption="Karanaki Raw Food Website - Image 5/10" data-uk-lightbox="{group:'group-3'}"></a>
-                    <a class="uk-hidden" href="assets/images/gallery-images/karanakis-6.jpg" data-caption="Karanaki Raw Food Website - Image 6/10" data-uk-lightbox="{group:'group-3'}"></a>
-                    <a class="uk-hidden" href="assets/images/gallery-images/karanakis-7.jpg" data-caption="Karanaki Raw Food Website - Image 7/10" data-uk-lightbox="{group:'group-3'}"></a>
-                    <a class="uk-hidden" href="assets/images/gallery-images/karanakis-8.jpg" data-caption="Karanaki Raw Food Website - Image 8/10" data-uk-lightbox="{group:'group-3'}"></a>
-                    <a class="uk-hidden" href="assets/images/gallery-images/karanakis-9.jpg" data-caption="Karanaki Raw Food Website - Image 9/10" data-uk-lightbox="{group:'group-3'}"></a>
-                    <a class="uk-hidden" href="assets/images/gallery-images/karanakis-10.jpg" data-caption="Karanaki Raw Food Website - Image 10/10" data-uk-lightbox="{group:'group-3'}"></a>
-                    <p>A website build to promote the most amazing raw food made by Kara from New Zealand, based in the Fremantle Market, 
-                        Western Australia. A project for a friend, unfinished as I moved to live in Germany. I customised the Yoo Theme to suit this product, in Joomla CMS, a challenging 
-                        project requiring a lot of product images and content. 
-                    </p>
-                </div>
-
+               <div class="container uk-box-shadow-large gallery-container">
+                  <h3>Karanaki's Raw Food</h3>
+                  <hr>
+                  <a class="uk-inline" href="assets/images/gallery-images/karanakis-1.jpg" data-caption="Karanaki Raw Food Website - Image 1/10" data-uk-lightbox="{group:'group-3'}">
+                     <img src="assets/images/gallery-images/karanakis-1.jpg" alt="">
+                     <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                        <p class="uk-h4 uk-margin-remove">Joomla CMS, Yoo Theme, HTML, CSS, UiKit, Bootstrap, JavaScript, Adobe Illustrator, Adobe Photoshop</p>
+                     </div>
+                  </a>
+                  <a class="uk-hidden" href="assets/images/gallery-images/karanakis-2.jpg" data-caption="Karanaki Raw Food Website - Image 2/10" data-uk-lightbox="{group:'group-3'}"></a>
+                  <a class="uk-hidden" href="assets/images/gallery-images/karanakis-3.jpg" data-caption="Karanaki Raw Food Website - Image 3/10" data-uk-lightbox="{group:'group-3'}"></a>
+                  <a class="uk-hidden" href="assets/images/gallery-images/karanakis-4.jpg" data-caption="Karanaki Raw Food Website - Image 4/10" data-uk-lightbox="{group:'group-3'}"></a>
+                  <a class="uk-hidden" href="assets/images/gallery-images/karanakis-5.jpg" data-caption="Karanaki Raw Food Website - Image 5/10" data-uk-lightbox="{group:'group-3'}"></a>
+                  <a class="uk-hidden" href="assets/images/gallery-images/karanakis-6.jpg" data-caption="Karanaki Raw Food Website - Image 6/10" data-uk-lightbox="{group:'group-3'}"></a>
+                  <a class="uk-hidden" href="assets/images/gallery-images/karanakis-7.jpg" data-caption="Karanaki Raw Food Website - Image 7/10" data-uk-lightbox="{group:'group-3'}"></a>
+                  <a class="uk-hidden" href="assets/images/gallery-images/karanakis-8.jpg" data-caption="Karanaki Raw Food Website - Image 8/10" data-uk-lightbox="{group:'group-3'}"></a>
+                  <a class="uk-hidden" href="assets/images/gallery-images/karanakis-9.jpg" data-caption="Karanaki Raw Food Website - Image 9/10" data-uk-lightbox="{group:'group-3'}"></a>
+                  <a class="uk-hidden" href="assets/images/gallery-images/karanakis-10.jpg" data-caption="Karanaki Raw Food Website - Image 10/10" data-uk-lightbox="{group:'group-3'}"></a>
+                  <p>A website build to promote the most amazing raw food made by Kara from New Zealand, based in the Fremantle Market, 
+                     Western Australia. A project for a friend, unfinished as I moved to live in Germany. I customised the Yoo Theme to suit this product, in Joomla CMS, a challenging 
+                     project requiring a lot of product images and content. 
+                  </p>
+               </div>
             </div>
-
             <div class="uk-inline-clip uk-transition-toggle uk-text-center gallery-images" uk-scrollspy="cls: uk-animation-fade; delay: 200; repeat: false" uk-lightbox="animation: slide" tabindex="0">
-                
-                <div class="container uk-box-shadow-large gallery-container">
-                    <h3>Interactive Refelexology Foot Charts</h3>
-                    <hr>
-                    <a class="uk-inline" href="assets/images/gallery-images/foot-charts-1.jpg" data-caption="Interactive Reflexology Footchart - Image 1/2" data-uk-lightbox="{group:'group-4'}">
-                        <img src="assets/images/gallery-images/foot-charts-1.jpg" alt="">
-                        <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
-                            <p class="uk-h4 uk-margin-remove">HTML, CSS, Bootstrap, JavaScript, jQuery, Adobe Illustrator, Adobe Photoshop, Adobe Dreamweaver, Image Mapping</p>
-                        </div>
-                    </a>
-                    <a class="uk-hidden" href="assets/images/gallery-images/foot-charts-2.mp4" data-type="video" data-caption="Interactive Reflexology Footchart - Movie 2/2" data-uk-lightbox="{group:'group-4'}"></a>
-                    <p>I bought a website that was not finished, then learned HTML and CSS to finish it. It
-                        became rabbit hole that taught me a whole range of skills. Creating new reflexology footchart artwork in Adobe Illustrator. Intricate image 
-                        mapping in Adobe Dreamweaver. Using jQuery plugins to bring life to the image mapping. A work in progress.
-                    </p>
-                </div>
-
+               <div class="container uk-box-shadow-large gallery-container">
+                  <h3>Interactive Refelexology Foot Charts</h3>
+                  <hr>
+                  <a class="uk-inline" href="assets/images/gallery-images/foot-charts-1.jpg" data-caption="Interactive Reflexology Footchart - Image 1/2" data-uk-lightbox="{group:'group-4'}">
+                     <img src="assets/images/gallery-images/foot-charts-1.jpg" alt="">
+                     <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                        <p class="uk-h4 uk-margin-remove">HTML, CSS, Bootstrap, JavaScript, jQuery, Adobe Illustrator, Adobe Photoshop, Adobe Dreamweaver, Image Mapping</p>
+                     </div>
+                  </a>
+                  <a class="uk-hidden" href="assets/images/gallery-images/foot-charts-2.mp4" data-type="video" data-caption="Interactive Reflexology Footchart - Movie 2/2" data-uk-lightbox="{group:'group-4'}"></a>
+                  <p>I bought a website that was not finished, then learned HTML and CSS to finish it. It
+                     became rabbit hole that taught me a whole range of skills. Creating new reflexology footchart artwork in Adobe Illustrator. Intricate image 
+                     mapping in Adobe Dreamweaver. Using jQuery plugins to bring life to the image mapping. A work in progress.
+                  </p>
+               </div>
             </div>
-        
             <div class="uk-inline-clip uk-transition-toggle uk-text-center gallery-images" uk-scrollspy="cls: uk-animation-fade; delay: 200; repeat: false" uk-lightbox="animation: slide" tabindex="0">
-                
-                <div class="container uk-box-shadow-large gallery-container ">
-                    <h3>Manahawkin Tree Service</h3>
-                    <hr>
-                    <a class="uk-inline" href="assets/images/gallery-images/manahawkin-1.jpg" data-caption="Manahawking Tree Service Website - Image 1/8" data-uk-lightbox="{group:'group-5'}">
-                        <img src="assets/images/gallery-images/manahawkin-1.jpg" alt="">
-                        <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
-                            <p class="uk-h4 uk-margin-remove">Joomla CMS, Yoo Theme, UiKit, Bootstrap, HTML, CSS, JavaScript, PHP, Adobe Illustrator, Adobe Photoshop, </p>
-                        </div>
-                    </a>
-                    <a class="uk-hidden" href="assets/images/gallery-images/manahawkin-2.jpg" data-caption="Manahawking Tree Service Website - Image 2/8" data-uk-lightbox="{group:'group-5'}"></a>
-                    <a class="uk-hidden" href="assets/images/gallery-images/manahawkin-3.jpg" data-caption="Manahawking Tree Service Website - Image 3/8" data-uk-lightbox="{group:'group-5'}"></a>
-                    <a class="uk-hidden" href="assets/images/gallery-images/manahawkin-4.jpg" data-caption="Manahawking Tree Service Website - Image 4/8" data-uk-lightbox="{group:'group-5'}"></a>
-                    <a class="uk-hidden" href="assets/images/gallery-images/manahawkin-5.jpg" data-caption="Manahawking Tree Service Website - Image 5/8" data-uk-lightbox="{group:'group-5'}"></a>
-                    <a class="uk-hidden" href="assets/images/gallery-images/manahawkin-6.jpg" data-caption="Manahawking Tree Service Website - Image 6/8" data-uk-lightbox="{group:'group-5'}"></a>
-                    <a class="uk-hidden" href="assets/images/gallery-images/manahawkin-7.jpg" data-caption="Manahawking Tree Service Website - Image 7/8" data-uk-lightbox="{group:'group-5'}"></a>
-                    <a class="uk-hidden" href="assets/images/gallery-images/manahawkin-8.jpg" data-caption="Manahawking Tree Service Website - Image 8/8" data-uk-lightbox="{group:'group-5'}"></a>
-                    <p>I originally built a static site for Manahawin Tree Service, and then did a rebuild in my own time, in Joomla CMS, customising a Yoo Theme, UIkit, HTML5, CSS3, 
-                        Adobe Illustrator, Adobe Photoshop. Required diving into PHP in order to add a required form field. 
-                    </p>
-                </div>
-        
+               <div class="container uk-box-shadow-large gallery-container ">
+                  <h3>Manahawkin Tree Service</h3>
+                  <hr>
+                  <a class="uk-inline" href="assets/images/gallery-images/manahawkin-1.jpg" data-caption="Manahawking Tree Service Website - Image 1/8" data-uk-lightbox="{group:'group-5'}">
+                     <img src="assets/images/gallery-images/manahawkin-1.jpg" alt="">
+                     <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                        <p class="uk-h4 uk-margin-remove">Joomla CMS, Yoo Theme, UiKit, Bootstrap, HTML, CSS, JavaScript, PHP, Adobe Illustrator, Adobe Photoshop, </p>
+                     </div>
+                  </a>
+                  <a class="uk-hidden" href="assets/images/gallery-images/manahawkin-2.jpg" data-caption="Manahawking Tree Service Website - Image 2/8" data-uk-lightbox="{group:'group-5'}"></a>
+                  <a class="uk-hidden" href="assets/images/gallery-images/manahawkin-3.jpg" data-caption="Manahawking Tree Service Website - Image 3/8" data-uk-lightbox="{group:'group-5'}"></a>
+                  <a class="uk-hidden" href="assets/images/gallery-images/manahawkin-4.jpg" data-caption="Manahawking Tree Service Website - Image 4/8" data-uk-lightbox="{group:'group-5'}"></a>
+                  <a class="uk-hidden" href="assets/images/gallery-images/manahawkin-5.jpg" data-caption="Manahawking Tree Service Website - Image 5/8" data-uk-lightbox="{group:'group-5'}"></a>
+                  <a class="uk-hidden" href="assets/images/gallery-images/manahawkin-6.jpg" data-caption="Manahawking Tree Service Website - Image 6/8" data-uk-lightbox="{group:'group-5'}"></a>
+                  <a class="uk-hidden" href="assets/images/gallery-images/manahawkin-7.jpg" data-caption="Manahawking Tree Service Website - Image 7/8" data-uk-lightbox="{group:'group-5'}"></a>
+                  <a class="uk-hidden" href="assets/images/gallery-images/manahawkin-8.jpg" data-caption="Manahawking Tree Service Website - Image 8/8" data-uk-lightbox="{group:'group-5'}"></a>
+                  <p>I originally built a static site for Manahawin Tree Service, and then did a rebuild in my own time, in Joomla CMS, customising a Yoo Theme, UIkit, HTML5, CSS3, 
+                     Adobe Illustrator, Adobe Photoshop. Required diving into PHP in order to add a required form field. 
+                  </p>
+               </div>
             </div>
-        
-        </div>
-    </div>
-    <!-- END Gallery block -->
-
-    <!-- START Footer block -->
-    <footer>
-        <div class="uk-navbar uk-visible@m">
-
+         </div>
+      </div>
+      <!-- END Gallery block -->
+      <!-- START Footer block -->
+      <footer>
+         <div class="uk-navbar uk-visible@m">
             <!-- <div class="uk-navbar-left">
-                <a class="uk-navbar-item uk-logo" href="#">Logo</a>
-            </div> -->
-
+               <a class="uk-navbar-item uk-logo" href="#">Logo</a>
+               </div> -->
             <div class="uk-navbar-center">
-                <ul class="uk-navbar-nav">
-                    <li class="uk-active" uk-scroll><a href="#home">Home</a></li>
-                    <hr class="uk-divider-vertical">
-                    <li><a href="#about" uk-scroll>About</a></li>
-                    <hr class="uk-divider-vertical">
-                    <li><a href="#gallery" uk-scroll>Gallery</a></li>
-                    <hr class="uk-divider-vertical">
-                    <li><a href="#modal-contact-form" uk-toggle>Contact</a></li>
-                </ul> 
+               <ul class="uk-navbar-nav">
+                  <li class="uk-active" uk-scroll><a href="#home">Home</a></li>
+                  <hr class="uk-divider-vertical">
+                  <li><a href="#about" uk-scroll>About</a></li>
+                  <hr class="uk-divider-vertical">
+                  <li><a href="#gallery" uk-scroll>Gallery</a></li>
+                  <hr class="uk-divider-vertical">
+                  <li><a href="#modal-contact-form" uk-toggle>Contact</a></li>
+               </ul>
             </div>
-            
             <div class="uk-navbar-right">
-                <div class="uk-navbar-item">
-                    <ul class="uk-navbar-nav social-links  uk-visible@l">
-                        <li>
-                            <a href="#" uk-totop uk-scroll uk-tooltip="title: To Top; delay: 500; animation: uk-animation-scale-up; pos: top; cls: uk-active tooltip-blue uk-box-shadow-large"></a>
-                        </li>
-                        <li class="">
-                            <a class="" href="https://github.com/daidensacha" target="_blank" uk-tooltip="title: Github; delay: 500; animation: uk-animation-scale-up; pos: top; cls: uk-active tooltip-blue uk-box-shadow-large"><i class="fab fa-github"></i></a>
-                        </li>
-                        <li class="">
-                            <a class="" href="https://www.linkedin.com/in/daiden-sacha-8852b41a6/" target="_blank" uk-tooltip="title: Linkedin; delay: 500; animation: uk-animation-scale-up; pos: top; cls: uk-active tooltip-blue uk-box-shadow-large"><i class="fab fa-linkedin-in"></i></a>
-                        </li>
-                        <li>
-                            <a class="" href="https://codepen.io/daidensacha/pens/"  target="_blank" uk-tooltip="title: Codepen; delay: 500; animation: animation: uk-animation-scale-up; pos: top; cls: uk-active tooltip-blue uk-box-shadow-large"><i class="fab fa-codepen"></i></a>
-                        </li>
-                        <li class="">
-                            <a class="" href="#modal-contact-form" uk-toggle uk-tooltip="title: Message me; delay: 500; animation: uk-animation-scale-up; pos: top; cls: uk-active tooltip-blue uk-box-shadow-large"><i class="far fa-envelope"></i></a>
-                        </li>
-                    </ul> 
-                </div>
+               <div class="uk-navbar-item">
+                  <ul class="uk-navbar-nav social-links  uk-visible@l">
+                     <li>
+                        <a class="uk-visible@m totop-link" href="#" uk-totop uk-scroll uk-tooltip="title: To Top; delay: 500; animation: uk-animation-scale-up; pos: top; cls: uk-active tooltip-blue uk-box-shadow-large"></a>
+                     </li>
+                     <li class="">
+                        <a class="" href="https://github.com/daidensacha" target="_blank" uk-tooltip="title: Github; delay: 500; animation: uk-animation-scale-up; pos: top; cls: uk-active tooltip-blue uk-box-shadow-large"><i class="fab fa-github"></i></a>
+                     </li>
+                     <li class="">
+                        <a class="" href="https://www.linkedin.com/in/daiden-sacha-8852b41a6/" target="_blank" uk-tooltip="title: Linkedin; delay: 500; animation: uk-animation-scale-up; pos: top; cls: uk-active tooltip-blue uk-box-shadow-large"><i class="fab fa-linkedin-in"></i></a>
+                     </li>
+                     <li>
+                        <a class="" href="https://codepen.io/daidensacha/pens/"  target="_blank" uk-tooltip="title: Codepen; delay: 500; animation: animation: uk-animation-scale-up; pos: top; cls: uk-active tooltip-blue uk-box-shadow-large"><i class="fab fa-codepen"></i></a>
+                     </li>
+                     <li class="">
+                        <a class="" href="#modal-contact-form" uk-toggle uk-tooltip="title: Message me; delay: 500; animation: uk-animation-scale-up; pos: top; cls: uk-active tooltip-blue uk-box-shadow-large"><i class="far fa-envelope"></i></a>
+                     </li>
+                  </ul>
+               </div>
             </div>
-        </div>
-        <span class="uk-align-center uk-text-center">Copyright © 2020 Daiden Sacha. All Rights Reserved</span>
-    </footer>
-    <!-- END Footer block -->
-
-    <!-- Start Modal Contact Form-->
-    <div id="modal-contact-form" uk-modal>
-        <div class="uk-modal-dialog uk-modal-body"><button class="uk-modal-close-default" type="button" uk-close></button>
+         </div>
+         <span class="uk-align-center uk-text-center copyright">Copyright © 2020 Daiden Sacha. All Rights Reserved</span>
+      </footer>
+      <!-- END Footer block -->
+      <!-- Start Modal Contact Form-->
+      <div id="modal-contact-form" uk-modal>
+         <div class="uk-modal-dialog uk-modal-body">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
             <form class="uk-background-bottom-right uk-background-cover uk-padding" id="contact-form" style="background-image: url('assets/images/office-desk.jpg');" >
-                
-                <div class="uk-modal-dialog uk-modal-body"><button class="uk-modal-close-outside" type="button" uk-close></button></div>
-                
-                <fieldset class="uk-fieldset">
-                    <legend class="uk-legend uk-text-center">Write to me</legend>
-
-                    <div class="uk-margin uk-inline-block uk-width-1-1">
-                        <span class="uk-form-icon" uk-icon="icon: user"></span>
-                        <input class="uk-input" type="text" name="name" placeholder="Your Name">
-                    </div>
-                    <div class="uk-margin uk-inline-block uk-width-1-1">
-                    <span class="uk-form-icon" uk-icon="icon: mail"></span>
-                        <input class="uk-input" type="email" name="email" placeholder="Your Email">
-                    </div>
-                    <div class="uk-margin  uk-width-1-1">
-                        <textarea class="uk-textarea" rows="10" name="message" placeholder="Subject"></textarea>
-                    </div>
-                    <div>
-                    <button type="submit" class="uk-button uk-button-default" id="contact-btn">Send</button>
-                    </div>
-                </fieldset>
+               <div class="uk-modal-dialog uk-modal-body"><button class="uk-modal-close-outside" type="button" uk-close></button></div>
+               <fieldset class="uk-fieldset">
+                  <legend class="uk-legend uk-text-center">Write to me</legend>
+                  <div class="uk-margin uk-inline-block uk-width-1-1">
+                     <span class="uk-form-icon" uk-icon="icon: user"></span>
+                     <input class="uk-input" type="text" name="name" placeholder="Your Name">
+                  </div>
+                  <div class="uk-margin uk-inline-block uk-width-1-1">
+                     <span class="uk-form-icon" uk-icon="icon: mail"></span>
+                     <input class="uk-input" type="email" name="email" placeholder="Your Email">
+                  </div>
+                  <div class="uk-margin  uk-width-1-1">
+                     <textarea class="uk-textarea" rows="10" name="message" placeholder="Subject"></textarea>
+                  </div>
+                  <div>
+                     <button type="submit" class="uk-button uk-button-default" id="contact-btn">Send</button>
+                  </div>
+               </fieldset>
             </form>
-        </div>
-    </div>
-    <!-- End Modal Contact Form-->
-
-    <!-- Start Resume Modal-->
-    <div id="resume" class="uk-flex-top" uk-modal>
-        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-overflow-auto">
+         </div>
+      </div>
+      <!-- End Modal Contact Form-->
+      <!-- Start Resume Modal-->
+      <div id="resume" class="uk-flex-top" uk-modal>
+         <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-overflow-auto">
             <button class="uk-modal-close-default" type="button" uk-close></button>
             <div class="container">
-                <img src="assets/images/resume-1811x1280-2020.gif" alt="Resume 2020">
+               <img src="assets/images/resume-1811x1280-2020.gif" alt="Resume 2020">
             </div>
             <form method="get" action="assets/documents/resume-2020.pdf" target="_blank">
-                <button type="submit" class="uk-button uk-button-default" id="btn-resume-download">Download PDF</button>
+               <button type="submit" class="uk-button uk-button-default" id="btn-resume-download">Download PDF</button>
             </form>
-        </div>
-    </div>
-    <!-- End Resume Modal -->
-
-    <!-- UIkit form validation to be completed with jQuery or Vanilla JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="assets/js/uikit.min.js"></script>
-    <script src="assets/js/uikit-icons.min.js"></script>
-    <script src="https://kit.fontawesome.com/7432ab4d43.js" crossorigin="anonymous"></script>
-    <script src="assets/js/main.js"></script>
-</body>
+         </div>
+      </div>
+      <!-- End Resume Modal -->
+      <!-- UIkit form validation to be completed with jQuery or Vanilla JS -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="assets/js/uikit.min.js"></script>
+      <script src="assets/js/uikit-icons.min.js"></script>
+      <script src="https://kit.fontawesome.com/7432ab4d43.js" crossorigin="anonymous"></script>
+      <script src="assets/js/main.js"></script>
+   </body>
 </html>

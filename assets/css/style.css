@@ -1,1002 +1,839 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Manrope:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('uikit.min.css');
-@import url('variables.css');
-/*
-NOTES:
-See variables.css for variables relating to display of skill category images,
-skill block icons, and also for changing skill proficiency level.
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Manrope:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,1000,300;0,4000,500;0,700;0,900;1,100;1,300;1,400;1,500;,700;1,900&display=swap');
+ @import url('uikit.min.css');
+ @import url('variables.css');
+/* NOTES: See variables.css for variables relating to display of skill category images, skill block icons, and also for changing skill proficiency level. */
+ body {
+     font-family: 'Manrope', sans-serif;
+     font-size: 14pt;
+     margin: 0;
+     padding: 0;
+}
+ .header-image {
+     -webkit-box-shadow: inset 0px -2px 22px -8px rgba(0,0,0,0.75);
+     -moz-box-shadow: inset 0px -2px 22px -8px rgba(0,0,0,0.75);
+     box-shadow: inset 0px -2px 22px -8px rgba(0,0,0,0.75);
+}
+ .uk-padding-medium {
+     padding: 40px;
+}
+/* ============================================================== Theme Backgrounds */
+ .uk-background-blue {
+     background: url('../images/seamless-background-blue.jpg') repeat;
+}
+ .uk-background-muted {
+     background: url('../images/seamless-background-muted.jpg') repeat;
+}
+/* ================================================================== Theme Divider */
+ .hr-40per {
+     border-top: 1px solid rgba(229, 229, 229,.9);
+     width: 40%;
+     border: 0;
+     height: 1px;
+     background-image: linear-gradient(to right, rgba(229, 229, 229,.4), rgba(146, 146, 146, 0.9), rgba(229, 229, 229,.4));
+}
+ .hr-70per {
+     width: 70%;
+     border: 0;
+     height: 1px;
+     background-image: linear-gradient(to right, rgba(229, 229, 229,.4), rgba(146, 146, 146,.9), rgba(229, 229, 229,.4));
+}
+/* CREDIT: Inspiration for the following divider styling from:, https://codepen.io/Oddgson/pen/VPrYbv */
+ .divider {
+     position: relative;
+     margin: 40px 0;
+     height: 1px;
+}
+ .div-transparent:before{
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 25%;
+     right: 25%;
+     width: 50%;
+     height: 1px;
+     background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+}
+/* ************************************************ Divider Primary (White Rhombus) */
+ .div-rhombus-white:after {
+     content: "";
+     position: absolute;
+     z-index: 1;
+     top: -7px;
+     left: calc(50% - 7px);
+     width: 14px;
+     height: 14px;
+     transform: rotate(45deg);
+     background-color: white;
+     border: 1px solid rgb(48,49,51);
+}
+/* *********************************************** Divider Secondary (Blue Rhombus) */
+ .div-rhombus-blue:after {
+     content: "";
+     position: absolute;
+     z-index: 1;
+     top: -7px;
+     left: calc(50% - 7px);
+     width: 14px;
+     height: 14px;
+     transform: rotate(45deg);
+     background-color: rgba(32, 152, 207,0.9);
+     border: 1px solid rgb(48,49,51);
+}
+/* **************************************************************** Tooltip Styling */
+ .uk-tooltip.tooltip-blue {
+     color: #ffffff;
+     background-color: rgba(32, 152, 207,0.9);
+     border: 1px solid #ffffff;
+}
+/* 
+================================================================================ 
+=================================== BUTTON STYLING ============================= 
+================================================================================ 
 */
-
-body {
-
-    font-family: 'Manrope', sans-serif;
-    font-size: 14pt;
-    margin: 0;
-    padding: 0;
+ #resume-modal-button, #btn-resume-download {
+     border: 2px solid #9555af;
+    /* border-radius: 50%;
+     */
+    /* font-size: 22px;
+     */
+    /* line-height: 22px;
+     */
+    /* text-align: center;
+     */
+    /* vertical-align: middle;
+     */
+     color: #9555af;
+     opacity: 0.7;
+     background: #ffffff;
+     transition: all 0.35s ease-in-out;
+     -moz-transition: all 0.35s ease-in-out;
+     -webkit-transition: all 0.35s ease-in-out;
+     -o-transition: all 0.35s ease-in-out;
 }
-
-.header-image {
-    -webkit-box-shadow: inset 0px -2px 22px -8px rgba(0,0,0,0.75);
-    -moz-box-shadow: inset 0px -2px 22px -8px rgba(0,0,0,0.75);
-    box-shadow: inset 0px -2px 22px -8px rgba(0,0,0,0.75);
-}
-
-.uk-padding-medium {
-    padding: 40px;
-}
-
-/*
-============================================================== Theme Backgrounds
-*/
-
-.uk-background-blue {
-    background: url('../images/seamless-background-blue.jpg') repeat;
-}
-
-.uk-background-muted {
-    background: url('../images/seamless-background-muted.jpg') repeat;
-}
-
-/*                
-================================================================== Theme Divider
-*/
-
-.hr-40per {
-    border-top: 1px solid rgba(229, 229, 229,.9);
-    width: 40%;
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(229, 229, 229,.4), rgba(146, 146, 146, 0.9), rgba(229, 229, 229,.4));
-}
-
-.hr-70per {
-    width: 70%;
-	border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(229, 229, 229,.4), rgba(146, 146, 146,.9), rgba(229, 229, 229,.4));
-}
-
-/*
-CREDIT: Inspiration for the following divider styling from:,
-https://codepen.io/Oddgson/pen/VPrYbv
-*/
-
-.divider {
-    position: relative;
-    margin: 40px 0;
-    height: 1px;
-    }
-
-.div-transparent:before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 25%;
-    right: 25%;
-    width: 50%;
-    height: 1px;
-    background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
-}
-
-/*
-************************************************ Divider Primary (White Rhombus)
-*/
-
-.div-rhombus-white:after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    top: -7px;
-    left: calc(50% - 7px);
-    width: 14px;
-    height: 14px;
-    transform: rotate(45deg);
-    background-color: white;
-    border: 1px solid rgb(48,49,51);
-}
-
-/*
-*********************************************** Divider Secondary (Blue Rhombus)
-*/
-
-.div-rhombus-blue:after
-{
-	content: "";
-	position: absolute;
-	z-index: 1;
-	top: -7px;
-	left: calc(50% - 7px);
-	width: 14px;
-	height: 14px;
-	transform: rotate(45deg);
-	background-color: rgba(32, 152, 207,0.9);
-	border: 1px solid rgb(48,49,51);
-}
-
-/*
-**************************************************************** Tooltip Styling
-*/
-
-.uk-tooltip.tooltip-blue {
-    color: #ffffff;
-    background-color: rgba(32, 152, 207,0.9);
-    border: 1px solid #ffffff;
-}
-
-/*
-================================================================================
-============================== BUTTON STYLING =============================
-================================================================================
-*/
-
-#resume-modal-button, #btn-resume-download {
-    border: 2px solid #9555af;
-    /* border-radius: 50%; */
-    /* font-size: 22px; */
-    /* line-height: 22px; */
-    /* text-align: center; */
-    /* vertical-align: middle; */
-    color: #9555af;
-    opacity: 0.7;
-    background: #ffffff; 
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out; 
-  }
-
- /* CREDIT for STYLING BUTTONS - https://fvsch.com/styling-buttons/ */
-
- #contact-btn.uk-button,
- #resume-modal-button, 
- #btn-resume-download  {
+/* CREDIT for STYLING BUTTONS - https://fvsch.com/styling-buttons/ */
+ #contact-btn.uk-button, #resume-modal-button, #btn-resume-download {
     /* default for <button>, but useful for <a> */
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
+     display: inline-block;
+     text-align: center;
+     text-decoration: none;
     /* create a small space when buttons wrap on 2 lines */
-    margin: 2px 0;
+     margin: 2px 0;
     /* invisible border (will be colored on hover/focus) */
-    border: solid 1px transparent;
-    border-radius: 4px;
+     border: solid 1px transparent;
+     border-radius: 4px;
     /* make sure colors have enough contrast! */
-    color: #ffffff;
-    background-color: #9555af;
-  }
-  
-  /* inverse colors on mouse-over and focus */
-  #contact-btn.uk-button:hover, #resume-modal-button:hover,#btn-resume-download:hover, 
-  #contact-btn.uk-button:focus, #resume-modal-button:focus, #btn-resume-download:focus  {
-    color: #9555af;
-    border-color: currentColor;
-    background-color: white;
-  }
-
-/*                
-========================================================================= Navbar
-*/
-
+     color: #ffffff;
+     background-color: #9555af;
+}
+/* inverse colors on mouse-over and focus */
+ #contact-btn.uk-button:hover, #resume-modal-button:hover,#btn-resume-download:hover, #contact-btn.uk-button:focus, #resume-modal-button:focus, #btn-resume-download:focus {
+     color: #9555af;
+     border-color: currentColor;
+     background-color: white;
+}
+/* ========================================================================= Navbar */
  .uk-navbar-container {
      background-color: rgba(0,0,0,0.45);
- }
-
-
-.uk-navbar-nav > li {
-    position: relative;
 }
+ .uk-navbar-nav > li {
+     position: relative;
+}
+/* bottom-leftToRight Border taken from https://code-fx.github.io/Pure-CSS3-Animated-Border/ NOTE: had to add position relative to the navbar list item to contain the effect. */
+ .bottom-leftToRight:before, .bottom-leftToRight:after, .bottom-leftToRight > .ui-border-element:before, .bottom-leftToRight > .ui-border-element:after {
+     content: '';
+     position: absolute;
+}
+ .bottom-leftToRight:after {
+     border-bottom: 2px solid rgba(32, 152, 207,0.9);
+     left: 0;
+     right: 100%;
+     bottom: 0;
+     -webkit-transition-property: all;
+     -moz-transition-property: all;
+     -o-transition-property: all;
+     transition-property: all;
+     -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+     -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+     -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+     transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+     -webkit-transition-duration: 200ms;
+     -moz-transition-duration: 200ms;
+     -o-transition-duration: 200ms;
+     transition-duration: 200ms;
+     -webkit-transition-delay: 0s;
+     -moz-transition-delay: 0s;
+     -o-transition-delay: 0s;
+     transition-delay: 0s;
+}
+ .bottom-leftToRight:hover:after {
+     right: 0%;
+}
+ .bottom-leftToRight:not(:hover):after {
+     -webkit-transition-delay: 0s;
+     -moz-transition-delay: 0s;
+     -o-transition-delay: 0s;
+     transition-delay: 0s;
+}
+/* ===================================================================== Off Canvas */
 
-/*
-bottom-leftToRight Border taken from https://code-fx.github.io/Pure-CSS3-Animated-Border/ 
-NOTE: had to add position relative to the navbar list item to contain the effect.
+
+/* ============================================================ Social Icon Slyling */
+ ul.social-links {
+     margin: 0;
+     padding: 0;
+}
+ .social-links li a {
+     margin-right: 20px;
+}
+ .social-links li a i {
+     width: 32px;
+     height: 20px;
+     padding: 7px 0;
+     border: 2px solid rgba(32, 152, 207,0.9);
+     border-radius: 50%;
+     font-size: 22px;
+     line-height: 22px;
+     text-align: center;
+     vertical-align: middle;
+     color: #2098D1;
+     opacity: 0.7;
+     background: #ffffff;
+     transition: all 0.35s ease-in-out;
+     -moz-transition: all 0.35s ease-in-out;
+     -webkit-transition: all 0.35s ease-in-out;
+     -o-transition: all 0.35s ease-in-out;
+}
+ .social-links li a i:hover {
+     color: #ffffff;
+     background: #2098D1;
+     border: 2px solid #ffffff;
+}
+ .skill-icon-block {
+     padding-bottom: 50px;
+}
+ .skill-block>.skills-category>img {
+     max-width: 100%;
+     height: auto;
+     box-sizing: border-box;
+     width: 125px;
+     opacity: .5;
+}
+ .skillblock-icons {
+     background: transparent;
+     padding-top: 25px;
+}
+ .skillblock-icons>.skill-block>img {
+     max-width: 100%;
+     height: auto;
+     box-sizing: border-box;
+     width: 125px;
+     opacity: .5;
+}
+/* ============================================================= Name Block Styling */
+ h1.name {
+     font-family: "Manrope", sans-serif;
+     font-size: 2rem;
+     font-weight: 400;
+     letter-spacing: 0.2em;
+}
+ h1.profession {
+     font-family: "Manrope", sans-serif;
+     font-size: 2.5rem;
+     font-weight: 700;
+     letter-spacing: 0.1em 
+}
+ .line-light {
+     border: 1px solid #f7f7f7;
+     width: 350px;
+}
+ .name-block {
+     z-index: 5;
+     top: 45%;
+}
+/* 
+================================================================================ 
+============================== ABOUT BLOCK STYLING ============================= 
+================================================================================ 
 */
-
-.bottom-leftToRight:before, 
-.bottom-leftToRight:after, 
-.bottom-leftToRight > .ui-border-element:before, 
-.bottom-leftToRight > .ui-border-element:after {
-    content: '';
-    position: absolute;
-  }
-  
-  .bottom-leftToRight:after {
-    border-bottom: 2px solid rgba(32, 152, 207,0.9);
-    left: 0;
-    right: 100%;
-    bottom: 0;
-    -webkit-transition-property: all;
-    -moz-transition-property: all;
-    -o-transition-property: all;
-    transition-property: all;
-    -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
-    -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
-    -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
-    transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
-    -webkit-transition-duration: 200ms;
-    -moz-transition-duration: 200ms;
-    -o-transition-duration: 200ms;
-    transition-duration: 200ms;
-    -webkit-transition-delay: 0s;
-    -moz-transition-delay: 0s;
-    -o-transition-delay: 0s;
-    transition-delay: 0s;
-  }
-  
-  .bottom-leftToRight:hover:after {
-    right: 0%;
-  }
-  
-  .bottom-leftToRight:not(:hover):after {
-    -webkit-transition-delay: 0s;
-    -moz-transition-delay: 0s;
-    -o-transition-delay: 0s;
-    transition-delay: 0s;
-  }
-
-/*               
-===================================================================== Off Canvas 
+ .d-image-background {
+     border-top: 2px solid #e5e5e5;
+     border-bottom: 2px solid #e5e5e5;
+}
+ .d-content {
+     text-align: justify;
+}
+ .image-dai {
+     max-height: 600px;
+}
+ .image-dai > img {
+     max-height: 600px;
+     padding: 0;
+}
+ .about {
+     min-height: 800px;
+     border-top: 5px solid #e5e5e5;
+}
+ .image-daiden {
+     background: url('../images/daiden-4.gif');
+     height: 260px;
+     max-width: 260px;
+     border-radius: 50%;
+     display: block;
+     margin: 0 auto 30px;
+     border: 1px solid #707070;
+}
+/* 
+================================================================================ 
+============================== SKILLS BLOCK STYLING ============================ 
+================================================================================ 
 */
-
-
-/*               
-============================================================ Social Icon Slyling 
+ .skills {
+     background: transparent;
+}
+ .skill-bg-wrapper {
+     border-top: 2px solid hsl(0, 0%, 50%);
+     border-bottom: 2px solid hsl(0, 0%, 50%);
+     padding: 3px 0;
+     background: hsl(0, 0%, 40%);
+     -webkit-box-shadow: inset 0px 1px 15px -10px rgba(0,0,0,0.75);
+     -moz-box-shadow: inset 0px 1px 15px -10px rgba(0,0,0,0.75);
+     box-shadow: inset 0px 1px 15px -10px rgba(0,0,0,0.75);
+}
+ .list-inline-skill img {
+     margin: 10px auto;
+}
+ .skill-block-icon {
+     height: 100px;
+     width: 100px;
+     border-radius: 50%;
+     text-align: center;
+     line-height: 100px;
+     vertical-align: middle;
+     padding: 30px;
+     background: #040404;
+     margin: 0px auto;
+}
+ .icon-block h3 {
+     text-transform: uppercase;
+     text-align: center;
+     margin-top: 30px;
+     margin-bottom: 40px;
+}
+ .icon-block p {
+     text-align: center;
+     padding: 0 10px;
+}
+ .icon-block {
+     display: inline-block;
+}
+ .icon-block > img {
+     width: 47px;
+     margin: 0 auto;
+}
+ .dev-skills {
+     padding: 10px 0 30px;
+}
+ .dev-skills img {
+     vertical-align: center;
+     margin: auto;
+}
+/* =================================================================== Skills Ikons */
+ div.progress {
+     position: relative;
+     height: 25px;
+     width: 100%;
+     margin-bottom: 4px;
+     background: rgba(232, 236, 239, 1.00);
+     border-radius: 4px;
+}
+ .progress-type {
+     position: absolute;
+     width: 90px;
+     height: 25px;
+     left: 0px;
+     font-weight: 400;
+     padding: 0px 10px 0px 10px;
+     color: #fafafa;
+     background-color: rgba(25, 25, 25, 0.2);
+}
+ .progress-section {
+     margin: 40px 20px;
+     min-height: 200px;
+}
+/* =================================================== Sprite Skill Category Images */
+ .adobe-design-white {
+     width: var(--skill-cat-width);
+     height: var(--skill-cat-height);
+     background: url('../images/sprites/skill-cat@125png');
+    ;
+     background-position: var(--adobe-design-white);
+}
+ .frontend-dev-white {
+     width: var(--skill-cat-width);
+     height: var(--skill-cat-height);
+     background: url('../images/sprites/skill-cat@125png');
+    ;
+     background-position: var(--frontend-dev-white);
+}
+ .backend-dev-white {
+     width: var(--skill-cat-width);
+     height: var(--skill-cat-height);
+     background: url('../images/sprites/skill-cat@125png');
+    ;
+     background-position: var(--backend-dev-white);
+}
+ .adobe-design-yellow {
+     width: var(--skill-cat-width);
+     height: var(--skill-cat-height);
+     background: url('../images/sprites/skill-cat@125png');
+    ;
+     background-position: var(--adobe-design-yellow);
+}
+ .frontend-dev-yellow {
+     width: var(--skill-cat-width);
+     height: var(--skill-cat-height);
+     background: url('../images/sprites/skill-cat@125png');
+    ;
+     background-position: var(--frontend-dev-yellow);
+}
+ .backend-dev-yellow {
+     width: var(--skill-cat-width);
+     height: var(--skill-cat-height);
+     background: url('../images/sprites/skill-cat@125png');
+    ;
+     background-position: var(--backend-dev-yellow);
+}
+/* ============================================================= Skill Icon Sprites */
+ .sprite-photoshop {
+     width: 25px;
+     height: 25px;
+     background: url('../images/sprites/sprite-skills-25x25.png') 0 0;
+}
+ .sprite-illustrator {
+     width: 25px;
+     height: 25px;
+     background: url('../images/sprites/sprite-skills-25x25.png') -25px 0;
+}
+ .sprite-xd {
+     width: 25px;
+     height: 25px;
+     background: url('../images/sprites/sprite-skills-25x25.png') -50px 0;
+}
+ .sprite-indesign {
+     width: 25px;
+     height: 25px;
+     background: url('../images/sprites/sprite-skills-25x25.png') -75px 0;
+}
+ .sprite-html5 {
+     width: 25px;
+     height: 25px;
+     background: url('../images/sprites/sprite-skills-25x25.png') -100px 0;
+}
+ .sprite-css3 {
+     width: 25px;
+     height: 25px;
+     background: url('../images/sprites/sprite-skills-25x25.png') -125px 0;
+}
+ .sprite-js {
+     width: 25px;
+     height: 25px;
+     background: url('../images/sprites/sprite-skills-25x25.png') -150px 0;
+}
+ .sprite-bootstrap {
+     width: 25px;
+     height: 25px;
+     background: url('../images/sprites/sprite-skills-25x25.png') -175px 0;
+}
+ .sprite-python {
+     width: 25px;
+     height: 25px;
+     background: url('../images/sprites/sprite-skills-25x25.png') -200px 0;
+}
+ .sprite-django {
+     width: 25px;
+     height: 25px;
+     background: url('../images/sprites/sprite-skills-25x25.png') -225px 0;
+}
+ .sprite-flask {
+     width: 25px;
+     height: 25px;
+     background: url('../images/sprites/sprite-skills-25x25.png') -250px 0;
+}
+ .sprite-mysql {
+     width: 25px;
+     height: 25px;
+     background: url('../images/sprites/sprite-skills-25x25.png') -275px 0;
+}
+ .sprite-mongodb {
+     width: 25px;
+     height: 25px;
+     background: url('../images/sprites/sprite-skills-25x25.png') -300px 0;
+}
+/* ========================================================== Progress Bars Styling */
+ .l-inline-skill img {
+     display: block;
+     margin: 0 auto;
+     max-height: 25px;
+     min-width: 25px;
+}
+ span.progress-percentage.photoshop {
+     position: absolute;
+     left: 0;
+     height: 25px;
+     width: var(--photoshop-percentage);
+     background-color: #00f1fe;
+     border-radius: 4px 0 0 4px;
+}
+ span.progress-type.photoshop {
+     position: absolute;
+     width: 90px;
+     height: 25px;
+     left: 0px;
+     font-weight: 400;
+     padding: 0px 10px 0px 10px;
+     color: #fafafa;
+     background-color: rgba(25, 25, 25, 0.2);
+     z-index: 10;
+     border-radius: 4px 0 0 4px;
+     font-size: 12pt;
+}
+ span.progress-percentage.illustrator {
+     position: absolute;
+     left: 0;
+     height: 25px;
+     width: var(--illustrator-percentage);
+     background-color: #f8b849;
+     border-radius: 4px 0 0 4px;
+}
+ span.progress-type.illustrator {
+     position: absolute;
+     width: 90px;
+     height: 25px;
+     left: 0px;
+     font-weight: 400;
+     padding: 0px 10px 0px 10px;
+     color: #fafafa;
+     background-color: rgba(25, 25, 25, 0.2);
+     z-index: 10;
+     border-radius: 4px 0 0 4px;
+     font-size: 12pt;
+}
+ span.progress-percentage.xd {
+     position: absolute;
+     left: 0;
+     height: 25px;
+     width: var(--xd-percentage);
+     background-color: #ff25be;
+     border-radius: 4px 0 0 4px;
+}
+ span.progress-type.xd {
+     position: absolute;
+     width: 90px;
+     height: 25px;
+     left: 0px;
+     font-weight: 400;
+     padding: 0px 10px 0px 10px;
+     color: #fafafa;
+     background-color: rgba(25, 25, 25, 0.2);
+     z-index: 10;
+     border-radius: 4px 0 0 4px;
+     font-size: 12pt;
+}
+ span.progress-percentage.indesign {
+     position: absolute;
+     left: 0;
+     height: 25px;
+     width: var(--indesign-percentage);
+     background-color: #ff3f94;
+     border-radius: 4px 0 0 4px;
+}
+ span.progress-type.indesign {
+     position: absolute;
+     width: 90px;
+     height: 25px;
+     left: 0px;
+     font-weight: 400;
+     padding: 0px 10px 0px 10px;
+     color: #fafafa;
+     background-color: rgba(25, 25, 25, 0.2);
+     z-index: 10;
+     border-radius: 4px 0 0 4px;
+     font-size: 12pt;
+}
+ span.progress-percentage.html5 {
+     position: absolute;
+     left: 0;
+     height: 25px;
+     width: var(--html5-percentage);
+     background-color: #ee671d;
+     border-radius: 4px 0 0 4px;
+}
+ span.progress-type.html5 {
+     position: absolute;
+     width: 90px;
+     height: 25px;
+     left: 0px;
+     font-weight: 400;
+     padding: 0px 10px 0px 10px;
+     color: #fafafa;
+     background-color: rgba(25, 25, 25, 0.2);
+     z-index: 10;
+     border-radius: 4px 0 0 4px;
+     font-size: 12pt;
+}
+ span.progress-percentage.css3 {
+     position: absolute;
+     left: 0;
+     height: 25px;
+     width: var(--css3-percentage);
+     background-color: #31addf;
+     border-radius: 4px 0 0 4px;
+}
+ span.progress-type.css3 {
+     position: absolute;
+     width: 90px;
+     height: 25px;
+     left: 0px;
+     font-weight: 400;
+     padding: 0px 10px 0px 10px;
+     color: #fafafa;
+     background-color: rgba(25, 25, 25, 0.2);
+     z-index: 10;
+     border-radius: 4px 0 0 4px;
+     font-size: 12pt;
+}
+ span.progress-percentage.javascript {
+     position: absolute;
+     left: 0;
+     height: 25px;
+     width: var(--javascript-percentage);
+     background-color: #ffcc00;
+     border-radius: 4px 0 0 4px;
+}
+ span.progress-type.javascript {
+     position: absolute;
+     width: 90px;
+     height: 25px;
+     left: 0px;
+     font-weight: 400;
+     padding: 0px 10px 0px 10px;
+     color: #fafafa;
+     background-color: rgba(25, 25, 25, 0.2);
+     z-index: 10;
+     border-radius: 4px 0 0 4px;
+     font-size: 12pt;
+}
+ span.progress-percentage.bootstrap {
+     position: absolute;
+     left: 0;
+     height: 25px;
+     width: var(--bootstrap-percentage);
+     background-color: #603f8e;
+     border-radius: 4px 0 0 4px;
+}
+ span.progress-type.bootstrap {
+     position: absolute;
+     width: 90px;
+     height: 25px;
+     left: 0px;
+     font-weight: 400;
+     padding: 0px 10px 0px 10px;
+     color: #fafafa;
+     background-color: rgba(25, 25, 25, 0.2);
+     z-index: 10;
+     border-radius: 4px 0 0 4px;
+     font-size: 12pt;
+}
+ span.progress-percentage.python {
+     position: absolute;
+     left: 0;
+     height: 25px;
+     width: var(--python-percentage);
+     background-color: #396f9f;
+     border-radius: 4px 0 0 4px;
+}
+ span.progress-type.python {
+     position: absolute;
+     width: 90px;
+     height: 25px;
+     left: 0px;
+     font-weight: 400;
+     padding: 0px 10px 0px 10px;
+     color: #fafafa;
+     background-color: rgba(25, 25, 25, 0.2);
+     z-index: 10;
+     border-radius: 4px 0 0 4px;
+     font-size: 12pt;
+}
+ span.progress-percentage.django {
+     position: absolute;
+     left: 0;
+     height: 25px;
+     width: var(--django-percentage);
+     background-color: #0c4b33;
+     border-radius: 4px 0 0 4px;
+}
+ span.progress-type.django {
+     position: absolute;
+     width: 90px;
+     height: 25px;
+     left: 0px;
+     font-weight: 400;
+     padding: 0px 10px 0px 10px;
+     color: #fafafa;
+     background-color: rgba(25, 25, 25, 0.2);
+     z-index: 10;
+     border-radius: 4px 0 0 4px;
+     font-size: 12pt;
+}
+ span.progress-percentage.flask {
+     position: absolute;
+     left: 0;
+     height: 25px;
+     width: var(--flask-percentage);
+     background-color: #363b3d;
+     border-radius: 4px 0 0 4px;
+}
+ span.progress-type.flask {
+     position: absolute;
+     width: 90px;
+     height: 25px;
+     left: 0px;
+     font-weight: 400;
+     padding: 0px 10px 0px 10px;
+     color: #fafafa;
+     background-color: rgba(25, 25, 25, 0.2);
+     z-index: 10;
+     border-radius: 4px 0 0 4px;
+     font-size: 12pt;
+}
+ span.progress-percentage.mysql {
+     position: absolute;
+     left: 0;
+     height: 25px;
+     width: var(--mysql-percentage);
+     background-color: #02546b;
+     border-radius: 4px 0 0 4px;
+}
+ span.progress-type.mysql {
+     position: absolute;
+     width: 90px;
+     height: 25px;
+     left: 0px;
+     font-weight: 400;
+     padding: 0px 10px 0px 10px;
+     color: #fafafa;
+     background-color: rgba(25, 25, 25, 0.2);
+     z-index: 10;
+     border-radius: 4px 0 0 4px;
+     font-size: 12pt;
+}
+ span.progress-percentage.mongodb {
+     position: absolute;
+     left: 0;
+     height: 25px;
+     width: var(--mongodb-percentage);
+     background-color: #49b344;
+     border-radius: 4px 0 0 4px;
+}
+ span.progress-type.mongodb {
+     position: absolute;
+     width: 90px;
+     height: 25px;
+     left: 0px;
+     font-weight: 400;
+     padding: 0px 10px 0px 10px;
+     color: #fafafa;
+     background-color: rgba(25, 25, 25, 0.2);
+     z-index: 10;
+     border-radius: 4px 0 0 4px;
+     font-size: 12pt;
+}
+/* 
+================================================================================ 
+============================== PORTFOLIO BLOCK STYLING ========================= 
+================================================================================ 
 */
-
-ul.social-links {
-    margin: 0;
-    padding: 0;
-}
-
-.social-links li a {
-    margin-right: 20px;
-}
-.social-links li a i {
-    width: 32px;
-    height: 20px;
-    padding: 7px 0;
-
-    border: 2px solid rgba(32, 152, 207,0.9);
-    border-radius: 50%;
-    font-size: 22px;
-    line-height: 22px;
-    text-align: center;
-    vertical-align: middle;
-    color: #2098D1;
-    opacity: 0.7;
-    background: #ffffff; 
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out; 
-}
-
-.social-links li a i:hover {
-    color: #ffffff;
-    background: #2098D1;
-    border: 2px solid #ffffff;
-}
-
-.skill-icon-block {
-    padding-bottom: 50px;
-}
-
-.skill-block>.skills-category>img  {
-    max-width: 100%;
-    height: auto;
-    box-sizing: border-box;
-    width: 125px;
-    opacity: .5;
-}
-
-.skillblock-icons {
-    background: transparent;
-    padding-top: 25px;
-}
-
-.skillblock-icons>.skill-block>img {
-    max-width: 100%;
-    height: auto;
-    box-sizing: border-box;
-    width: 125px;
-    opacity: .5;
-}
-
-/*               
-============================================================= Name Block Styling
-*/
-
-h1.name {
-    font-family: "Manrope", sans-serif;
-    font-size: 2rem;
-    font-weight: 400;
-    letter-spacing: 0.2em;
-}
-
-h1.profession {
-    font-family: "Manrope", sans-serif;
-    font-size: 2.5rem;
-    font-weight: 700;
-    letter-spacing: 0.1em    
-  }
-
-.line-light {
-    border: 1px solid #f7f7f7;
-    width: 350px;
-}
-
-.name-block {
-    z-index: 5;
-    top: 45%;
-}
-
-/*
-================================================================================
-============================== ABOUT BLOCK STYLING =============================
-================================================================================
-*/
-
-.d-image-background {
-    border-top: 2px solid #e5e5e5;
-    border-bottom: 2px solid #e5e5e5;
-}
-.d-content {
-    text-align: justify;
-}
-
-.image-dai {
-    max-height: 600px;
-}
-
-.image-dai > img {
-    max-height: 600px;
-    padding: 0;
-}
-
-.about {
-    min-height: 800px;
-    border-top: 5px solid #e5e5e5;
-}
-
-.image-daiden {
-    background: url('../images/daiden-4.gif');
-    height: 260px;
-    max-width: 260px;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto 30px;
-    border: 1px solid #707070;
-}
-
-/*
-================================================================================
-============================== SKILLS BLOCK STYLING ============================
-================================================================================
-*/
-
-.skills {
-    background: transparent;
-    
-}
-
-.skill-bg-wrapper {
-    border-top: 2px solid hsl(0, 0%, 50%);
-    border-bottom: 2px solid hsl(0, 0%, 50%);
-    padding: 3px 0;
-    background: hsl(0, 0%, 40%);
-    -webkit-box-shadow: inset 0px 1px 15px -10px rgba(0,0,0,0.75);
-    -moz-box-shadow: inset 0px 1px 15px -10px rgba(0,0,0,0.75);
-    box-shadow: inset 0px 1px 15px -10px rgba(0,0,0,0.75);
-}
-
-.list-inline-skill img {
-  margin: 10px auto;
-}
-
-.skill-block-icon {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 100px;
-  vertical-align: middle;
-  padding: 30px;
-  background: #040404;
-  margin: 0px auto;
-}
-
-.icon-block h3 {
-  text-transform: uppercase;
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 40px;
-}
-
-.icon-block p {
-    text-align: center;
-    padding: 0 10px;
-}
-
-.icon-block {
-  display: inline-block;
- 
-}
-
-.icon-block > img {
-  width: 47px;
-  margin: 0 auto;
-}
-
-.dev-skills {
-    padding: 10px 0 30px;
-}
-
-.dev-skills img {
-  vertical-align: center;
-  margin: auto;
-}
-
-/*                                    
-=================================================================== Skills Ikons
-*/
-
-div.progress {
-  position: relative;
-  height: 25px;
-  width: 100%;
-  margin-bottom: 4px;
-  background: rgba(232, 236, 239, 1.00);
-  border-radius: 4px;
-}
-
-.progress-type {
-  position: absolute;
-  width: 90px;
-  height: 25px;
-  left: 0px;
-  font-weight: 400;
-  padding: 0px 10px 0px 10px;
-  color: #fafafa;
-  background-color: rgba(25, 25, 25, 0.2);
-}
-
-.progress-section {
-  margin: 40px 20px;
-  min-height: 200px;
-}
-
-/*
-=================================================== Sprite Skill Category Images
-*/
-
-.adobe-design-white {
-    width: var(--skill-cat-width);
-    height: var(--skill-cat-height);
-    background: url('../images/sprites/skill-cat@125png');;
-    background-position: var(--adobe-design-white);
-}
-
-.frontend-dev-white {
-    width: var(--skill-cat-width);
-    height: var(--skill-cat-height);
-    background: url('../images/sprites/skill-cat@125png');;
-    background-position: var(--frontend-dev-white);
-}
-
-.backend-dev-white {
-    width: var(--skill-cat-width);
-    height: var(--skill-cat-height);
-    background: url('../images/sprites/skill-cat@125png');;
-    background-position: var(--backend-dev-white);
-}
-
-.adobe-design-yellow {
-    width: var(--skill-cat-width);
-    height: var(--skill-cat-height);
-    background: url('../images/sprites/skill-cat@125png');;
-    background-position: var(--adobe-design-yellow);
-}
-
-.frontend-dev-yellow {
-    width: var(--skill-cat-width);
-    height: var(--skill-cat-height);
-    background: url('../images/sprites/skill-cat@125png');;
-    background-position: var(--frontend-dev-yellow);
-}
-
-.backend-dev-yellow {
-    width: var(--skill-cat-width);
-    height: var(--skill-cat-height);
-    background: url('../images/sprites/skill-cat@125png');;
-    background-position: var(--backend-dev-yellow);
-}
-
-/*
-============================================================= Skill Icon Sprites
-*/
-
-.sprite-photoshop {
-    width: 25px;
-    height: 25px;
-    background: url('../images/sprites/sprite-skills-25x25.png') 0 0;
-  }
-
-.sprite-illustrator {
-    width: 25px;
-    height: 25px;
-    background: url('../images/sprites/sprite-skills-25x25.png') -25px 0;
-  }  
-  
-.sprite-xd {
-    width: 25px;
-    height: 25px;
-    background: url('../images/sprites/sprite-skills-25x25.png') -50px 0;
-  }
-
-.sprite-indesign {
-    width: 25px;
-    height: 25px;
-    background: url('../images/sprites/sprite-skills-25x25.png') -75px 0;
-  }
-
-.sprite-html5 {
-    width: 25px;
-    height: 25px;
-    background: url('../images/sprites/sprite-skills-25x25.png') -100px 0;
-  }
-
-.sprite-css3 {
-    width: 25px;
-    height: 25px;
-    background: url('../images/sprites/sprite-skills-25x25.png') -125px 0;
-  }
-
-.sprite-js {
-    width: 25px;
-    height: 25px;
-    background: url('../images/sprites/sprite-skills-25x25.png') -150px 0;
-  }
-
-.sprite-bootstrap {
-    width: 25px;
-    height: 25px;
-    background: url('../images/sprites/sprite-skills-25x25.png') -175px 0;
-  }
-
-.sprite-python {
-    width: 25px;
-    height: 25px;
-    background: url('../images/sprites/sprite-skills-25x25.png') -200px 0;
-  }
-
-.sprite-django {
-    width: 25px;
-    height: 25px;
-    background: url('../images/sprites/sprite-skills-25x25.png') -225px 0;
-  }
-
-.sprite-flask {
-    width: 25px;
-    height: 25px;
-    background: url('../images/sprites/sprite-skills-25x25.png') -250px 0;
-  }
-
-.sprite-mysql {
-    width: 25px;
-    height: 25px;
-    background: url('../images/sprites/sprite-skills-25x25.png') -275px 0;
-  }
-
-.sprite-mongodb {
-    width: 25px;
-    height: 25px;
-    background: url('../images/sprites/sprite-skills-25x25.png') -300px 0;
-  }
-
-
-/*               
-========================================================== Progress Bars Styling
-*/
-
-.l-inline-skill img {
-  display: block;
-  margin: 0 auto;
-  max-height: 25px;
-  min-width: 25px;
-}
-
-span.progress-percentage.photoshop {
-    position: absolute;
-    left: 0;
-    height: 25px;
-    width: var(--photoshop-percentage);
-    background-color: #00f1fe;
-    border-radius: 4px 0 0 4px; 
-}
-
-span.progress-type.photoshop {
-    position: absolute;
-    width: 90px;
-    height: 25px;
-    left: 0px;
-    font-weight: 400;
-    padding: 0px 10px 0px 10px;
-    color: #fafafa;
-    background-color: rgba(25, 25, 25, 0.2);
-    z-index: 10;
-    border-radius: 4px 0 0 4px;
-    font-size: 12pt;
-}
-
-span.progress-percentage.illustrator {
-    position: absolute;
-    left: 0;
-    height: 25px;
-    width: var(--illustrator-percentage);
-    background-color: #f8b849;
-    border-radius: 4px 0 0 4px;
-}
-
-span.progress-type.illustrator {
-    position: absolute;
-    width: 90px;
-    height: 25px;
-    left: 0px;
-    font-weight: 400;
-    padding: 0px 10px 0px 10px;
-    color: #fafafa;
-    background-color: rgba(25, 25, 25, 0.2);
-    z-index: 10;
-    border-radius: 4px 0 0 4px;
-    font-size: 12pt;
-}
-
-span.progress-percentage.xd {
-    position: absolute;
-    left: 0;
-    height: 25px;
-    width: var(--xd-percentage);
-    background-color: #ff25be;
-    border-radius: 4px 0 0 4px;
-}
-
-span.progress-type.xd {
-    position: absolute;
-    width: 90px;
-    height: 25px;
-    left: 0px;
-    font-weight: 400;
-    padding: 0px 10px 0px 10px;
-    color: #fafafa;
-    background-color: rgba(25, 25, 25, 0.2);
-    z-index: 10;
-    border-radius: 4px 0 0 4px;
-    font-size: 12pt;
-}
-
-span.progress-percentage.indesign {
-    position: absolute;
-    left: 0;
-    height: 25px;
-    width: var(--indesign-percentage);
-    background-color: #ff3f94;
-    border-radius: 4px 0 0 4px;
-}
-
-span.progress-type.indesign {
-    position: absolute;
-    width: 90px;
-    height: 25px;
-    left: 0px;
-    font-weight: 400;
-    padding: 0px 10px 0px 10px;
-    color: #fafafa;
-    background-color: rgba(25, 25, 25, 0.2);
-    z-index: 10;
-    border-radius: 4px 0 0 4px;
-    font-size: 12pt;
-}
-
-span.progress-percentage.html5 {
-    position: absolute;
-    left: 0;
-    height: 25px;
-    width: var(--html5-percentage);
-    background-color: #ee671d;
-    border-radius: 4px 0 0 4px;
-}
-
-span.progress-type.html5 {
-    position: absolute;
-    width: 90px;
-    height: 25px;
-    left: 0px;
-    font-weight: 400;
-    padding: 0px 10px 0px 10px;
-    color: #fafafa;
-    background-color: rgba(25, 25, 25, 0.2);
-    z-index: 10;
-    border-radius: 4px 0 0 4px;
-    font-size: 12pt;
-}
-
-span.progress-percentage.css3 {
-    position: absolute;
-    left: 0;
-    height: 25px;
-    width: var(--css3-percentage);
-    background-color: #31addf;
-    border-radius: 4px 0 0 4px;
-}
-
-span.progress-type.css3 {
-    position: absolute;
-    width: 90px;
-    height: 25px;
-    left: 0px;
-    font-weight: 400;
-    padding: 0px 10px 0px 10px;
-    color: #fafafa;
-    background-color: rgba(25, 25, 25, 0.2);
-    z-index: 10;
-    border-radius: 4px 0 0 4px;
-    font-size: 12pt;
-}
-
-span.progress-percentage.javascript {
-    position: absolute;
-    left: 0;
-    height: 25px;
-    width: var(--javascript-percentage);
-    background-color: #ffcc00;
-    border-radius: 4px 0 0 4px;
-}
-
-span.progress-type.javascript {
-    position: absolute;
-    width: 90px;
-    height: 25px;
-    left: 0px;
-    font-weight: 400;
-    padding: 0px 10px 0px 10px;
-    color: #fafafa;
-    background-color: rgba(25, 25, 25, 0.2);
-    z-index: 10;
-    border-radius: 4px 0 0 4px;
-    font-size: 12pt;
-}
-
-span.progress-percentage.bootstrap {
-    position: absolute;
-    left: 0;
-    height: 25px;
-    width: var(--bootstrap-percentage);
-    background-color: #603f8e;
-    border-radius: 4px 0 0 4px;
-}
-
-span.progress-type.bootstrap {
-    position: absolute;
-    width: 90px;
-    height: 25px;
-    left: 0px;
-    font-weight: 400;
-    padding: 0px 10px 0px 10px;
-    color: #fafafa;
-    background-color: rgba(25, 25, 25, 0.2);
-    z-index: 10;
-    border-radius: 4px 0 0 4px;
-    font-size: 12pt;
-}
-
-span.progress-percentage.python {
-    position: absolute;
-    left: 0;
-    height: 25px;
-    width: var(--python-percentage);
-    background-color: #396f9f;
-    border-radius: 4px 0 0 4px;
-}
-
-span.progress-type.python {
-    position: absolute;
-    width: 90px;
-    height: 25px;
-    left: 0px;
-    font-weight: 400;
-    padding: 0px 10px 0px 10px;
-    color: #fafafa;
-    background-color: rgba(25, 25, 25, 0.2);
-    z-index: 10;
-    border-radius: 4px 0 0 4px;
-    font-size: 12pt;
-}
-
-span.progress-percentage.django {
-    position: absolute;
-    left: 0;
-    height: 25px;
-    width: var(--django-percentage);
-    background-color: #0c4b33;
-    border-radius: 4px 0 0 4px;
-}
-
-span.progress-type.django {
-    position: absolute;
-    width: 90px;
-    height: 25px;
-    left: 0px;
-    font-weight: 400;
-    padding: 0px 10px 0px 10px;
-    color: #fafafa;
-    background-color: rgba(25, 25, 25, 0.2);
-    z-index: 10;
-    border-radius: 4px 0 0 4px;
-    font-size: 12pt;
-}
-
-span.progress-percentage.flask {
-    position: absolute;
-    left: 0;
-    height: 25px;
-    width: var(--flask-percentage);
-    background-color: #363b3d;
-    border-radius: 4px 0 0 4px;
-}
-
-span.progress-type.flask {
-    position: absolute;
-    width: 90px;
-    height: 25px;
-    left: 0px;
-    font-weight: 400;
-    padding: 0px 10px 0px 10px;
-    color: #fafafa;
-    background-color: rgba(25, 25, 25, 0.2);
-    z-index: 10;
-    border-radius: 4px 0 0 4px;
-    font-size: 12pt;
-}
-
-span.progress-percentage.mysql {
-    position: absolute;
-    left: 0;
-    height: 25px;
-    width: var(--mysql-percentage);
-    background-color: #02546b;
-    border-radius: 4px 0 0 4px;
-}
-
-span.progress-type.mysql {
-    position: absolute;
-    width: 90px;
-    height: 25px;
-    left: 0px;
-    font-weight: 400;
-    padding: 0px 10px 0px 10px;
-    color: #fafafa;
-    background-color: rgba(25, 25, 25, 0.2);
-    z-index: 10;
-    border-radius: 4px 0 0 4px;
-    font-size: 12pt;
-}
-
-span.progress-percentage.mongodb {
-    position: absolute;
-    left: 0;
-    height: 25px;
-    width: var(--mongodb-percentage);
-    background-color: #49b344;
-    border-radius: 4px 0 0 4px;
-}
-
-span.progress-type.mongodb {
-    position: absolute;
-    width: 90px;
-    height: 25px;
-    left: 0px;
-    font-weight: 400;
-    padding: 0px 10px 0px 10px;
-    color: #fafafa;
-    background-color: rgba(25, 25, 25, 0.2);
-    z-index: 10;
-    border-radius: 4px 0 0 4px;
-    font-size: 12pt;
-}
-
-/*
-================================================================================
-============================== PORTFOLIO BLOCK STYLING =========================
-================================================================================
-*/
-
-.gallery-container {
-    border: 1px solid #e5e5e5;
-    padding: 15px;
-    height: 100%;
-    background-color: #ffffff
-}
-
-.gallery {
-    border-top: 2px solid #e5e5e5;
+ .gallery-container {
+     border: 1px solid #e5e5e5;
+     padding: 15px;
+     height: 100%;
+     background-color: #ffffff 
+}
+ .gallery {
+     border-top: 2px solid #e5e5e5;
      padding-bottom: 100px;
 }
-
-.grid.gallery {
-    margin-top: 100px;
+ .grid.gallery {
+     margin-top: 100px;
 }
-
-.gallery-images > a > img {
-    border: 1px solid black;
+ .gallery-images > a > img {
+     border: 1px solid black;
 }
-
-.gallery-images p {
-    text-align: justify;
-    padding-left: 10px;
-    padding-right: 10px;
+ .gallery-images p {
+     text-align: justify;
+     padding-left: 10px;
+     padding-right: 10px;
 }
-
-/*
-================================================================================
-============================== FOOTER STYLING ==================================
-================================================================================
+/* 
+================================================================================ 
+============================== FOOTER STYLING ================================== 
+================================================================================ 
 */
-
-footer {
-    min-height: 150px;
-    background-color: #3E3E3E;
-    border-top: 5px solid #707070;
-    -webkit-box-shadow: inset 0px 13px 20px 0px rgba(0,0,0,0.35);
-    -moz-box-shadow: inset 0px 13px 20px 0px rgba(0,0,0,0.35);
-    box-shadow: inset 0px 13px 20px 0px rgba(0,0,0,0.35);
-    overflow: hidden;
+ footer {
+     background-color: #3E3E3E;
+     border-top: 5px solid #707070;
+     -webkit-box-shadow: inset 0px 13px 20px 0px rgba(0,0,0,0.35);
+     -moz-box-shadow: inset 0px 13px 20px 0px rgba(0,0,0,0.35);
+     box-shadow: inset 0px 13px 20px 0px rgba(0,0,0,0.35);
+     overflow: hidden;
 }
-
-footer > span {
-    color: rgba(204, 200, 200,.7);
-    margin-top: 0 !important;
-    margin: 0 auto 30px;
-    text-shadow: -1px 1px 1px rgba(95, 95, 95, 0.6);
-    font-size: 10pt;
+ footer > span {
+     color: rgba(204, 200, 200,.7);
+     margin-top: 0 !important;
+     margin: 0 auto 30px;
+     text-shadow: -1px 1px 1px rgba(95, 95, 95, 0.6);
+     font-size: 10pt;
 }
-
-footer .uk-navbar-nav>li>a {
-    text-shadow: -1px 1px 1px rgba(91, 91, 91,0.6);
+ footer .uk-navbar-nav>li>a {
+     text-shadow: -1px 1px 1px rgba(91, 91, 91,0.6);
 }
-
-footer .uk-navbar-nav>li>a:hover {
-    color:  rgba(255, 255, 255,0.9);
+ footer .uk-navbar-nav>li>a:hover {
+     color: rgba(255, 255, 255,0.9);
 }
-
-footer .uk-navbar-nav>li.uk-active>a {
-    color: rgba(255, 255, 255,0.9);
+ footer .uk-navbar-nav>li.uk-active>a {
+     color: rgba(255, 255, 255,0.9);
 }
-
-footer .uk-navbar-nav>hr {
-    height: 20px;
-    margin-top: 30px;
-    opacity: 0.6;
-    margin-right: 20px;
-    margin-left: 20px;  
+ footer .uk-navbar-nav>hr {
+     height: 20px;
+     margin-top: 30px;
+     opacity: 0.6;
+     margin-right: 20px;
+     margin-left: 20px;
 }
-
-/*
-================================================================================
-============================== MODAL FORM STYLING ==============================
-================================================================================
+/* 
+================================================================================ 
+============================== MODAL FORM STYLING ============================== 
+================================================================================ 
 */
-
-.uk-modal-body {
-    padding: 10px;
+ .uk-modal-body {
+     padding: 10px;
 }
-
-/*
-================================================================================
-============================== RESUME MODAL STYLING =============================
-================================================================================
+/* 
+================================================================================ 
+============================== RESUME MODAL STYLING ============================
+================================================================================ 
 */
-
-
-@media only screen and (max-width: 600px) {
-    footer {
-      max-height: 200px;
-    }
-  }
+ @media only screen and (max-width: 959px) {
+    footer > span {
+        color: rgba(204, 200, 200,.7);
+        margin-top: 0 !important;
+        margin: 0 auto 30px;
+        text-shadow: -1px 1px 1px rgba(95, 95, 95, 0.6);
+        font-size: 10pt;
+        padding-top:30px;
+   }
+   a.totop-link {
+       visibility: hidden;
+   }
+}
