@@ -2,7 +2,7 @@
 ## Code Institute: Milestone Project 1 
 ### Portfolio - Daiden Sacha - Full Stack Web Developer
 * * *
-I decided on completing a personal portfolio because of my desire to change my career to Full Stack Development. This project motivates me to nosh out the details and to create a portfolio that evolves as my studies and knowledge progress. 
+I decided on completing a personal portfolio because of my desire to change my career to Full Stack Development. This project motivates me to nosh out the details and to create a portfolio that evolves as my studies and knowledge progress. [See my portfolio here](https://daidensacha.github.io/Portfolio-Daiden-Sacha/).
 
 ### Planning
 * * *
