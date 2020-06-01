@@ -1,0 +1,717 @@
+@import 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+@import url('../css/uikit.min.css');
+
+body {
+    font-family: $font-stack;
+    font-size: 14pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-image {
+    -webkit-box-shadow: inset 0px -2px 22px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px -2px 22px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px -2px 22px -8px rgba(0, 0, 0, 0.75);
+}
+
+.uk-padding-medium {
+    padding: 40px;
+}
+
+/* ======================================================== Theme Backgrounds */
+.uk-background-blue {
+    background: $background-blue;
+}
+
+.uk-background-muted {
+    background: $background-muted;
+}
+
+/* CREDIT: Inspiration for the following divider styling 
+from:, https://codepen.io/Oddgson/pen/VPrYbv */
+.divider {
+    position: relative;
+    margin: 40px 0;
+    height: 1px;
+}
+
+.div-transparent:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 25%;
+    right: 25%;
+    width: 50%;
+    height: 1px;
+    background-image: linear-gradient(to right, transparent, $divider-base-grey, transparent);
+}
+
+/* ========================================== Divider Primary (White Rhombus) */
+.div-rhombus-white:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -7px;
+    left: calc(50% - 7px);
+    width: 14px;
+    height: 14px;
+    transform: rotate(45deg);
+    background-color: $background-base-white;
+    border: 1px solid $divider-base-grey;
+}
+
+/* ========================================= Divider Secondary (Blue Rhombus) */
+.div-rhombus-blue:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -7px;
+    left: calc(50% - 7px);
+    width: 14px;
+    height: 14px;
+    transform: rotate(45deg);
+    background-color: $background-base-blue;
+    border: 1px solid $divider-base-grey;
+}
+
+/* ========================================================== Tooltip Styling */
+.uk-tooltip.tooltip-blue {
+    color: $background-base-white;
+    background-color: $background-base-blue;
+    border: 1px solid $background-base-white;
+}
+
+/* 
+================================================================================ 
+=================================== BUTTON STYLING ============================= 
+================================================================================ 
+*/
+#resume-modal-button,
+#btn-resume-download {
+    border: 2px solid $background-base-purple;
+    color: $background-base-purple;
+    opacity: 0.7;
+    background: $background-base-white;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+/* CREDIT for STYLING BUTTONS - https://fvsch.com/styling-buttons/ */
+#contact-btn.uk-button,
+#resume-modal-button,
+#btn-resume-download {
+    /* default for <button>, but useful for <a> */
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    /* create a small space when buttons wrap on 2 lines */
+    margin: 2px 0;
+    /* invisible border (will be colored on hover/focus) */
+    border: solid 1px transparent;
+    border-radius: 4px;
+    /* make sure colors have enough contrast! */
+    color: $background-base-white;
+    background-color: $background-base-purple;
+}
+
+/* inverse colors on mouse-over and focus */
+#contact-btn.uk-button:hover,
+#resume-modal-button:hover,
+#btn-resume-download:hover,
+#contact-btn.uk-button:focus,
+#resume-modal-button:focus,
+#btn-resume-download:focus {
+    color: $background-base-purple;
+    border-color: currentColor;
+    background-color: $background-base-white;
+}
+
+/* =================================================================== Navbar */
+.uk-navbar-container {
+    background-color: $navbar-background;
+}
+
+.uk-navbar-nav>li {
+    position: relative;
+}
+
+/* CREDIT: bottom-leftToRight Border taken from 
+https://code-fx.github.io/Pure-CSS3-Animated-Border/ NOTE: had to 
+add position relative to the navbar list item to contain the effect. */
+.bottom-leftToRight:before,
+.bottom-leftToRight:after,
+.bottom-leftToRight>.ui-border-element:before,
+.bottom-leftToRight>.ui-border-element:after {
+    content: '';
+    position: absolute;
+}
+
+.bottom-leftToRight:after {
+    border-bottom: 2px solid $background-base-blue;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+    -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+    -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+    transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+    -webkit-transition-duration: 200ms;
+    -moz-transition-duration: 200ms;
+    -o-transition-duration: 200ms;
+    transition-duration: 200ms;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.bottom-leftToRight:hover:after {
+    right: 0%;
+}
+
+.bottom-leftToRight:not(:hover):after {
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+/* =============================================================== Off Canvas */
+
+
+/* ====================================================== Social Icon Slyling */
+ul.social-links {
+    margin: 0;
+    padding: 0;
+
+    a {
+        margin-right: 20px;
+    }
+
+    a i {
+        width: 32px;
+        height: 20px;
+        padding: 7px 0;
+        border: 2px solid $background-base-blue;
+        border-radius: 50%;
+        font-size: 22px;
+        line-height: 22px;
+        text-align: center;
+        vertical-align: middle;
+        color: $background-base-blue;
+        opacity: 0.7;
+        background: $background-base-white;
+        transition: all 0.35s ease-in-out;
+        -moz-transition: all 0.35s ease-in-out;
+        -webkit-transition: all 0.35s ease-in-out;
+        -o-transition: all 0.35s ease-in-out;
+    }
+
+    a i:hover {
+        color: $background-base-white;
+        background: $background-base-blue;
+        border: 2px solid $background-base-white;
+    }
+}
+
+.skill-icon-block {
+    padding-bottom: 50px;
+}
+
+.skill-block>.skills-category>img {
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    width: 125px;
+    opacity: .5;
+}
+
+.skillblock-icons {
+    background: transparent;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/* ======================================================= Name Block Styling */
+h1.name {
+    font-family: $font-stack;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+}
+
+h1.profession {
+    font-family: $font-stack;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.1em
+}
+
+.name-block {
+    z-index: 5;
+    top: 45%;
+}
+
+/* 
+================================================================================ 
+============================== ABOUT BLOCK STYLING ============================= 
+================================================================================ 
+*/
+.d-image-background {
+    border-top: 2px solid $border-background-light;
+    border-bottom: 2px solid $border-background-light;
+}
+
+.d-content {
+    text-align: justify;
+}
+
+.image-dai {
+    max-height: 600px;
+
+    >img {
+        max-height: 600px;
+        padding: 0;
+    }
+}
+
+.about {
+    min-height: 800px;
+    border-top: 5px solid $border-background-light;
+}
+
+.image-daiden {
+    background: url('../images/daiden-4.gif');
+    height: 260px;
+    max-width: 260px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 30px;
+    border: 1px solid $border-background-dark;
+}
+
+/* 
+================================================================================ 
+============================== SKILLS BLOCK STYLING ============================ 
+================================================================================ 
+*/
+.skills {
+    background: transparent;
+
+    .skill-bg-wrapper {
+        border-top: 2px solid $border-background-dark;
+        border-bottom: 2px solid $border-background-dark;
+        padding: 3px 0;
+        background: $background-base-grey;
+        -webkit-box-shadow: inset 0px 1px 15px -10px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: inset 0px 1px 15px -10px rgba(0, 0, 0, 0.75);
+        box-shadow: inset 0px 1px 15px -10px rgba(0, 0, 0, 0.75);
+    }
+}
+
+.icon-block {
+    display: inline-block;
+
+    h3 {
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    p {
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    >img {
+        width: 47px;
+        margin: 0 auto;
+    }
+}
+
+.dev-skills {
+    padding: 10px 0 30px;
+
+    img {
+        vertical-align: center;
+        margin: auto;
+    }
+}
+
+/* ============================================================= Skills Ikons */
+.progress-section {
+    margin: 40px 20px;
+    min-height: 200px;
+
+    .progress-type {
+        position: absolute;
+        width: $progress-type-width;
+        height: $skill-icon-height;
+        left: $progress-position-left;
+        font-weight: $progress-type-font-weight;
+        padding: $progress-type-padding;
+        color: $progress-type-color;
+        background-color: $progress-type-bg-color;
+    }
+
+    div.progress {
+        position: relative;
+        height: $skill-icon-height;
+        width: 100%;
+        margin-bottom: 4px;
+        background: $background-base-offwhite;
+        border-radius: 4px;
+    }
+}
+
+/* ============================================= Sprite Skill Category Images */
+.adobe-design-white {
+    width: $skill-category-width;
+    height: $skill-category-height;
+    background: $skill-category-images;
+    background-position: $adobe-design-white;
+}
+
+.frontend-dev-white {
+    width: $skill-category-width;
+    height: $skill-category-height;
+    background: $skill-category-images;
+    background-position: $frontend-dev-white;
+}
+
+.backend-dev-white {
+    width: $skill-category-width;
+    height: $skill-category-height;
+    background: $skill-category-images;
+    background-position: $backend-dev-white;
+}
+
+.adobe-design-yellow {
+    width: $skill-category-width;
+    height: $skill-category-height;
+    background: $skill-category-images;
+    background-position: $adobe-design-yellow;
+}
+
+.frontend-dev-yellow {
+    width: $skill-category-width;
+    height: $skill-category-height;
+    background: $skill-category-images;
+    background-position: $frontend-dev-yellow;
+}
+
+.backend-dev-yellow {
+    width: $skill-category-width;
+    height: $skill-category-height;
+    background: $skill-category-images;
+    background-position: $backend-dev-yellow;
+}
+
+/* ======================================================= Skill Icon Sprites */
+.sprite-photoshop {
+    width: $skill-icon-width;
+    height: $skill-icon-height;
+    background: $skill-icon-sprite $photoshop-bg-position;
+}
+
+.sprite-illustrator {
+    width: $skill-icon-width;
+    height: $skill-icon-height;
+    background: $skill-icon-sprite $illustrator-bg-position;
+}
+
+.sprite-xd {
+    width: $skill-icon-width;
+    height: $skill-icon-height;
+    background: $skill-icon-sprite $xd-bg-position;
+}
+
+.sprite-indesign {
+    width: $skill-icon-width;
+    height: $skill-icon-height;
+    background: $skill-icon-sprite $indesign-bg-position;
+}
+
+.sprite-html5 {
+    width: $skill-icon-width;
+    height: $skill-icon-height;
+    background: $skill-icon-sprite $html5-bg-position;
+}
+
+.sprite-css3 {
+    width: $skill-icon-width;
+    height: $skill-icon-height;
+    background: $skill-icon-sprite $css3-bg-position;
+}
+
+.sprite-js {
+    width: $skill-icon-width;
+    height: $skill-icon-height;
+    background: $skill-icon-sprite $js-bg-position;
+}
+
+.sprite-bootstrap {
+    width: $skill-icon-width;
+    height: $skill-icon-height;
+    background: $skill-icon-sprite $bootstrap-bg-position;
+}
+
+.sprite-python {
+    width: $skill-icon-width;
+    height: $skill-icon-height;
+    background: $skill-icon-sprite $python-bg-position;
+}
+
+.sprite-django {
+    width: $skill-icon-width;
+    height: $skill-icon-height;
+    background: $skill-icon-sprite $django-bg-position;
+}
+
+.sprite-flask {
+    width: $skill-icon-width;
+    height: $skill-icon-height;
+    background: $skill-icon-sprite $flask-bg-position;
+}
+
+.sprite-mysql {
+    width: $skill-icon-width;
+    height: $skill-icon-height;
+    background: $skill-icon-sprite $mysql-bg-position;
+}
+
+.sprite-mongodb {
+    width: $skill-icon-width;
+    height: $skill-icon-height;
+    background: $skill-icon-sprite $mongodb-bg-position;
+}
+
+/* ==================================================== Progress Bars Styling */
+.l-inline-skill img {
+    display: block;
+    margin: 0 auto;
+    max-height: $skill-icon-height;
+    min-width: $skill-icon-width;
+}
+
+span.progress-type.photoshop,
+span.progress-type.illustrator,
+span.progress-type.xd,
+span.progress-type.indesign,
+span.progress-type.html5,
+span.progress-type.css3,
+span.progress-type.javascript,
+span.progress-type.bootstrap,
+span.progress-type.python,
+span.progress-type.django,
+span.progress-type.flask,
+span.progress-type.mysql,
+span.progress-type.mongodb {
+    position: absolute;
+    width: $progress-type-width;
+    height: $skill-icon-height;
+    left: $progress-position-left;
+    font-weight: $progress-type-font-weight;
+    padding: $progress-type-padding;
+    color: $progress-type-color;
+    background-color: $progress-type-bg-color;
+    z-index: $progress-type-z-index;
+    border-radius: $progress-bar-border-radius;
+    font-size: $progress-type-font-size;
+}
+
+span.progress-percentage.photoshop,
+span.progress-percentage.illustrator,
+span.progress-percentage.xd,
+span.progress-percentage.indesign,
+span.progress-percentage.html5,
+span.progress-percentage.css3,
+span.progress-percentage.javascript,
+span.progress-percentage.bootstrap,
+span.progress-percentage.python,
+span.progress-percentage.django,
+span.progress-percentage.flask,
+span.progress-percentage.mysql,
+span.progress-percentage.mongodb {
+    position: absolute;
+    left: $progress-position-left;
+    height: $skill-icon-height;
+    border-radius: $progress-bar-border-radius;
+    width: $photoshop-percentage;
+    background-color: $photoshop-color;
+}
+
+span.progress-percentage.photoshop {
+    width: $photoshop-percentage;
+    background-color: $photoshop-color;
+}
+
+span.progress-percentage.illustrator {
+    width: $illustrator-percentage;
+    background-color: $illustrator-color;
+}
+
+span.progress-percentage.xd {
+    width: $xd-percentage;
+    background-color: $xd-color;
+}
+
+span.progress-percentage.indesign {
+    width: $indesign-percentage;
+    background-color: $indesign-color;
+}
+
+span.progress-percentage.html5 {
+    width: $html5-percentage;
+    background-color: $html5-color;
+}
+
+span.progress-percentage.css3 {
+    width: $css3-percentage;
+    background-color: $css3-color;
+}
+
+span.progress-percentage.javascript {
+    width: $javascript-percentage;
+    background-color: $javascript-color;
+}
+
+span.progress-percentage.bootstrap {
+    width: $bootstrap-percentage;
+    background-color: $bootstrap-color;
+}
+
+span.progress-percentage.python {
+    width: $python-percentage;
+    background-color: $python-color;
+}
+
+span.progress-percentage.django {
+    width: $django-percentage;
+    background-color: $django-color;
+}
+
+span.progress-percentage.flask {
+    width: $flask-percentage;
+    background-color: $flask-color;
+}
+
+span.progress-percentage.mysql {
+    width: $mysql-percentage;
+    background-color: $mysql-color;
+}
+
+span.progress-percentage.mongodb {
+    width: $mongodb-percentage;
+    background-color: $mongodb-color;
+}
+
+/* 
+================================================================================ 
+============================== PORTFOLIO BLOCK STYLING ========================= 
+================================================================================ 
+*/
+.gallery-container {
+    border: 1px solid $border-background-light;
+    padding: 15px;
+    height: 100%;
+    background-color: $background-base-white;
+}
+
+.gallery {
+    border-top: 2px solid $border-background-light;
+    padding-bottom: 100px;
+}
+
+.grid.gallery {
+    margin-top: 100px;
+}
+
+.gallery-images>a>img {
+    border: 1px solid black;
+}
+
+.gallery-images p {
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* 
+================================================================================ 
+============================== FOOTER STYLING ================================== 
+================================================================================ 
+*/
+footer {
+    background-color: #3E3E3E;
+    border-top: 5px solid #707070;
+    -webkit-box-shadow: inset 0px 13px 20px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: inset 0px 13px 20px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: inset 0px 13px 20px 0px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+
+    >span {
+        color: rgba(204, 200, 200, .7);
+        margin-top: 0 !important;
+        margin: 0 auto 30px;
+        text-shadow: -1px 1px 1px rgba(95, 95, 95, 0.6);
+        font-size: 10pt;
+    }
+
+    .uk-navbar-nav>li>a {
+        text-shadow: -1px 1px 1px rgba(91, 91, 91, 0.6);
+
+        &:hover {
+            color: rgba(255, 255, 255, 0.9);
+        }
+    }
+
+    .uk-navbar-nav>li.uk-active>a {
+        color: rgba(255, 255, 255, 0.9);
+    }
+}
+
+.uk-subnav-divider>::before {
+    content: "";
+height: 1.5em;
+margin-left: 20px;
+margin-right: 20px; 
+border-left: 1px solid transparent;
+}
+
+/* 
+================================================================================ 
+============================== MODAL FORM STYLING ============================== 
+================================================================================ 
+*/
+.uk-modal-body {
+    padding: 10px;
+}
+
+/* 
+================================================================================ 
+============================== RESUME MODAL STYLING ============================
+================================================================================ 
+*/
+@media only screen and (max-width: 959px) {
+    footer>span {
+        color: rgba(204, 200, 200, .7);
+        /* margin-top: 0 !important; */
+        margin: 0 auto 30px;
+        text-shadow: -1px 1px 1px rgba(95, 95, 95, 0.6);
+        font-size: 10pt;
+        padding-top: 30px;
+    }
+
+    a.totop-link {
+        visibility: hidden;
+    }
+}

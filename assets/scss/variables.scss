@@ -1,0 +1,93 @@
+$font-stack: 'Manrope','Roboto',sans-serif;
+
+// Background Tiles
+$background-blue: url('../images/seamless-background-blue.jpg') repeat;
+$background-muted: url('../images/seamless-background-muted.jpg') repeat;
+
+// Background Colors.
+$background-base-white: #ffffff;
+$background-base-offwhite: #e8ecef;
+$background-base-purple: #9555af;
+$background-base-blue: #2098D1;
+$background-base-grey: #666666;
+
+$divider-base-grey: rgb(48, 49, 51);
+
+$navbar-background: rgba(0, 0, 0, 0.45);
+
+// Borders
+$border-background-light: #e5e5e5;
+$border-background-dark: #707070;
+$border-808080: #808080;
+
+// ==== IMAGES ====
+// Skill Category Sprite
+$skill-category-images: url('../images/sprites/skill-cat@125png');
+$skill-category-width: 125px;
+$skill-category-height: 125px;
+$adobe-design-white: 0 0;
+$frontend-dev-white: -125px 0;
+$backend-dev-white: -250px 0;
+$adobe-design-yellow: -500px 0;
+$frontend-dev-yellow: -625px 0;
+$backend-dev-yellow: -750px 0;
+
+// Skill Icon Sprite
+$skill-icon-sprite: url('../images/sprites/sprite-skills-25x25.png');
+$skill-icon-width: 25px;
+$skill-icon-height: 25px;
+$photoshop-bg-position: 0 0;
+$illustrator-bg-position: -25px 0;
+$xd-bg-position: -50px 0;
+$indesign-bg-position: -75px 0;
+$html5-bg-position: -100px 0;
+$css3-bg-position: -125px 0;
+$js-bg-position: -150px 0;
+$bootstrap-bg-position: -175px 0;
+$python-bg-position: -200px 0;
+$django-bg-position: -225px 0;
+$flask-bg-position: -250px 0;
+$mysql-bg-position: -275px 0;
+$mongodb-bg-position: -300px 0;
+
+//PROGESS BAR VARIABLES
+// Progress Bar
+$progress-type-width: 90px;
+$progress-type-color: #fafafa;
+$progress-type-bg-color: rgba(25, 25, 25, 0.2);
+$progress-type-padding: 0px 10px 0px 10px;
+$progress-type-font-size: 12pt;
+$progress-type-font-weight: 400;
+$progress-type-z-index: 10;
+$progress-position-left: 0px;
+$progress-bar-border-radius: 4px 0 0 4px;
+
+// Progress Bar Percentage
+$photoshop-percentage: 75%;
+$illustrator-percentage: 80%;
+$xd-percentage: 40%;
+$indesign-percentage: 50%;
+$html5-percentage: 80%;
+$css3-percentage: 70%;
+$javascript-percentage: 40%;
+$bootstrap-percentage: 70%;
+$python-percentage: 50%;
+$django-percentage: 40%;
+$flask-percentage: 60%;
+$mysql-percentage: 60%;
+$mongodb-percentage: 40%;
+
+// Progress Bar Color
+$photoshop-color: #00f1fe;
+$illustrator-color: #f8b849;
+$xd-color: #a5a5a5;
+$indesign-color: #ff3f94;
+$html5-color: #ee671d;
+$css3-color: #31addf;
+$javascript-color: #ffcc00;
+$bootstrap-color: #603f8e;
+$python-color: #396f9f;
+$django-color: #0c4b33;
+$flask-color: #363b3d;
+$mysql-color: #02546b;
+$mongodb-color: #49b344;
