@@ -100,12 +100,12 @@ I started over again creating the same prototypes with ***UIkit***, as I felt it
     - ***Portfolio Gallery*** Visual and informative section displaying my work. 
     - ***Contact Form*** One click opens the contact form in a modal available easily at any point in browsing the site. 
 
-#### 4. SKELETON
+#### 4. Skeleton
 - ***Wireframing:*** My first venture into wireframing, and my choice was to go with Adobe XD. Ample information and tutorials online to learn the user interface. I was able to knock up a prototype of the site and to establish some fonts and colors to be used on the site. 
 
 ![Wireframes](assets/images/wirefram.png)
 
-#### 5. SURFACE
+#### 5. Surface
 ***Visual Design:*** Kept the site to black and white with different shades and a touch of color in the icons and buttons, and the progress bars. I also dressed up the background of the "Portfolio" section using a blue textured background. Skill category icons were designed and created in Adobe Illustrator, images of myself edited and created in Adobe Photoshop. The home screen image is a free stock image, also edited in Adobe Photoshop.
 
 ### TECHNOLOGIES USED
