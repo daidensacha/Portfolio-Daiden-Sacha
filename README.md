@@ -2,7 +2,7 @@
 ## Code Institute: Milestone Project 1 
 ### Portfolio - Daiden Sacha - Full Stack Web Developer
 * * *
-I decided on completing a personal portfolio because of my desire to change my career to Full Stack Development. This project motivates me to nosh out the details and to create a portfolio that evolves as my studies and knowledge progress. [See my portfolio](https://daidensacha.github.io/Portfolio-Daiden-Sacha/).
+I decided on completing a personal portfolio because of my desire to change my career to Full Stack Development. This project motivated me to nosh out the details and to create a portfolio that will continue to evolve as my knowledge increases and my studies progress. [See my portfolio](https://daidensacha.github.io/Portfolio-Daiden-Sacha/).
 
 
 ### UX DESIGN
@@ -31,7 +31,7 @@ The initial planning for the project entailed working through the 5 planes of us
         - As the project director, I need someone to be responsible for particular parts of development within the framework of a larger project.
         - As the project director, I’m looking for someone who can work within a team framework, in collaboration with others.
         - As the project director, I want someone with good communication skills and work ethic.
-        - As the project director, I want someone who is reliable and can commit to completing agreed work within a given time frame. 
+        - As the project director, I want someone reliable who can commit to completing agreed work within a given time frame. 
         - As the project director, I want to know your skills
         - As the project director, I want to see examples of work
 
@@ -44,30 +44,30 @@ With potential users in mind, my goal is to create a landing page with a good fi
 
   - One page site, simple and not overcooked with info. 
   - Sticky navbar, there when it's needed. 
-  - Icon links to Linkedin, Github, Codepen, and a Contact form.
+  - Icon links to Linkedin, Github, Codepen.
   - Modal contact form, easy to open, doesn't navigate away from the homepage.
   - About Me, Who am I, what's my strength or skillset, and what do I do/ offer? It should be a simple outline that someone can skim through to get a brief outline.
-  - Resume, display, and the possibility to download.
-  - Skills block, simple block with a simple overview of my skills, using icons and progress bars.
-  - Portfolio gallery, gallery showing examples of my work.
-  - Footer with the navbar and icon links.
+  - Resume, to view, and the possibility to download a PDF copy.
+  - Skills block, with a simple overview of my skills, using icons and progress bars.
+  - Portfolio gallery, an image gallery showing examples of my work.
+  - Footer with a navbar and icon links to Linkedin, Github, Codepen.
 
 - **Functional Requirements**
-  - **Sticky Navbar:** Navbar with links to page sections **About Me**, **Skills**, **Portfolio**, **Contact Form**, and icon links to **Github**, **Linkedin**, **Codepen**, and the **contact form**. Disappears when scrolling down page, appears when scrolling up.
+  - **Sticky Navbar** Navbar with links to page sections **About Me**, **Skills**, **Portfolio**, **Contact Form**, and icon links to **Github**, **Linkedin**, **Codepen**, and the **contact form**. Disappears when scrolling down page, appears when scrolling up.
   - **Offcanvas Navigation** Off-canvas menu becomes visible for small screens. 
-  - **Smooth Navigation Scrolling** Utilising the "ToTop" feature for smooth scrolling when navigating to different sections. 
+  - **Smooth Navigation Scrolling** Utilising the "ToTop" feature for smooth scrolling when navigating to different page sections. 
   - **About Me** A section introducing myself, with a link to download my CV for more complete information.
   - **CV Download** User clicks on the link/ button to download my CV. It opens a readable version online and offers the opportunity to download a PDF.
   - **Skill block with progress bars** Skill block displaying individual skills with a progress bar that I can adjust to reflect my skill proficiency as it improves.
-  - **Portfolio Gallery** A portfolio gallery, with a display image opening website image sets to view a sample of my work. An overlay appears on hover with the listed skills used to complete the site.
-  - **Contact Form:** Easily accessible from any point on the webpage, link in navbar or the contact icon opens a modal contact form. 
+  - **Portfolio Gallery** A portfolio gallery, displaying images of websites. Each image opens a gallery of related images to view different aspects of the work. An overlay appears on hover of each image with the listed skills used to complete the site.
+  - **Contact Form:** Easily accessible from any point on the webpage, the link in navbar or the contact icon opens a modal contact form. 
 
 - **Content Requirements**
   - **Single Page site** - Containing blocks of information in sequential order of importance.
   - **Header - Landing Page** - Full-screen image with my name, profession, navbar links, and development icons **Adobe Design**, **Frontend Development**, **Backend Development**.
   - **About Me Section** - The info is to be simple and to the point, who I am, what I do, and what I offer. An introduction that is an easy read for someone interested in a glance at info about me. Link to be able to download and or print a CV.
   - **CV download** - An up to date CV to be made available from download in PDF format.
-  - **Skill Block** A section with skill icons and progress bars split into sections for **Adobe Design*, **Frontend**, and **Backend**. 
+  - **Skill Block** A section with skill icons and progress bars split into sections for **Adobe Design**, **Frontend**, and **Backend**. 
   - **Portfolio Gallery** Screenshots of websites, there different pages and features in an easily accessible gallery format to display samples of my work. Short description of the site and work undertaken to complete the site.
  
 **NOTE - Choice of the framework:**
@@ -90,7 +90,7 @@ I started over again creating the same prototypes with ***UIkit***, as I felt it
 
     - Same with the CV, a download link in the "About me" section opens the PDF in a separate tab for downloading or printing.
 
-    - A portfolio has one image of each site as a teaser, that opens to a slideshow in a modal, easily closed to return to the homepage.
+    - A portfolio has one image of each site as a teaser, that opens to a slideshow in a modal lightbox, easily closed to return to the homepage.
 
 - **Information Architecture** Information arranged in the following order.
     - ***Homepage/ Landing page:*** First impressions count. Simple and elegant page with full-screen image, name, profession, sticky navigation, and social links. Clean, structured, and professional is the message.
@@ -103,7 +103,7 @@ I started over again creating the same prototypes with ***UIkit***, as I felt it
 #### 4. Skeleton
 - ***Wireframing:*** My first venture into wireframing, and my choice was to go with Adobe XD. Ample information and tutorials online to learn the user interface. I was able to knock up a prototype of the site and to establish some fonts and colors to be used on the site. 
 
-![Wireframes](assets/images/wirefram.png)
+![Portfolio Wireframes](assets/images/wireframe.png)
 
 #### 5. Surface
 ***Visual Design:*** Kept the site to black and white with different shades and a touch of color in the icons and buttons, and the progress bars. I also dressed up the background of the "Portfolio" section using a blue textured background. Skill category icons were designed and created in Adobe Illustrator, images of myself edited and created in Adobe Photoshop. The home screen image is a free stock image, also edited in Adobe Photoshop.
@@ -119,7 +119,7 @@ I started over again creating the same prototypes with ***UIkit***, as I felt it
 
 ***Frameworks, Libraries, Programs used*** 
 1. [UIkit 3.4.6](https://getuikit.com)
-    - My preferred responsive framework for catering for all screen sizes. Included Modal windows for the contact form, also for displaying my CV. Sticky navbar used for the main navbar, and off-canvas nav for small screens. Image gallery created using the lightbox gallery.
+    - My preferred responsive framework developing with all screen sizes in mind. Included Modal windows for the contact form, also for displaying my CV. Sticky navbar used for the main navbar, and off-canvas nav for small screens. Image gallery created using a modal lightbox gallery.
 2. [Pure CSS3 Animated Border](https://code-fx.github.io/Pure-CSS3-Animated-Border/)
     - Used for the main navbar underline effect.
 3. [jQuery 3.5.1](https://jquery.com)
@@ -129,7 +129,7 @@ I started over again creating the same prototypes with ***UIkit***, as I felt it
 5. [Google Fonts](https://fonts.google.com)
     - My chosen font for use throughout the project, "Manrope".
 6. [GitHub](https://github.com)
-    - Used to host my repository for the project, and published to GitHub Pages.
+    - Used to host my repository for the project, and finished project deployed to GitHub Pages.
 7. [Git Version Control](https://git-scm.com) 
     - Regular backups and commits using Git, pushing my work to the repository on GitHub.
 8. [Adobe Xd](https://www.adobe.com/uk/products/xd.html)
@@ -138,38 +138,108 @@ I started over again creating the same prototypes with ***UIkit***, as I felt it
     - Used Photoshop to edit images, and add effects to images.
 10. [Adobe Illustrator](https://www.adobe.com/uk/products/illustrator.html)
     - Used Illustrator to create icons and sprites, also my initial draft for my CV which was then saved to PDF.
-11. [Adobe Premier Pro](https://www.adobe.com/uk/products/premiere.html)
+11. [Adobe Premiere Pro](https://www.adobe.com/uk/products/premiere.html)
     - Used to edit, convert, and compress the short movie of the foot charts.
 12. [Squoosh](https://squoosh.app)
     - Used Squoosh to compress images to cut the size for web deployment.
 13. [Visual Studio Code](https://code.visualstudio.com)
     - I chose to use Visual Studio Code for the learning experience.
+14. [Joplin](https://joplinapp.org)
+    - A free open-source note-taking and markdown application, for OSX, iOS, Linux, Windows. Used to create and work on my README file.
+    
+***TECHNOLOGY NOTES:***
+
+**Visual Studio Code:** This project was an expansive learning experience in many ways. I've used TextMate, Sublime Text, and Atom, and I have been looking for a good IDE editor to use moving forward. Having used GitPod in the introduction to this course, this project offered the opportunity to get to know Visual Studio Code. It's been a good experience, and overall I am really happy with it. The terminal interface gives easy access to the project root, making it easy to use terminal to create directories and files. In the Mac, opening terminal with keys (⌃⇧\`) Control+Shift+Backtick is convenient. It gives instant access to Git Version Control to add changes, commit and push changes to the remote repository. 
+
+**SCSS/CSS:** Having created the initial build in HTML and CSS, I implemented CSS variables to make it easier to make changes to the skill icon block when needed. Specifically the progress percentage display. There were conflicts with image paths in Safari and Chrome browsers. CSS variables did not work for me. Rather than let it go, I looked into Less, SASS, and SCSS. After researching, I concluded that SCSS is presently the most attractive option, and in high demand as a skill in advertised jobs. The [SASS Website](https://sass-lang.com/install) gives clear and easy instructions to install. I chose to install Dart Sass using the Homebrew Package manager. `brew install sass/sass/sass`.  Compiling on the command line is easy at any time by writing the source file path and target file paths, `sass source/stylesheets/index.scss build/stylesheets/index.css`. Even easier is live compiling upon saving the SCSS file by typing, `sass --watch source/stylesheets/index.scss build/stylesheets/index.css`. Exiting the live compiling process is easy by hitting Control+C on a Mac. 
+I rewrote my CSS, nesting selectors and styles where possible to save duplication. I recognise I still have much to learn but it's good to jump into it. I was able to create variables without any issues, which enables me to go back to make changes to the percentage bars at any time, with ease.
 
 ### TESTING
 * * *
-This project provided the opportunity for me to get to know and work with Visual Studio Code. Given Gitpod is almost identical in build, I saw advantages in learning how to set up the project locally, using terminal to create directories and files, also to connect to my Github repository using Git. 
 
 Initial features/ modules of the site were created locally and in Codepen to test and compare the advantages and disadvantages of Bootstrap and UIkit frameworks. My goal was to see what was possible and which framework best suited my needs for this project. In the end, my preference was UIkit. It was easily added into the project in terminal using `yarn add UIkit`. 
 
-In Visual Studio Code I had the option to view in the live server as I worked, and also to view in the browser for when I wanted to use the web inspector to identify the source of errors, or to identify selectors for customizing CSS styling. I tested and used both Google Chrome and Safari to test and view the work as it progressed. I also used my iPhone 11 Pro to view the mobile view once it was deployed on Github. I shared the link to the site with family and friends to get feedback.
+In Visual Studio Code I had the option to view in the live server as I worked, and also to view in the browser for when I wanted to use the web inspector to identify the source of errors, or to identify selectors for customising CSS styling. 
+
+I tested the site using both Google Chrome, Safari on my Macbook Pro, and in Windows 10. In Chrome I was able to test the responsiveness of various screen sizes and devices from desktops, laptops, and mobile devices. Once the site was uploaded and live on GitHub, I was able to test it by sending links to friends and colleagues to get feedback. 
+
+
 
 ***Testing Notes*** 
 
 - My focus during development was that the site viewed equally well in my 15" Macbook Pro, and also on smaller screens. The Navbar which contained the main navigation to the left, and the social navigation to the right did not fit on small screens, so I implemented the off-canvas menu. The social navigation remains visible for small screens, and main navigation links are available in the off-canvas menu. 
-- In my original wireframe, I had envisaged a single image framed in a circle but on larger screens, there was too much white space, so I created a separate image for large screens, and the image framed in a circle works nicely on smaller screens. I had some initial issues with margins in the skill block with the three columns, noticeable when they stacked on smaller screens, however, it was sorted by adding 'uk-collapse" class to the grid. 
-- UIkit does not offer the same Progress Bar feature that Bootstrap does. I created the same feature using HTML and CSS quite easily, although with 13 different skills to display it was an overly large block of CSS markup. I implemented CSS Variables to try to simplify it and make it easier to change the percentage display easily when needed. I also created my icons and a sprite sheet, however, I hit a wall with a conflict between Google Chrome and Safari displaying images linked via CSS variables. It was then that I decided to turn to SCSS, rewrote my styling in SCSS utilizing SCSS variables, and compiling to CSS in Visual Studio Code. It will make changes at a later date easier.
+- In my original wireframe, I had envisaged a single image framed in a circle but on larger screens, there was too much white space, so I created a separate image for large screens, and the image framed in a circle works nicely on smaller screens. I had some initial issues with margins in the skill block with the three columns, noticeable when they stacked on smaller screens, however, it was sorted by adding `uk-collapse` class to the grid. 
+- I verified that users of interest can easily contact me by clicking on the contact link in the navbar, or the contact icon also in the navbar and in the footer. When clicked the modal opens with the contact form. 
+- Potential users can also view and download my CV by clicking on the button in the "About me" section. When clicking the button, a modal opens displaying the CV, with another button inviting the user to download the CV. When clicked it opens the CV PDF in a separate browser tab.
+- The sections are easy to navigate when clicking on the section links in the navbar. The scrolling is smooth. 
+- I verified that interested users can view samples of my work by navigating to the Portfolio Gallery. I provided a sample of 5 separate projects, each including up to 12 screenshots of my previous works. When the mouse hovers over the displayed image an overlay appears displaying the skills used to create the work. Clicking on the image opens a lightbox slideshow that auto-plays. The displayed sites are grouped in sets of images that can be opened separately.
+- For interested users who what to know more about me, I provided icon links to my GitHub, Linkedin, and Codepen. When clicking on the links, the sites are opened in separate tabs. 
 
-Evaluating the final product with the initial user stories in mind, my goal was to keep it simple, to the point, and to portray a professional image. My conclusion is that the initial impression becomes the foundation for further interest. From the landing page, the users are guided by scrolling the page to the about me section, with a link to view, and or download my CV. After my skills are displayed various modes of presentation. The code icons, progress bars, and colors, and then the portfolio gallery. I think I addressed the key points of interest in the initial user stories.
+Evaluating the final product with the initial user stories in mind, my goal was to keep it simple, to the point, and to portray a professional image. My conclusion is that the initial impression becomes the foundation for further interest. From the landing page, users are guided through scrolling the page to the about me section, with a link to view, and or download my CV. Next, my skills are displayed using various modes of presentation. The code icons, progress bars, and colors, and then the portfolio gallery. I think I addressed the key points of interest in the initial user stories.
 
-- [W3C HTML Validation](https://validator.w3.org/nu/): No real passing W3C HTML validation.
+- [W3C HTML Validation](https://validator.w3.org/nu/): No real issues passing W3C HTML validation.
 - [W3C CSS3 Validation](https://jigsaw.w3.org/css-validator/): No issues at all passing the W3C CSS3 validation.
 
 
 ### DEPLOYMENT
 * * *
-I used the Code Institute Full Template, saving it and creating a GitHub repository. From there I cloned it to my laptop using Visual Studio Code where I worked on the site. Using Git version control I made regular commits, saving my work, and pushing it to the GitHub server. My development process involved first planning what features I wanted. I then created the individual modules to my liking, to get a good idea and feel for what I was creating. I then developed the site, a section at a time adding the individual features. Once complete, I repeated the process with the wisdom of hindsight applying what I learned in the first build, improving aspects I wasn't fully happy with. 
 
-Once complete, the site was deployed live to GitHub Pages, by setting it to master branch in the repository settings/GitHub Pages.
+#### **Creating the repository and cloning to Visual Studio Code**
+
+1.  On GitHub.
+
+    -   I used the Code Institute [gitpod-full-template](https://github.com/Code-Institute-Org/gitpod-full-template) to start my project.
+
+    -   I clicked on “Use this template”, which opened a window prompting me to name my repository. 
+
+    -   I named it “Portfolio-Daiden-Sacha” and clicked “Create repository from template”.
+
+    -   On the repository page, I clicked “Clone or download” and copied the Web URL for the repository.
+
+2.  In Visual Studio Code
+
+    -   I navigated to File > New Window
+
+    -   In the activity bar on the left, I clicked “Source Control”.
+
+    -   I clicked “Clone Repository"
+
+    -   I pasted the repository URL into the field prompting me for the repository name and hit enter.
+
+    -   It prompted me to choose a location to save the project, which I did and saved it.
+
+    -   The cloning was complete, showing the files in the sidebar.
+
+**Creating the directories and files in terminal in Visual Studio Code**
+
+1.  Open terminal in Visual Studio Code using shortcut keys on mac: Control + Shift + `
+
+2.  Create directories in one line in terminal by writing: `mkdir assets assets/css assets/scss assets/js assets/images assets/images/gallery-images assets/images/sprites assets/documents`
+
+3.  Create all required files for site in terminal by writing: `touch index.html assets/css/style.css assets/scss/style.scss assets/scss/variables.scss assets/js/main.js`
+
+**Git initial commit**
+
+1.  Check for new changes to be added to the repository: `git status`
+
+2.  Add changes to be committed: `git add .`
+
+3.  Commit new directories and files to the repository: `git commit -m “Initial commit, created directories and files"`
+
+4.  Push the changes to the remote repository hosted on Github: `git push`
+
+**Deployment of the site to GitHub Pages**
+
+1.  Once I was happy with my site, and had pushed the final changes to GitHub I navigated to the GitHub repository.
+
+2.  On the GitHub repository page, I clicked on “Settings”.
+
+3.  I scrolled down the page to the "GitHub Pages” section.
+
+4.  I clicked on the dropdown and selected “master branch"
+
+5.  The site is now live, showing “ Your site is published at <https://daidensacha.github.io/Portfolio-Daiden-Sacha/">
+
 
 ### CREDITS
 * * *
@@ -179,6 +249,7 @@ Once complete, the site was deployed live to GitHub Pages, by setting it to mast
 - Main Navbar link hover bottom-leftToRight Border taken from [Pure CSS3 Animated Border](https://code-fx.github.io/Pure-CSS3-Animated-Border/)
 
 - Inspiration for the button and icon styling from ["Styling buttons, the right way"](https://fvsch.com/styling-buttons/) by **Florens Verschelde** 
+- Thanks to UIkit for extensive documentation and examples showing what is possible and how to implement UIkit components and features used throughout my project.
 
 ### NOTES
 * * *
