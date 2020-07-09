@@ -1,1 +1,4 @@
 node_modules
+.theia
+.gitpod.dockerfile
+.gitpod.yml
