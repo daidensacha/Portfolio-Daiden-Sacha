@@ -181,6 +181,12 @@ add position relative to the navbar list item to contain the effect. */
   transition-delay: 0s;
 }
 
+/* ========================================================= Offcanvas navbar */
+.uk-navbar-container>.uk-container .uk-navbar-left {
+  margin-left: -12px;
+  margin-right: -20px;
+}
+
 /* ====================================================== Social Icon Slyling */
 ul.social-links {
   margin: 0;
