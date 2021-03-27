@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap");
 @import url("../css/uikit.min.css");
 body {
-  font-family: "Manrope", "Roboto", sans-serif;
+  font: "Manrope", "Roboto", sans-serif;
   font-size: 14pt;
   margin: 0;
   padding: 0;
@@ -374,45 +374,38 @@ h1.profession {
 }
 
 /* ============================================= Sprite Skill Category Images */
-.adobe-design-white {
-  width: 125px;
-  height: 125px;
-  background: url("../images/sprites/skill-cat@125png");
-  background-position: 0 0;
-}
-
-.frontend-dev-white {
-  width: 125px;
-  height: 125px;
-  background: url("../images/sprites/skill-cat@125png");
-  background-position: -125px 0;
-}
-
-.backend-dev-white {
-  width: 125px;
-  height: 125px;
-  background: url("../images/sprites/skill-cat@125png");
-  background-position: -250px 0;
-}
-
-.adobe-design-yellow {
-  width: 125px;
-  height: 125px;
-  background: url("../images/sprites/skill-cat@125png");
-  background-position: -500px 0;
-}
-
-.frontend-dev-yellow {
-  width: 125px;
-  height: 125px;
-  background: url("../images/sprites/skill-cat@125png");
-  background-position: -625px 0;
-}
-
+.adobe-design-white,
+.frontend-dev-white,
+.backend-dev-white,
+.adobe-design-yellow,
+.frontend-dev-yellow,
 .backend-dev-yellow {
   width: 125px;
   height: 125px;
   background: url("../images/sprites/skill-cat@125png");
+}
+
+.adobe-design-white {
+  background-position: 0 0;
+}
+
+.frontend-dev-white {
+  background-position: -125px 0;
+}
+
+.backend-dev-white {
+  background-position: -250px 0;
+}
+
+.adobe-design-yellow {
+  background-position: -500px 0;
+}
+
+.frontend-dev-yellow {
+  background-position: -625px 0;
+}
+
+.backend-dev-yellow {
   background-position: -750px 0;
 }
 
@@ -423,81 +416,72 @@ h1.profession {
 }
 
 /* ======================================================= Skill Icon Sprites */
-.sprite-photoshop {
+.sprite-photoshop,
+.sprite-illustrator,
+.sprite-xd,
+.sprite-indesign,
+.sprite-html5,
+.sprite-css3,
+.sprite-js,
+.sprite-bootstrap,
+.sprite-python,
+.sprite-django,
+.sprite-flask,
+.sprite-mysql,
+.sprite-mongodb {
   width: 25px;
   height: 25px;
+}
+
+.sprite-photoshop {
   background: url("../images/sprites/sprite-skills-25x25.png") 0 0;
 }
 
 .sprite-illustrator {
-  width: 25px;
-  height: 25px;
   background: url("../images/sprites/sprite-skills-25x25.png") -25px 0;
 }
 
 .sprite-xd {
-  width: 25px;
-  height: 25px;
   background: url("../images/sprites/sprite-skills-25x25.png") -50px 0;
 }
 
 .sprite-indesign {
-  width: 25px;
-  height: 25px;
   background: url("../images/sprites/sprite-skills-25x25.png") -75px 0;
 }
 
 .sprite-html5 {
-  width: 25px;
-  height: 25px;
   background: url("../images/sprites/sprite-skills-25x25.png") -100px 0;
 }
 
 .sprite-css3 {
-  width: 25px;
-  height: 25px;
   background: url("../images/sprites/sprite-skills-25x25.png") -125px 0;
 }
 
 .sprite-js {
-  width: 25px;
-  height: 25px;
   background: url("../images/sprites/sprite-skills-25x25.png") -150px 0;
 }
 
 .sprite-bootstrap {
-  width: 25px;
-  height: 25px;
   background: url("../images/sprites/sprite-skills-25x25.png") -175px 0;
 }
 
 .sprite-python {
-  width: 25px;
-  height: 25px;
   background: url("../images/sprites/sprite-skills-25x25.png") -200px 0;
 }
 
 .sprite-django {
-  width: 25px;
-  height: 25px;
   background: url("../images/sprites/sprite-skills-25x25.png") -225px 0;
 }
 
 .sprite-flask {
-  width: 25px;
-  height: 25px;
   background: url("../images/sprites/sprite-skills-25x25.png") -250px 0;
 }
 
 .sprite-mysql {
-  width: 25px;
-  height: 25px;
   background: url("../images/sprites/sprite-skills-25x25.png") -275px 0;
 }
 
 .sprite-mongodb {
-  width: 25px;
-  height: 25px;
   background: url("../images/sprites/sprite-skills-25x25.png") -300px 0;
 }
 
@@ -556,7 +540,7 @@ span.progress-percentage.mongodb {
 }
 
 span.progress-percentage.photoshop {
-  width: 75%;
+  width: 80%;
   background-color: #00f1fe;
 }
 
@@ -629,7 +613,11 @@ span.progress-percentage.mongodb {
   border: 1px solid #e5e5e5;
   padding: 15px;
   height: 100%;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.gallery-container a {
+  border: 2px solid rgba(153, 168, 151, 0.3);
 }
 
 .gallery {

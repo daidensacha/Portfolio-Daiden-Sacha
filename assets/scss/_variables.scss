@@ -22,7 +22,7 @@ $border-808080: #808080;
 
 // ==== IMAGES ====
 // Skill Category Sprite
-$skill-category-images: url('../images/sprites/skill-cat@125png');
+$skill-category-images: url("../images/sprites/skill-cat@125png");
 $skill-category-width: 125px;
 $skill-category-height: 125px;
 $adobe-design-white: 0 0;
@@ -50,6 +50,21 @@ $flask-bg-position: -250px 0;
 $mysql-bg-position: -275px 0;
 $mongodb-bg-position: -300px 0;
 
+// Skill Icon Sprite image position
+$skill-spr-pos-0-0: 0 0;
+$skill-spr-pos-25-0: -25px 0;
+$skill-spr-pos-50-0: -50px 0;
+$skill-spr-pos-75-0: -75px 0;
+$skill-spr-pos-100-0: -100px 0;
+$skill-spr-pos-125-0: -125px 0;
+$skill-spr-pos-150-0: -150px 0;
+$skill-spr-pos-175-0: -175px 0;
+$skill-spr-pos-200-0: -200px 0;
+$skill-spr-pos-225-0: -225px 0;
+$skill-spr-pos-250-0: -250px 0;
+$skill-spr-pos-275-0: -275px 0;
+$skill-spr-pos-300-0: -300px 0;
+
 //PROGESS BAR VARIABLES
 // Progress Bar
 $progress-type-width: 90px;
@@ -63,19 +78,16 @@ $progress-position-left: 0px;
 $progress-bar-border-radius: 4px 0 0 4px;
 
 // Progress Bar Percentage
-$photoshop-percentage: 75%;
-$illustrator-percentage: 80%;
-$xd-percentage: 40%;
-$indesign-percentage: 50%;
-$html5-percentage: 80%;
-$css3-percentage: 70%;
-$javascript-percentage: 40%;
-$bootstrap-percentage: 70%;
-$python-percentage: 50%;
-$django-percentage: 40%;
-$flask-percentage: 60%;
-$mysql-percentage: 60%;
-$mongodb-percentage: 40%;
+$skill-10-percent: 10%;
+$skill-20-percent: 20%;
+$skill-30-percent: 30%;
+$skill-40-percent: 40%;
+$skill-50-percent: 50%;
+$skill-60-percent: 60%;
+$skill-70-percent: 70%;
+$skill-80-percent: 80%;
+$skill-90-percent: 90%;
+$skill-100-percent: 100%;
 
 // Progress Bar Color
 $photoshop-color: #00f1fe;

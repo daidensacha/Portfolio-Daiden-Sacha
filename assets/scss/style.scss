@@ -1,7 +1,10 @@
+@import 'variables';
+
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap");
 @import url("../css/uikit.min.css");
+
 body {
-  font-family: "Manrope", "Roboto", sans-serif;
+  font: $font-stack;
   font-size: 14pt;
   margin: 0;
   padding: 0;
@@ -55,7 +58,7 @@ from:, https://codepen.io/Oddgson/pen/VPrYbv */
   width: 14px;
   height: 14px;
   transform: rotate(45deg);
-  background-color: #ffffff;
+  background-color: $background-base-white;
   border: 1px solid #303133;
 }
 
@@ -69,15 +72,15 @@ from:, https://codepen.io/Oddgson/pen/VPrYbv */
   width: 14px;
   height: 14px;
   transform: rotate(45deg);
-  background-color: #2098D1;
+  background-color: $background-base-blue;
   border: 1px solid #303133;
 }
 
 /* ========================================================== Tooltip Styling */
 .uk-tooltip.tooltip-blue {
-  color: #ffffff;
-  background-color: #2098D1;
-  border: 1px solid #ffffff;
+  color: $background-base-white;
+  background-color: $background-base-blue;
+  border: 1px solid $background-base-white;
 }
 
 /* 
@@ -87,10 +90,10 @@ from:, https://codepen.io/Oddgson/pen/VPrYbv */
 */
 #resume-modal-button,
 #btn-resume-download {
-  border: 2px solid #9555af;
-  color: #9555af;
+  border: 2px solid $background-base-purple;
+  color: $background-base-purple;
   opacity: 0.7;
-  background: #ffffff;
+  background: $background-base-white;
   transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
   -webkit-transition: all 0.35s ease-in-out;
@@ -111,8 +114,8 @@ from:, https://codepen.io/Oddgson/pen/VPrYbv */
   border: solid 1px transparent;
   border-radius: 4px;
   /* make sure colors have enough contrast! */
-  color: #ffffff;
-  background-color: #9555af;
+  color: $background-base-white;
+  background-color: $background-base-purple;
 }
 
 /* inverse colors on mouse-over and focus */
@@ -122,14 +125,14 @@ from:, https://codepen.io/Oddgson/pen/VPrYbv */
 #contact-btn.uk-button:focus,
 #resume-modal-button:focus,
 #btn-resume-download:focus {
-  color: #9555af;
+  color: $background-base-purple;
   border-color: currentColor;
-  background-color: #ffffff;
+  background-color: $background-base-white;
 }
 
 /* =================================================================== Navbar */
 .uk-navbar-container {
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: $navbar-background;
 }
 
 .uk-navbar-nav > li {
@@ -148,7 +151,7 @@ add position relative to the navbar list item to contain the effect. */
 }
 
 .bottom-leftToRight:after {
-  border-bottom: 2px solid #2098D1;
+  border-bottom: 2px solid $background-base-blue;
   left: 0;
   right: 100%;
   bottom: 0;
@@ -199,24 +202,24 @@ ul.social-links a i {
   width: 32px;
   height: 20px;
   padding: 7px 0;
-  border: 2px solid #2098D1;
+  border: 2px solid $background-base-blue;
   border-radius: 50%;
   font-size: 22px;
   line-height: 22px;
   text-align: center;
   vertical-align: middle;
-  color: #2098D1;
+  color: $background-base-blue;
   opacity: 0.7;
-  background: #ffffff;
+  background: $background-base-white;
   transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
   -webkit-transition: all 0.35s ease-in-out;
   -o-transition: all 0.35s ease-in-out;
 }
 ul.social-links a i:hover {
-  color: #ffffff;
-  background: #2098D1;
-  border: 2px solid #ffffff;
+  color: $background-base-white;
+  background: $background-base-blue;
+  border: 2px solid $background-base-white;
 }
 
 .skill-icon-block {
@@ -227,7 +230,7 @@ ul.social-links a i:hover {
   max-width: 100%;
   height: auto;
   box-sizing: border-box;
-  width: 125px;
+  width: $skill-category-width;
   opacity: 0.5;
 }
 
@@ -263,8 +266,8 @@ h1.profession {
 ================================================================================ 
 */
 .d-image-background {
-  border-top: 2px solid #e5e5e5;
-  border-bottom: 2px solid #e5e5e5;
+  border-top: 2px solid $border-background-light;
+  border-bottom: 2px solid $border-background-light;
 }
 
 .d-content {
@@ -281,7 +284,7 @@ h1.profession {
 
 .about {
   min-height: 800px;
-  border-top: 5px solid #e5e5e5;
+  border-top: 5px solid $border-background-light;
 }
 
 .image-daiden {
@@ -291,7 +294,7 @@ h1.profession {
   border-radius: 50%;
   display: block;
   margin: 0 auto 30px;
-  border: 1px solid #707070;
+  border: 1px solid $border-background-dark;
 }
 
 /* 
@@ -303,10 +306,10 @@ h1.profession {
   background: transparent;
 }
 .skills .skill-bg-wrapper {
-  border-top: 2px solid #707070;
-  border-bottom: 2px solid #707070;
+  border-top: 2px solid $border-background-dark;
+  border-bottom: 2px solid $border-background-dark;
   padding: 3px 0;
-  background: #666666;
+  background: $background-base-grey;
   -webkit-box-shadow: inset 0px 1px 15px -10px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: inset 0px 1px 15px -10px rgba(0, 0, 0, 0.75);
   box-shadow: inset 0px 1px 15px -10px rgba(0, 0, 0, 0.75);
@@ -363,46 +366,39 @@ h1.profession {
 }
 
 /* ============================================= Sprite Skill Category Images */
+.adobe-design-white,
+.frontend-dev-white,
+.backend-dev-white,
+.adobe-design-yellow,
+.frontend-dev-yellow,
+.backend-dev-yellow  {
+  width: $skill-category-width;
+  height: $skill-category-height;
+  background: $skill-category-images;
+}
+
 .adobe-design-white {
-  width: 125px;
-  height: 125px;
-  background: url("../images/sprites/skill-cat@125png");
-  background-position: 0 0;
+  background-position: $adobe-design-white;
 }
 
 .frontend-dev-white {
-  width: 125px;
-  height: 125px;
-  background: url("../images/sprites/skill-cat@125png");
-  background-position: -125px 0;
+  background-position: $frontend-dev-white;
 }
 
 .backend-dev-white {
-  width: 125px;
-  height: 125px;
-  background: url("../images/sprites/skill-cat@125png");
-  background-position: -250px 0;
+  background-position: $backend-dev-white;
 }
 
 .adobe-design-yellow {
-  width: 125px;
-  height: 125px;
-  background: url("../images/sprites/skill-cat@125png");
-  background-position: -500px 0;
+  background-position: $adobe-design-yellow;
 }
 
 .frontend-dev-yellow {
-  width: 125px;
-  height: 125px;
-  background: url("../images/sprites/skill-cat@125png");
-  background-position: -625px 0;
+  background-position: $frontend-dev-yellow ;
 }
 
 .backend-dev-yellow {
-  width: 125px;
-  height: 125px;
-  background: url("../images/sprites/skill-cat@125png");
-  background-position: -750px 0;
+  background-position: $backend-dev-yellow;
 }
 
 /* ================================================= Skill Background Sprites */
@@ -412,82 +408,73 @@ h1.profession {
 }
 
 /* ======================================================= Skill Icon Sprites */
+.sprite-photoshop,
+.sprite-illustrator,
+.sprite-xd,
+.sprite-indesign,
+.sprite-html5,
+.sprite-css3,
+.sprite-js,
+.sprite-bootstrap,
+.sprite-python,
+.sprite-django ,
+.sprite-flask,
+.sprite-mysql,
+.sprite-mongodb  {
+  width: $skill-icon-width;
+  height: $skill-icon-height;
+}
+
 .sprite-photoshop {
-  width: 25px;
-  height: 25px;
-  background: url("../images/sprites/sprite-skills-25x25.png") 0 0;
+  background: $skill-icon-sprite $skill-spr-pos-0-0;
 }
 
 .sprite-illustrator {
-  width: 25px;
-  height: 25px;
-  background: url("../images/sprites/sprite-skills-25x25.png") -25px 0;
+  background: $skill-icon-sprite $skill-spr-pos-25-0;
 }
 
 .sprite-xd {
-  width: 25px;
-  height: 25px;
-  background: url("../images/sprites/sprite-skills-25x25.png") -50px 0;
+  background: $skill-icon-sprite $skill-spr-pos-50-0;
 }
 
 .sprite-indesign {
-  width: 25px;
-  height: 25px;
-  background: url("../images/sprites/sprite-skills-25x25.png") -75px 0;
+  background: $skill-icon-sprite $skill-spr-pos-75-0;
 }
 
 .sprite-html5 {
-  width: 25px;
-  height: 25px;
-  background: url("../images/sprites/sprite-skills-25x25.png") -100px 0;
+  background: $skill-icon-sprite $skill-spr-pos-100-0;
 }
 
 .sprite-css3 {
-  width: 25px;
-  height: 25px;
-  background: url("../images/sprites/sprite-skills-25x25.png") -125px 0;
+  background: $skill-icon-sprite $skill-spr-pos-125-0;
 }
 
 .sprite-js {
-  width: 25px;
-  height: 25px;
-  background: url("../images/sprites/sprite-skills-25x25.png") -150px 0;
+  background: $skill-icon-sprite $skill-spr-pos-150-0;
 }
 
 .sprite-bootstrap {
-  width: 25px;
-  height: 25px;
-  background: url("../images/sprites/sprite-skills-25x25.png") -175px 0;
+  background: $skill-icon-sprite $skill-spr-pos-175-0;
 }
 
 .sprite-python {
-  width: 25px;
-  height: 25px;
-  background: url("../images/sprites/sprite-skills-25x25.png") -200px 0;
+  background: $skill-icon-sprite $skill-spr-pos-200-0;
 }
 
 .sprite-django {
-  width: 25px;
-  height: 25px;
-  background: url("../images/sprites/sprite-skills-25x25.png") -225px 0;
+  background: $skill-icon-sprite $skill-spr-pos-225-0;
 }
 
 .sprite-flask {
-  width: 25px;
-  height: 25px;
-  background: url("../images/sprites/sprite-skills-25x25.png") -250px 0;
+  background: $skill-icon-sprite $skill-spr-pos-250-0;
 }
 
 .sprite-mysql {
-  width: 25px;
-  height: 25px;
-  background: url("../images/sprites/sprite-skills-25x25.png") -275px 0;
+  background: $skill-icon-sprite $skill-spr-pos-275-0;
 }
 
 .sprite-mongodb {
-  width: 25px;
-  height: 25px;
-  background: url("../images/sprites/sprite-skills-25x25.png") -300px 0;
+  background: $skill-icon-sprite $skill-spr-pos-300-0;
 }
 
 /* ==================================================== Progress Bars Styling */
@@ -546,68 +533,68 @@ span.progress-percentage.mongodb {
 }
 
 span.progress-percentage.photoshop {
-  width: 75%;
-  background-color: #00f1fe;
+  width: $skill-80-percent;
+  background-color: $photoshop-color;
 }
 
 span.progress-percentage.illustrator {
-  width: 80%;
-  background-color: #f8b849;
+  width: $skill-80-percent;
+  background-color: $illustrator-color;
 }
 
 span.progress-percentage.xd {
-  width: 40%;
-  background-color: #a5a5a5;
+  width: $skill-40-percent;
+  background-color: $xd-color;
 }
 
 span.progress-percentage.indesign {
-  width: 50%;
-  background-color: #ff3f94;
+  width: $skill-50-percent;
+  background-color: $indesign-color;
 }
 
 span.progress-percentage.html5 {
-  width: 80%;
-  background-color: #ee671d;
+  width: $skill-80-percent;
+  background-color: $html5-color;
 }
 
 span.progress-percentage.css3 {
-  width: 70%;
-  background-color: #31addf;
+  width: $skill-70-percent;
+  background-color: $css3-color;
 }
 
 span.progress-percentage.javascript {
-  width: 40%;
-  background-color: #ffcc00;
+  width: $skill-40-percent;
+  background-color: $javascript-color;
 }
 
 span.progress-percentage.bootstrap {
-  width: 70%;
-  background-color: #603f8e;
+  width: $skill-70-percent;
+  background-color: $bootstrap-color;
 }
 
 span.progress-percentage.python {
-  width: 50%;
-  background-color: #396f9f;
+  width: $skill-50-percent;
+  background-color: $python-color;
 }
 
 span.progress-percentage.django {
-  width: 40%;
-  background-color: #0c4b33;
+  width: $skill-40-percent;
+  background-color: $django-color;
 }
 
 span.progress-percentage.flask {
-  width: 60%;
-  background-color: #363b3d;
+  width: $skill-60-percent;
+  background-color: $flask-color;
 }
 
 span.progress-percentage.mysql {
-  width: 60%;
-  background-color: #02546b;
+  width: $skill-60-percent;
+  background-color: $mysql-color;
 }
 
 span.progress-percentage.mongodb {
-  width: 40%;
-  background-color: #49b344;
+  width: $skill-40-percent;
+  background-color: $mongodb-color;
 }
 
 /* 
@@ -616,14 +603,18 @@ span.progress-percentage.mongodb {
 ================================================================================ 
 */
 .gallery-container {
-  border: 1px solid #e5e5e5;
+  border: 1px solid $border-background-light;
   padding: 15px;
   height: 100%;
-  background-color: #ffffff;
+  background-color: rgba(255,255,255,0.7);
+}
+
+.gallery-container a {
+  border: 2px solid rgba(153, 168, 151, 0.30)
 }
 
 .gallery {
-  border-top: 2px solid #e5e5e5;
+  border-top: 2px solid $border-background-light;
   padding-bottom: 100px;
 }
 
@@ -660,7 +651,7 @@ span.progress-percentage.mongodb {
 */
 footer {
   background-color: #3E3E3E;
-  border-top: 5px solid #707070;
+  border-top: 5px solid $border-background-dark;
   -webkit-box-shadow: inset 0px 13px 20px 0px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: inset 0px 13px 20px 0px rgba(0, 0, 0, 0.35);
   box-shadow: inset 0px 13px 20px 0px rgba(0, 0, 0, 0.35);
